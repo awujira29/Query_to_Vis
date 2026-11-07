@@ -1,0 +1,1659 @@
+[
+ {
+  "set": "appendix",
+  "query": "How has the number of trials for pembrolizumab changed per year since 2015?",
+  "intent": "trend",
+  "series": [
+   {
+    "drug": "pembrolizumab",
+    "start_year": 2015
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "pembrolizumab",
+     "filters": {
+      "drug": "pembrolizumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": 2015,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Pembrolizumab trials started per year",
+   "interpretation": "Number of trials by start year."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "How many trials started each year for ovarian cancer?",
+  "intent": "trend",
+  "series": [
+   {
+    "condition": "ovarian cancer"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "ovarian cancer",
+     "filters": {
+      "drug": null,
+      "condition": "ovarian cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Ovarian cancer trials started per year",
+   "interpretation": "Number of trials by start year."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "How are melanoma trials distributed across phases?",
+  "intent": "distribution",
+  "dimension": "phase",
+  "series": [
+   {
+    "condition": "melanoma"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "melanoma",
+     "filters": {
+      "drug": null,
+      "condition": "melanoma",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Melanoma trials by phase",
+   "interpretation": "Trials grouped by phase."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "What are the most common intervention types for psoriasis trials?",
+  "intent": "distribution",
+  "dimension": "intervention_type",
+  "series": [
+   {
+    "condition": "psoriasis"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "psoriasis",
+     "filters": {
+      "drug": null,
+      "condition": "psoriasis",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "intervention_type",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Psoriasis trials by intervention type",
+   "interpretation": "Trials grouped by intervention type."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "Compare phases for trials involving pembrolizumab vs nivolumab.",
+  "intent": "comparison",
+  "dimension": "phase",
+  "series": [
+   {
+    "drug": "pembrolizumab"
+   },
+   {
+    "drug": "nivolumab"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "comparison",
+   "series": [
+    {
+     "label": "pembrolizumab",
+     "filters": {
+      "drug": "pembrolizumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    },
+    {
+     "label": "nivolumab",
+     "filters": {
+      "drug": "nivolumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Phase: pembrolizumab vs nivolumab",
+   "interpretation": "Compare phase across pembrolizumab vs nivolumab."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "Compare sponsor categories across breast cancer and lung cancer trials.",
+  "intent": "comparison",
+  "dimension": "sponsor_class",
+  "series": [
+   {
+    "condition": "breast cancer"
+   },
+   {
+    "condition": "lung cancer"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "comparison",
+   "series": [
+    {
+     "label": "breast cancer",
+     "filters": {
+      "drug": null,
+      "condition": "breast cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    },
+    {
+     "label": "lung cancer",
+     "filters": {
+      "drug": null,
+      "condition": "lung cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "sponsor_class",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sponsor class: breast cancer vs lung cancer",
+   "interpretation": "Compare sponsor class across breast cancer vs lung cancer."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "Which countries have the most recruiting trials for lung cancer?",
+  "intent": "distribution",
+  "dimension": "country",
+  "series": [
+   {
+    "condition": "lung cancer",
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "lung cancer",
+     "filters": {
+      "drug": null,
+      "condition": "lung cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [
+       "RECRUITING"
+      ],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "country",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Recruiting lung cancer trials by country",
+   "interpretation": "Trials grouped by country."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "Show a network of sponsors and drugs for melanoma trials.",
+  "intent": "network",
+  "network": [
+   "sponsor",
+   "drug"
+  ],
+  "series": [
+   {
+    "condition": "melanoma"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "melanoma",
+     "filters": {
+      "drug": null,
+      "condition": "melanoma",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "sponsor",
+    "drug"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sponsors and drugs in melanoma trials",
+   "interpretation": "Network linking sponsor and drug entities of these trials."
+  }
+ },
+ {
+  "set": "appendix",
+  "query": "Which drugs frequently co-occur in combination studies with pembrolizumab?",
+  "intent": "network",
+  "network": [
+   "drug",
+   "drug"
+  ],
+  "series": [
+   {
+    "drug": "pembrolizumab"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "pembrolizumab",
+     "filters": {
+      "drug": "pembrolizumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "drug",
+    "drug"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Drugs given together with pembrolizumab",
+   "interpretation": "Network linking drug and drug entities of these trials."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Trend of new ipilimumab trials over time",
+  "intent": "trend",
+  "series": [
+   {
+    "drug": "ipilimumab"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "ipilimumab",
+     "filters": {
+      "drug": "ipilimumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Ipilimumab trials started per year",
+   "interpretation": "Number of trials by start year."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Yearly count of glioblastoma trials from 2010 to 2020",
+  "intent": "trend",
+  "series": [
+   {
+    "condition": "glioblastoma",
+    "start_year": 2010,
+    "end_year": 2020
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "glioblastoma",
+     "filters": {
+      "drug": null,
+      "condition": "glioblastoma",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": 2010,
+      "end_year": 2020
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Glioblastoma trials started per year",
+   "interpretation": "Number of trials by start year."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Breakdown of hepatitis C trials by sponsor class",
+  "intent": "distribution",
+  "dimension": "sponsor_class",
+  "series": [
+   {
+    "condition": "hepatitis C"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "hepatitis C",
+     "filters": {
+      "drug": null,
+      "condition": "hepatitis C",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "sponsor_class",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Hepatitis C trials by sponsor class",
+   "interpretation": "Trials grouped by sponsor class."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Who funds malaria trials?",
+  "intent": "distribution",
+  "dimension": "sponsor_class",
+  "series": [
+   {
+    "condition": "malaria"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "malaria",
+     "filters": {
+      "drug": null,
+      "condition": "malaria",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "sponsor_class",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Malaria trials by sponsor class",
+   "interpretation": "Trials grouped by sponsor class."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Which sponsors run the most multiple sclerosis trials?",
+  "intent": "distribution",
+  "dimension": "lead_sponsor",
+  "series": [
+   {
+    "condition": "multiple sclerosis"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "multiple sclerosis",
+     "filters": {
+      "drug": null,
+      "condition": "multiple sclerosis",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "lead_sponsor",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Multiple sclerosis trials by lead sponsor",
+   "interpretation": "Trials grouped by lead sponsor."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "What is the recruitment status of trials testing durvalumab?",
+  "intent": "distribution",
+  "dimension": "overall_status",
+  "series": [
+   {
+    "drug": "durvalumab"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "durvalumab",
+     "filters": {
+      "drug": "durvalumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "overall_status",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Durvalumab trials by status",
+   "interpretation": "Trials grouped by status."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Where are sickle cell disease trials located?",
+  "intent": "distribution",
+  "dimension": "country",
+  "series": [
+   {
+    "condition": "sickle cell disease"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "sickle cell disease",
+     "filters": {
+      "drug": null,
+      "condition": "sickle cell disease",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "country",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sickle cell disease trials by country",
+   "interpretation": "Trials grouped by country."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Which conditions are studied in trials of metformin?",
+  "intent": "distribution",
+  "dimension": "condition",
+  "series": [
+   {
+    "drug": "metformin"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "metformin",
+     "filters": {
+      "drug": "metformin",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "condition",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Metformin trials by condition",
+   "interpretation": "Trials grouped by condition."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Interventional vs observational: what study types do epilepsy trials use?",
+  "intent": "distribution",
+  "dimension": "study_type",
+  "series": [
+   {
+    "condition": "epilepsy"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "epilepsy",
+     "filters": {
+      "drug": null,
+      "condition": "epilepsy",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "study_type",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Epilepsy trials by study type",
+   "interpretation": "Trials grouped by study type."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "How are completed cystic fibrosis trials split by phase?",
+  "intent": "distribution",
+  "dimension": "phase",
+  "series": [
+   {
+    "condition": "cystic fibrosis",
+    "status": [
+     "COMPLETED"
+    ]
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "cystic fibrosis",
+     "filters": {
+      "drug": null,
+      "condition": "cystic fibrosis",
+      "sponsor": null,
+      "country": null,
+      "status": [
+       "COMPLETED"
+      ],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Completed cystic fibrosis trials by phase",
+   "interpretation": "Trials grouped by phase."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Compare trial phases of osimertinib and erlotinib",
+  "intent": "comparison",
+  "dimension": "phase",
+  "series": [
+   {
+    "drug": "osimertinib"
+   },
+   {
+    "drug": "erlotinib"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "comparison",
+   "series": [
+    {
+     "label": "osimertinib",
+     "filters": {
+      "drug": "osimertinib",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    },
+    {
+     "label": "erlotinib",
+     "filters": {
+      "drug": "erlotinib",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Phase: osimertinib vs erlotinib",
+   "interpretation": "Compare phase across osimertinib vs erlotinib."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Compare the countries running colorectal cancer vs gastric cancer trials",
+  "intent": "comparison",
+  "dimension": "country",
+  "series": [
+   {
+    "condition": "colorectal cancer"
+   },
+   {
+    "condition": "gastric cancer"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "comparison",
+   "series": [
+    {
+     "label": "colorectal cancer",
+     "filters": {
+      "drug": null,
+      "condition": "colorectal cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    },
+    {
+     "label": "gastric cancer",
+     "filters": {
+      "drug": null,
+      "condition": "gastric cancer",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "country",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Country: colorectal cancer vs gastric cancer",
+   "interpretation": "Compare country across colorectal cancer vs gastric cancer."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Compare trials per year for atorvastatin versus rosuvastatin since 2005",
+  "intent": "trend",
+  "series": [
+   {
+    "drug": "atorvastatin",
+    "start_year": 2005
+   },
+   {
+    "drug": "rosuvastatin",
+    "start_year": 2005
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "atorvastatin",
+     "filters": {
+      "drug": "atorvastatin",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": 2005,
+      "end_year": null
+     }
+    },
+    {
+     "label": "rosuvastatin",
+     "filters": {
+      "drug": "rosuvastatin",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": 2005,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Trials started per year: atorvastatin vs rosuvastatin",
+   "interpretation": "Compare trials per start year for atorvastatin vs rosuvastatin."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Show which drugs are given together with carboplatin",
+  "intent": "network",
+  "network": [
+   "drug",
+   "drug"
+  ],
+  "series": [
+   {
+    "drug": "carboplatin"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "carboplatin",
+     "filters": {
+      "drug": "carboplatin",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "drug",
+    "drug"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Drugs given together with carboplatin",
+   "interpretation": "Network linking drug and drug entities of these trials."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Network of conditions and drugs in trials sponsored by Pfizer",
+  "intent": "network",
+  "network": [
+   "condition",
+   "drug"
+  ],
+  "series": [
+   {
+    "sponsor": "Pfizer"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "Pfizer",
+     "filters": {
+      "drug": null,
+      "condition": null,
+      "sponsor": "Pfizer",
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "condition",
+    "drug"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Conditions and drugs in trials sponsored by Pfizer",
+   "interpretation": "Network linking condition and drug entities of these trials."
+  }
+ },
+ {
+  "set": "paraphrase",
+  "query": "Which sponsors study which conditions in HIV trials?",
+  "intent": "network",
+  "network": [
+   "sponsor",
+   "condition"
+  ],
+  "series": [
+   {
+    "condition": "HIV"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "HIV",
+     "filters": {
+      "drug": null,
+      "condition": "HIV",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "sponsor",
+    "condition"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sponsors and conditions in hIV trials",
+   "interpretation": "Network linking sponsor and condition entities of these trials."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "What is the typical enrollment of phase 3 heart failure trials?",
+  "intent": "histogram",
+  "measure": "enrollment_count",
+  "series": [
+   {
+    "condition": "heart failure",
+    "phases": [
+     "PHASE3"
+    ]
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "histogram",
+   "series": [
+    {
+     "label": "heart failure",
+     "filters": {
+      "drug": null,
+      "condition": "heart failure",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [
+       "PHASE3"
+      ],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": "enrollment_count",
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Enrollment of phase 3 heart failure trials",
+   "interpretation": "Distribution of enrollment per trial."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "How long do schizophrenia trials take?",
+  "intent": "histogram",
+  "measure": "duration_months",
+  "series": [
+   {
+    "condition": "schizophrenia"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "histogram",
+   "series": [
+    {
+     "label": "schizophrenia",
+     "filters": {
+      "drug": null,
+      "condition": "schizophrenia",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": "duration_months",
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Duration of schizophrenia trials",
+   "interpretation": "Distribution of duration per trial."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "Distribution of the number of sites in COPD trials",
+  "intent": "histogram",
+  "measure": "site_count",
+  "series": [
+   {
+    "condition": "COPD"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "histogram",
+   "series": [
+    {
+     "label": "COPD",
+     "filters": {
+      "drug": null,
+      "condition": "COPD",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": "site_count",
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sites of cOPD trials",
+   "interpretation": "Distribution of sites per trial."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "Is there a relationship between enrollment and duration for Parkinson's disease trials?",
+  "intent": "scatter",
+  "measures": [
+   "enrollment_count",
+   "duration_months"
+  ],
+  "series": [
+   {
+    "condition": "Parkinson's disease"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "scatter",
+   "series": [
+    {
+     "label": "Parkinson's disease",
+     "filters": {
+      "drug": null,
+      "condition": "Parkinson's disease",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": "enrollment_count",
+   "y": "duration_months",
+   "color": "phase",
+   "top_n": null,
+   "title": "Duration vs enrollment for parkinson's disease trials",
+   "interpretation": "One point per trial: enrollment against duration, colored by phase."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "Scatter plot of start year against enrollment for trials of insulin",
+  "intent": "scatter",
+  "measures": [
+   "start_year",
+   "enrollment_count"
+  ],
+  "series": [
+   {
+    "drug": "insulin"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "scatter",
+   "series": [
+    {
+     "label": "insulin",
+     "filters": {
+      "drug": "insulin",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": "enrollment_count",
+   "y": "start_year",
+   "color": "phase",
+   "top_n": null,
+   "title": "Start year vs enrollment for insulin trials",
+   "interpretation": "One point per trial: enrollment against start year, colored by phase."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "How many obesity trials are recruiting in Canada, by phase?",
+  "intent": "distribution",
+  "dimension": "phase",
+  "series": [
+   {
+    "condition": "obesity",
+    "country": "Canada",
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "obesity",
+     "filters": {
+      "drug": null,
+      "condition": "obesity",
+      "sponsor": null,
+      "country": "Canada",
+      "status": [
+       "RECRUITING"
+      ],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Recruiting obesity trials in Canada by phase",
+   "interpretation": "Trials grouped by phase."
+  }
+ },
+ {
+  "set": "extended",
+  "query": "Phase breakdown of UK trials for dementia",
+  "intent": "distribution",
+  "dimension": "phase",
+  "series": [
+   {
+    "condition": "dementia",
+    "country": "United Kingdom"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "dementia",
+     "filters": {
+      "drug": null,
+      "condition": "dementia",
+      "sponsor": null,
+      "country": "United Kingdom",
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Dementia trials in United Kingdom by phase",
+   "interpretation": "Trials grouped by phase."
+  }
+ },
+ {
+  "set": "structured",
+  "query": "How has the number of trials for this drug changed over time?",
+  "fields": {
+   "drug_name": "Pembrolizumab"
+  },
+  "intent": "trend",
+  "series": [
+   {
+    "drug": "Pembrolizumab"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "trend",
+   "series": [
+    {
+     "label": "Pembrolizumab",
+     "filters": {
+      "drug": "Pembrolizumab",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Pembrolizumab trials started per year",
+   "interpretation": "Number of trials by start year."
+  }
+ },
+ {
+  "set": "structured",
+  "query": "Trials by phase",
+  "fields": {
+   "drug_name": "Keytruda"
+  },
+  "intent": "distribution",
+  "dimension": "phase",
+  "series": [
+   {
+    "drug": "Keytruda"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "Keytruda",
+     "filters": {
+      "drug": "Keytruda",
+      "condition": null,
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "phase",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Keytruda trials by phase",
+   "interpretation": "Trials grouped by phase."
+  }
+ },
+ {
+  "set": "structured",
+  "query": "Which countries run these trials?",
+  "fields": {
+   "condition": "asthma",
+   "status": [
+    "recruiting"
+   ]
+  },
+  "intent": "distribution",
+  "dimension": "country",
+  "series": [
+   {
+    "condition": "asthma",
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "distribution",
+   "series": [
+    {
+     "label": "asthma",
+     "filters": {
+      "drug": null,
+      "condition": "asthma",
+      "sponsor": null,
+      "country": null,
+      "status": [
+       "RECRUITING"
+      ],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": "country",
+   "network": null,
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Recruiting asthma trials by country",
+   "interpretation": "Trials grouped by country."
+  }
+ },
+ {
+  "set": "structured",
+  "query": "Show the sponsor network",
+  "fields": {
+   "condition": "melanoma"
+  },
+  "intent": "network",
+  "network": [
+   "sponsor",
+   "drug"
+  ],
+  "series": [
+   {
+    "condition": "melanoma"
+   }
+  ],
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": {
+   "intent": "network",
+   "series": [
+    {
+     "label": "melanoma",
+     "filters": {
+      "drug": null,
+      "condition": "melanoma",
+      "sponsor": null,
+      "country": null,
+      "status": [],
+      "phases": [],
+      "start_year": null,
+      "end_year": null
+     }
+    }
+   ],
+   "dimension": null,
+   "network": [
+    "sponsor",
+    "drug"
+   ],
+   "measure": null,
+   "x": null,
+   "y": null,
+   "color": null,
+   "top_n": null,
+   "title": "Sponsors and drugs in melanoma trials",
+   "interpretation": "Network linking sponsor and drug entities of these trials."
+  }
+ },
+ {
+  "set": "off_topic",
+  "query": "What is the weather in Boston today?",
+  "intent": null,
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": null
+ },
+ {
+  "set": "off_topic",
+  "query": "Write me a poem about hospitals",
+  "intent": null,
+  "planner": "rules",
+  "ok": true,
+  "why": "",
+  "plan": null
+ }
+]

@@ -1,7 +1,16 @@
-"""ClinicalTrials.gov API client: throttled, retrying, paginated, cached."""
+"""ClinicalTrials.gov API client: throttled, retrying, paginated, cached.
+
+Environment variables (all optional):
+  CTGOV_CACHE_DIR   where responses are cached (default .cache/ctgov)
+  CTGOV_CACHE_TTL   seconds a cached response stays valid (default 86400, one day)
+  CTGOV_OFFLINE=1   never call the network: serve cached responses whatever their age
+                    and fail clearly on anything not cached. Used to replay example
+                    runs and to work without network access.
+"""
 import hashlib
 import json
 import logging
+import os
 import time
 from pathlib import Path
 
@@ -29,9 +38,17 @@ class UpstreamError(ApiError):
     """5xx, timeouts, or network failures after all retries."""
 
 
+class OfflineMissError(ApiError):
+    """CTGOV_OFFLINE is set and the request is not in the cache."""
 
-CACHE_DIR = Path(".cache/ctgov")
-CACHE_TTL_SECONDS = 24 * 60 * 60     # registry data changes slowly; a day is fine
+
+
+CACHE_DIR = Path(os.getenv("CTGOV_CACHE_DIR", ".cache/ctgov"))
+CACHE_TTL_SECONDS = int(os.getenv("CTGOV_CACHE_TTL", str(24 * 60 * 60)))
+
+
+def offline() -> bool:
+    return os.getenv("CTGOV_OFFLINE", "").lower() in {"1", "true", "yes"}
 
 
 def _cache_file(path: str, params: dict) -> Path:
@@ -45,7 +62,7 @@ def _cache_read(path: str, params: dict) -> dict | None:
     file = _cache_file(path, params)
     if not file.exists():
         return None
-    if time.time() - file.stat().st_mtime > CACHE_TTL_SECONDS:
+    if not offline() and time.time() - file.stat().st_mtime > CACHE_TTL_SECONDS:
         return None                                  # expired
     try:
         return json.loads(file.read_text())
@@ -84,6 +101,9 @@ def get_json(path: str, params: dict, use_cache: bool = True) -> dict:
         cached = _cache_read(path, params)
         if cached is not None:
             return cached
+    if offline():
+        raise OfflineMissError(f"CTGOV_OFFLINE is set and this request is not cached: "
+                               f"{path} {json.dumps(params, sort_keys=True)[:300]}")
 
     for attempt in range(MAX_RETRIES + 1):
         _throttle()

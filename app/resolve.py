@@ -4,6 +4,9 @@ Candidate sources, each of which can be wrong in its own way:
   - LLM       proposes MeSH terms by meaning     (wrong: invented or near-miss terms)
   - RxNorm    maps brand names to ingredients    (wrong: research codes, e.g. BMS-936558)
   - exact     the user's words as a MeSH name    (wrong: lay terms, abbreviations)
+  - sample    MeSH headings assigned to the trials the words find, sharing a word
+              with the query ("breast cancer" -> "Breast Neoplasms"); grounded by
+              construction, but blind to synonyms ("heart attack" matches nothing)
 
 One verifier checks every candidate against registry data, whatever its source:
   exists      the term set matches trials in the registry
@@ -11,13 +14,18 @@ One verifier checks every candidate against registry data, whatever its source:
   not narrow  its registry size is >= MIN_RATIO of the text search's size
   not broad   no more specific term in the results covers nearly as much
 
+Every candidate term is respelled the way the registry spells it before checking, so
+the final query string does not depend on a proposer's capitalization.
+
 The first verified candidate wins, in source order (LLM first: its ranking picked
 Breast Neoplasms over Breast Diseases where the numbers tie). If nothing verifies,
 the resolver falls back to a field search and says so; it never forces a doubtful term.
 
-Evidence (scripts/probe_v2.py, NOTES.md): with these thresholds, correct proposals
-passed 85 of 87 test queries, including 25 of 25 held-out queries; the two failures
-(chronic pain, lithium) are queries with no single honest MeSH term.
+Evidence (scripts/evaluate_resolver.py, results in scripts/eval_*.json): with these
+thresholds the resolver was right on 86 of 87 gold queries, including 25 of 25 held-out
+ones, and 45 of 48 on a fresh set never used for tuning; the misses are queries with no
+single honest MeSH term (chronic pain) or misspellings and research codes (alzhiemers,
+ONO-4538), which fall back to a field search.
 """
 from __future__ import annotations
 
@@ -30,7 +38,8 @@ import httpx
 from pydantic import BaseModel, Field, ValidationError
 
 from app import llm
-from app.client import get_json
+from app.client import get_json, offline
+from app.filters import CANCER_WORDS, _tokens
 
 logger = logging.getLogger(__name__)
 
@@ -59,7 +68,7 @@ FIELDS = {
 
 class CandidateCheck(BaseModel):
     terms: list[str]
-    source: Literal["llm", "rxnorm", "exact"]
+    source: Literal["llm", "rxnorm", "exact", "sample"]
     reason: str = ""
     passed: bool
     coverage: float              # % of sampled text-search trials covered
@@ -147,7 +156,7 @@ def name_expression(names: list[str]) -> str:
 @dataclass
 class Candidate:
     terms: list[str]
-    source: Literal["llm", "rxnorm", "exact"]
+    source: Literal["llm", "rxnorm", "exact", "sample"]
     reason: str = ""
 
     def key(self) -> tuple[str, ...]:
@@ -232,7 +241,7 @@ class RxNormProposer:
     BASE = "https://rxnav.nlm.nih.gov/REST"
 
     def propose(self, kind: Kind, words: str, sample: Sample | None = None) -> list[Candidate]:
-        if kind != "drug":
+        if kind != "drug" or offline():
             return []
         try:
             ids = httpx.get(f"{self.BASE}/rxcui.json", params={"name": words, "search": 2},
@@ -258,9 +267,44 @@ class ExactProposer:
         return [Candidate([words.strip()], "exact", "the words themselves")]
 
 
+class SampleProposer:
+    """MeSH headings actually assigned to the sampled trials that contain the user's
+    distinctive words: "breast cancer" -> Breast Neoplasms, Triple Negative Breast
+    Neoplasms...; a cancer word in the query must be matched by a cancer word in the
+    heading, so "Lung Diseases" is never proposed for "lung cancer".
+
+    Grounded by construction (only headings that exist on matching trials), but it
+    cannot see synonyms: "heart attack" proposes nothing and the resolver falls back.
+    Ranking: directly assigned headings first, then the fewest words ("Melanoma" before
+    "Nevi and Melanomas"), then the highest coverage. The verifier still rejects
+    parents and subtypes that slip through.
+    """
+
+    MAX_CANDIDATES = 4
+    TERMS_CONSIDERED = 60
+
+    def propose(self, kind: Kind, words: str, sample: Sample) -> list[Candidate]:
+        query = _tokens(words)
+        if not query:
+            return []
+        needs_cancer = bool(query & CANCER_WORDS)
+        distinctive = (query - CANCER_WORDS) or query
+        ranked = []
+        for term, pct, direct in sample.observed_terms(self.TERMS_CONSIDERED):
+            term_words = _tokens(term)
+            if not distinctive <= term_words:
+                continue
+            if needs_cancer and not term_words & CANCER_WORDS:
+                continue
+            ranked.append((not direct, len(term_words), -pct, term))
+        ranked.sort()
+        return [Candidate([term], "sample", f"MeSH heading on {-pct}% of the sampled trials")
+                for _, _, pct, term in ranked[:self.MAX_CANDIDATES]]
+
+
 def default_proposers() -> list[Proposer]:
     sources: list[Proposer] = [LLMProposer()] if llm.configured() else []
-    return sources + [RxNormProposer(), ExactProposer()]
+    return sources + [RxNormProposer(), ExactProposer(), SampleProposer()]
 
 
 # ---------------------------------------------------------------------------
@@ -376,6 +420,10 @@ def resolve(kind: Kind, words: str, proposers: list[Proposer] | None = None,
 
     def try_all(candidates: list[Candidate]) -> CandidateCheck | None:
         for cand in candidates:
+            # The registry's own spelling, so "melanoma", "Melanoma" and "MELANOMA" are
+            # one candidate and build one query string.
+            cand = Candidate([sample.names.get(t.lower(), t) for t in cand.terms],
+                             cand.source, cand.reason)
             if not cand.terms or cand.key() in seen:
                 continue
             seen.add(cand.key())

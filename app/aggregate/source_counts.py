@@ -24,6 +24,7 @@ SOURCE_COUNT_FIELDS = {
 }
 
 SKIP_KEYS = {"Other", "Not reported"}
+SINGLE = "_single"      # series key for a plain bar chart Table (rows have no "series")
 
 
 def _with_area(params: dict, field: str, value: str) -> dict:
@@ -35,10 +36,11 @@ def _with_area(params: dict, field: str, value: str) -> dict:
 def add_source_counts(table: Table, dimension: str, series_params: dict[str, dict],
                       series_totals: dict[str, int],
                       counter: Callable[[dict], int] = count_studies) -> Table:
-    """Add exact `source_count` and `source_percent` to each row of a compare Table.
+    """Add exact `source_count` and `source_percent` to each row of a Table.
 
     `series_params` are the API params used to fetch each series, and
-    `series_totals` the total matches per series. `counter` is injectable for tests.
+    `series_totals` the total matches per series; a plain bar chart Table (no
+    "series" column) uses the key SINGLE. `counter` is injectable for tests.
     """
     field = SOURCE_COUNT_FIELDS[dimension]
     for row in table.rows:
@@ -47,8 +49,9 @@ def add_source_counts(table: Table, dimension: str, series_params: dict[str, dic
             row["source_count"] = None
             row["source_percent"] = None
             continue
-        total = series_totals.get(row["series"]) or 0
-        count = counter(_with_area(series_params[row["series"]], field, key))
+        series = row.get("series", SINGLE)
+        total = series_totals.get(series) or 0
+        count = counter(_with_area(series_params[series], field, key))
         row["source_count"] = count
         row["source_percent"] = round(100 * count / total, 1) if total else 0.0
 

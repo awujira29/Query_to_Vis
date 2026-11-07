@@ -67,6 +67,9 @@ class Sponsor(BaseModel):
 
 DRUG_LIKE_TYPES = {"DRUG", "BIOLOGICAL", "COMBINATION_PRODUCT"}
 
+# Normalized names that are typed as drugs but are not drugs given to patients.
+NON_DRUG_NAMES = {"placebo"}
+
 
 class Intervention(BaseModel):
     name: str                       # exact API text, e.g. "favezelimab/pembrolizumab"
@@ -84,7 +87,8 @@ class Intervention(BaseModel):
 class Arm(BaseModel):
     label: str                        # e.g. "Part 3 Dose expansion"
     arm_type: str | None = None       # EXPERIMENTAL, ACTIVE_COMPARATOR, PLACEBO_COMPARATOR...
-    drugs_normalized: list[str] = []  # drug-like interventions given in this arm
+    intervention_names: list[str] = []  # exact API text, e.g. ["Drug: Pembrolizumab", ...]
+    drugs_normalized: list[str] = []  # drug-like interventions given in this arm (no placebo)
     source_path: str
 
 
@@ -189,7 +193,8 @@ class TrialRecord(BaseModel):
     @computed_field
     @property
     def drugs(self) -> list[str]:
-        return sorted({name for i in self.interventions if i.is_drug_like for name in i.names_normalized})
+        return sorted({name for i in self.interventions if i.is_drug_like
+                       for name in i.names_normalized if name not in NON_DRUG_NAMES})
 
     @computed_field
     @property

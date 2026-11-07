@@ -233,3 +233,52 @@ def test_every_term_must_be_specific_not_just_one():
     check = verify(Candidate(["Insulin", "Insulin Glargine"], "llm"), "drug",
                    reg.sample("drug", "insulin glargine"), reg)
     assert check.terms == ["Insulin Glargine"] and check.dropped_terms == ["Insulin"]
+
+
+# --- sample-grounded proposer and registry respelling (added with the planner) ---------
+
+from app.resolve import SampleProposer
+
+
+def _named_sample(trials, direct_terms, total):
+    names = {t.lower(): t for tr in trials for t in tr}
+    return Sample([{t.lower() for t in tr} for tr in trials],
+                  Counter(t.lower() for tr in trials for t in tr if t in direct_terms), total, names)
+
+
+def test_sample_proposer_prefers_short_direct_headings_sharing_a_word():
+    trials = ([{"Breast Neoplasms", "Neoplasms by Site", "Neoplasms", "Breast Diseases"}] * 80
+              + [{"Triple Negative Breast Neoplasms", "Breast Neoplasms", "Neoplasms"}] * 10
+              + [set()] * 10)
+    sample = _named_sample(trials, {"Breast Neoplasms", "Triple Negative Breast Neoplasms"}, 1000)
+    terms = [c.terms for c in SampleProposer().propose("condition", "breast cancer", sample)]
+    # "Breast Diseases" is not proposed: the query's cancer word needs a cancer word in the heading
+    assert terms == [["Breast Neoplasms"], ["Triple Negative Breast Neoplasms"]]
+
+
+def test_sample_proposer_needs_a_shared_word():
+    trials = [{"Myocardial Infarction", "Necrosis"}] * 50
+    sample = _named_sample(trials, {"Myocardial Infarction"}, 100)
+    assert SampleProposer().propose("condition", "heart attack", sample) == []
+
+
+def test_candidates_are_respelled_as_the_registry_spells_them():
+    reg = lung_registry()
+    reg._sample.names = {"lung neoplasms": "Lung Neoplasms"}
+    res = resolve("condition", "lung cancer",
+                  [FixedProposer(Candidate(["LUNG NEOPLASMS"], "llm"))], reg)
+    assert res.terms == ["Lung Neoplasms"]
+    assert 'AREA[ConditionMeshTerm]"Lung Neoplasms"' in res.api_params["filter.advanced"]
+
+
+def test_sample_proposer_resolves_when_exact_words_fail():
+    trials = ([{"Lung Neoplasms", "Lung Diseases", "Neoplasms"}] * 80
+              + [{"Lung Diseases"}] * 4 + [set()] * 16)
+    reg = FakeRegistry(trials, {"Lung Neoplasms"}, 14711, {
+        ("Lung Neoplasms",): 11790, ("Lung Diseases",): 40075, ("Neoplasms",): 107882})
+    reg._sample.names = {"lung neoplasms": "Lung Neoplasms", "lung diseases": "Lung Diseases",
+                         "neoplasms": "Neoplasms"}
+    from app.resolve import ExactProposer
+    res = resolve("condition", "lung cancer", [ExactProposer(), SampleProposer()], reg)
+    assert res.status == "resolved" and res.terms == ["Lung Neoplasms"] and res.source == "sample"
+    assert res.candidates[0].source == "exact" and not res.candidates[0].passed

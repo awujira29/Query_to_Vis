@@ -15,7 +15,7 @@ import re
 from pydantic import ValidationError
 
 from app.drug_names import normalize_drug_names
-from app.schemas.records import DRUG_LIKE_TYPES, Phase, TrialRecord
+from app.schemas.records import DRUG_LIKE_TYPES, NON_DRUG_NAMES, Phase, TrialRecord
 
 logger = logging.getLogger(__name__)
 
@@ -172,15 +172,17 @@ def parse_arms(protocol: dict, interventions: list[dict]) -> list[dict]:
             continue
 
         drugs = set()
-        for ref in group.get("interventionNames", []):
+        refs = group.get("interventionNames", [])
+        for ref in refs:
             name = ref.split(":", 1)[-1].strip()      # "Drug: Cisplatin" -> "Cisplatin"
             iv = by_name.get(name.lower())
             if iv and iv["intervention_type"] in DRUG_LIKE_TYPES:
-                drugs.update(iv["names_normalized"])
+                drugs.update(n for n in iv["names_normalized"] if n not in NON_DRUG_NAMES)
 
         arms.append({
             "label": label,
             "arm_type": group.get("type"),
+            "intervention_names": refs,
             "drugs_normalized": sorted(drugs),
             "source_path": f"{ARMS_PATH}.armGroups[{i}]",
         })

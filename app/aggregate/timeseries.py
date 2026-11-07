@@ -55,7 +55,7 @@ def time_series(records: list[TrialRecord], start_year: int | None = None,
         for year in range(lo, hi + 1):
             row = by_year.get(year, {"trial_count": 0, "nct_ids": [],
                                      "nct_ids_truncated": False, "citations": []})
-            row = {**row, "start_year": year,
+            row = {"start_year": year, **{k: v for k, v in row.items() if k != "start_year"},
                    "estimated_count": estimated.get(year, 0),
                    "partial_year": year == today.year}
             rows.append(row)

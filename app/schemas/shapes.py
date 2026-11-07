@@ -61,9 +61,12 @@ class PointSet(BaseModel):
 class Node(BaseModel):
     id: str                     # namespaced to avoid collisions, e.g. "drug:pembrolizumab"
     label: str
-    type: str                   # "drug", "sponsor", "condition", "investigator"...
-    weight: int                 # number of trials involving this node
+    type: str                   # "drug", "sponsor", "condition"
+    weight: int                 # number of trials linking this node to another node
+    degree: int = 0             # number of edges shown for this node
+    focus: bool = False         # the entity the question is about, e.g. the filtered drug
     nct_ids: list[str] = []
+    nct_ids_truncated: bool = False
     citations: list[Citation] = []
 
 
@@ -72,6 +75,7 @@ class Edge(BaseModel):
     target: str                 # Node.id
     weight: int                 # number of distinct trials linking the two
     nct_ids: list[str] = []
+    nct_ids_truncated: bool = False
     citations: list[Citation] = []
 
 
@@ -79,5 +83,7 @@ class Graph(BaseModel):
     nodes: list[Node]
     edges: list[Edge]
     directed: bool = False
+    node_types: list[str] = []  # e.g. ["sponsor", "drug"]; one entry for same-type networks
     total_records: int
+    missing_count: int = 0      # trials that link nothing, e.g. no arm with two drugs
     notes: list[str] = []

@@ -16,9 +16,17 @@ def label(dimension: str) -> str:
     return LABELS.get(dimension, dimension.replace("_", " ").capitalize())
 
 
-def build_bar(table: Table, dimension: str, title: str) -> VisualizationSpec:
+Y_CHANNELS = {
+    "trial_count": ("Number of trials", "trials"),
+    "source_count": ("Number of trials (exact, at source)", "trials"),
+}
+
+
+def build_bar(table: Table, dimension: str, title: str,
+              measure: str = "trial_count") -> VisualizationSpec:
     dim_col = next(c for c in table.columns if c.name == dimension)
     rows = [{**row, "label": display(dimension, row[dimension])} for row in table.rows]
+    y_title, y_unit = Y_CHANNELS[measure]
     return VisualizationSpec(
         type="bar_chart",
         title=title,
@@ -26,8 +34,7 @@ def build_bar(table: Table, dimension: str, title: str) -> VisualizationSpec:
             # "label" is the readable name; the raw code stays in rows[dimension].
             "x": Channel(field="label", type=dim_col.dtype, title=label(dimension),
                          sort=[row["label"] for row in rows]),
-            "y": Channel(field="trial_count", type="quantitative",
-                         title="Number of trials", unit="trials"),
+            "y": Channel(field=measure, type="quantitative", title=y_title, unit=y_unit),
         },
         data=rows,
     )
