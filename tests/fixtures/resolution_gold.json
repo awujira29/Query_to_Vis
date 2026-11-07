@@ -1,0 +1,697 @@
+[
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "heart attack",
+  "expected": [
+   "Myocardial Infarction"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "high blood pressure",
+  "expected": [
+   "Hypertension"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "kidney failure",
+  "expected": [
+   "Renal Insufficiency"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "flu",
+  "expected": [
+   "Influenza, Human"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "preterm birth",
+  "expected": [
+   "Premature Birth"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "insomnia",
+  "expected": [
+   "Sleep Initiation and Maintenance Disorders"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "chronic pain",
+  "expected": "fallback"
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "COPD",
+  "expected": [
+   "Pulmonary Disease, Chronic Obstructive"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "ADHD",
+  "expected": [
+   "Attention Deficit Disorder with Hyperactivity"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "HIV",
+  "expected": [
+   "HIV Infections"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "AML",
+  "expected": [
+   "Leukemia, Myeloid, Acute"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "CKD",
+  "expected": [
+   "Renal Insufficiency, Chronic"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "TB",
+  "expected": [
+   "Tuberculosis"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "alzheimer's",
+  "expected": [
+   "Alzheimer Disease"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "parkinson's",
+  "expected": [
+   "Parkinson Disease"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "multiple sclerosis",
+  "expected": [
+   "Multiple Sclerosis"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "epilepsy",
+  "expected": [
+   "Epilepsy"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "migraine",
+  "expected": [
+   "Migraine Disorders"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "depression",
+  "expected": [
+   "Depression",
+   "Depressive Disorder"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "schizophrenia",
+  "expected": [
+   "Schizophrenia"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "autism",
+  "expected": [
+   "Autism Spectrum Disorder"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "stroke",
+  "expected": [
+   "Stroke"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "rheumatoid arthritis",
+  "expected": [
+   "Arthritis, Rheumatoid"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "lupus",
+  "expected": [
+   "Lupus Erythematosus, Systemic"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "crohn's disease",
+  "expected": [
+   "Crohn Disease"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "psoriasis",
+  "expected": [
+   "Psoriasis"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "hepatitis C",
+  "expected": [
+   "Hepatitis C"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "covid",
+  "expected": [
+   "COVID-19"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "sepsis",
+  "expected": [
+   "Sepsis"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "obesity",
+  "expected": [
+   "Obesity"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "type 1 diabetes",
+  "expected": [
+   "Diabetes Mellitus, Type 1"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "sickle cell",
+  "expected": [
+   "Anemia, Sickle Cell"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "cystic fibrosis",
+  "expected": [
+   "Cystic Fibrosis"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "atrial fibrillation",
+  "expected": [
+   "Atrial Fibrillation"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "prostate cancer",
+  "expected": [
+   "Prostatic Neoplasms"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "colon cancer",
+  "expected": [
+   "Colonic Neoplasms",
+   "Colorectal Neoplasms"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "pancreatic cancer",
+  "expected": [
+   "Pancreatic Neoplasms"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "glioblastoma",
+  "expected": [
+   "Glioblastoma"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "lung cancer",
+  "expected": [
+   "Lung Neoplasms"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "nsclc",
+  "expected": [
+   "Carcinoma, Non-Small-Cell Lung"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "breast cancer",
+  "expected": [
+   "Breast Neoplasms"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "melanoma",
+  "expected": [
+   "Melanoma"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "metformin",
+  "expected": [
+   "Metformin"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "atorvastatin",
+  "expected": [
+   "Atorvastatin"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "aspirin",
+  "expected": [
+   "Aspirin"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "warfarin",
+  "expected": [
+   "Warfarin"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "tamoxifen",
+  "expected": [
+   "Tamoxifen"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "sertraline",
+  "expected": [
+   "Sertraline"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "apixaban",
+  "expected": [
+   "apixaban"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "semaglutide",
+  "expected": [
+   "semaglutide"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "osimertinib",
+  "expected": [
+   "osimertinib"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "remdesivir",
+  "expected": [
+   "remdesivir"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "adalimumab",
+  "expected": [
+   "Adalimumab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "trastuzumab",
+  "expected": [
+   "Trastuzumab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "rituximab",
+  "expected": [
+   "Rituximab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "imatinib",
+  "expected": [
+   "Imatinib Mesylate"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Humira",
+  "expected": [
+   "Adalimumab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Herceptin",
+  "expected": [
+   "Trastuzumab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Gleevec",
+  "expected": [
+   "Imatinib Mesylate"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Ozempic",
+  "expected": [
+   "semaglutide"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "MK-3475",
+  "expected": [
+   "pembrolizumab"
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "lithium",
+  "expected": "fallback"
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "heart failure",
+  "expected": [
+   "Heart Failure"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "osteoporosis",
+  "expected": [
+   "Osteoporosis"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "anxiety",
+  "expected": [
+   "Anxiety Disorders",
+   "Anxiety"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "bipolar",
+  "expected": [
+   "Bipolar Disorder"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "ovarian cancer",
+  "expected": [
+   "Ovarian Neoplasms"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "liver cancer",
+  "expected": [
+   "Liver Neoplasms"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "leukemia",
+  "expected": [
+   "Leukemia"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "malaria",
+  "expected": [
+   "Malaria"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "RSV",
+  "expected": [
+   "Respiratory Syncytial Virus Infections"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "endometriosis",
+  "expected": [
+   "Endometriosis"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "PCOS",
+  "expected": [
+   "Polycystic Ovary Syndrome"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "gout",
+  "expected": [
+   "Gout"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "macular degeneration",
+  "expected": [
+   "Macular Degeneration"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "opioid addiction",
+  "expected": [
+   "Opioid-Related Disorders"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "IBS",
+  "expected": [
+   "Irritable Bowel Syndrome"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "ibuprofen",
+  "expected": [
+   "Ibuprofen"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Keytruda",
+  "expected": [
+   "pembrolizumab"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Lipitor",
+  "expected": [
+   "Atorvastatin"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "insulin glargine",
+  "expected": [
+   "Insulin Glargine"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "dexamethasone",
+  "expected": [
+   "Dexamethasone"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "bevacizumab",
+  "expected": [
+   "Bevacizumab"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Avastin",
+  "expected": [
+   "Bevacizumab"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "levothyroxine",
+  "expected": [
+   "Thyroxine"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "dupilumab",
+  "expected": [
+   "dupilumab"
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "ketamine",
+  "expected": [
+   "Ketamine"
+  ]
+ }
+]

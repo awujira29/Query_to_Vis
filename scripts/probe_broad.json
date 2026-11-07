@@ -1,0 +1,2519 @@
+[
+  {
+    "kind": "condition",
+    "query": "heart attack",
+    "broad": 3971,
+    "proposed": {
+      "term": "Myocardial Infarction",
+      "coverage": 78,
+      "registry": 3002,
+      "ratio": 0.76,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Cardiovascular Diseases",
+        "coverage": 91,
+        "registry": 64837,
+        "ratio": 16.33,
+        "passed": false
+      },
+      {
+        "term": "Heart Diseases",
+        "coverage": 88,
+        "registry": 28214,
+        "ratio": 7.11,
+        "passed": false
+      },
+      {
+        "term": "Vascular Diseases",
+        "coverage": 88,
+        "registry": 46220,
+        "ratio": 11.64,
+        "passed": false
+      },
+      {
+        "term": "Myocardial Ischemia",
+        "coverage": 85,
+        "registry": 10441,
+        "ratio": 2.63,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "high blood pressure",
+    "broad": 12716,
+    "proposed": {
+      "term": "Hypertension",
+      "coverage": 59,
+      "registry": 11717,
+      "ratio": 0.92,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Cardiovascular Diseases",
+        "coverage": 63,
+        "registry": 64837,
+        "ratio": 5.1,
+        "passed": false
+      },
+      {
+        "term": "Vascular Diseases",
+        "coverage": 62,
+        "registry": 46220,
+        "ratio": 3.63,
+        "passed": false
+      },
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 19,
+        "registry": 144420,
+        "ratio": 11.36,
+        "passed": false
+      },
+      {
+        "term": "Nutritional and Metabolic Diseases",
+        "coverage": 18,
+        "registry": 50406,
+        "ratio": 3.96,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "kidney failure",
+    "broad": 7927,
+    "proposed": {
+      "term": "Renal Insufficiency",
+      "coverage": 93,
+      "registry": 7344,
+      "ratio": 0.93,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Kidney Diseases",
+        "coverage": 94,
+        "registry": 13326,
+        "ratio": 1.68,
+        "passed": false
+      },
+      {
+        "term": "Female Urogenital Diseases and Pregnancy Complications",
+        "coverage": 94,
+        "registry": 37676,
+        "ratio": 4.75,
+        "passed": false
+      },
+      {
+        "term": "Urogenital Diseases",
+        "coverage": 94,
+        "registry": 54811,
+        "ratio": 6.91,
+        "passed": false
+      },
+      {
+        "term": "Male Urogenital Diseases",
+        "coverage": 94,
+        "registry": 28511,
+        "ratio": 3.6,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "flu",
+    "broad": 2824,
+    "proposed": {
+      "term": "Influenza, Human",
+      "coverage": 78,
+      "registry": 2191,
+      "ratio": 0.78,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Infections",
+        "coverage": 85,
+        "registry": 46453,
+        "ratio": 16.45,
+        "passed": false
+      },
+      {
+        "term": "Virus Diseases",
+        "coverage": 84,
+        "registry": 26355,
+        "ratio": 9.33,
+        "passed": false
+      },
+      {
+        "term": "RNA Virus Infections",
+        "coverage": 83,
+        "registry": 21322,
+        "ratio": 7.55,
+        "passed": false
+      },
+      {
+        "term": "Respiratory Tract Diseases",
+        "coverage": 83,
+        "registry": 52438,
+        "ratio": 18.57,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "preterm birth",
+    "broad": 4007,
+    "proposed": {
+      "term": "Premature Birth",
+      "coverage": 67,
+      "registry": 3573,
+      "ratio": 0.89,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Urogenital Diseases",
+        "coverage": 72,
+        "registry": 54811,
+        "ratio": 13.68,
+        "passed": false
+      },
+      {
+        "term": "Female Urogenital Diseases and Pregnancy Complications",
+        "coverage": 72,
+        "registry": 37676,
+        "ratio": 9.4,
+        "passed": false
+      },
+      {
+        "term": "Pregnancy Complications",
+        "coverage": 72,
+        "registry": 37676,
+        "ratio": 9.4,
+        "passed": false
+      },
+      {
+        "term": "Obstetric Labor Complications",
+        "coverage": 71,
+        "registry": 3614,
+        "ratio": 0.9,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Obstetric Labor Complications"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "insomnia",
+    "broad": 3404,
+    "proposed": {
+      "term": "Sleep Initiation and Maintenance Disorders",
+      "coverage": 75,
+      "registry": 2702,
+      "ratio": 0.79,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 83,
+        "registry": 76746,
+        "ratio": 22.55,
+        "passed": false
+      },
+      {
+        "term": "Mental Disorders",
+        "coverage": 82,
+        "registry": 49570,
+        "ratio": 14.56,
+        "passed": false
+      },
+      {
+        "term": "Sleep Wake Disorders",
+        "coverage": 80,
+        "registry": 7456,
+        "ratio": 2.19,
+        "passed": false
+      },
+      {
+        "term": "Dyssomnias",
+        "coverage": 77,
+        "registry": 6418,
+        "ratio": 1.89,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "chronic pain",
+    "broad": 7899,
+    "proposed": {
+      "term": "Chronic Pain",
+      "coverage": 33,
+      "registry": 3122,
+      "ratio": 0.4,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 75,
+        "registry": 144420,
+        "ratio": 18.28,
+        "passed": false
+      },
+      {
+        "term": "Signs and Symptoms",
+        "coverage": 74,
+        "registry": 144420,
+        "ratio": 18.28,
+        "passed": false
+      },
+      {
+        "term": "Neurologic Manifestations",
+        "coverage": 72,
+        "registry": 45784,
+        "ratio": 5.8,
+        "passed": false
+      },
+      {
+        "term": "Pain",
+        "coverage": 71,
+        "registry": 27291,
+        "ratio": 3.45,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "COPD",
+    "broad": 5594,
+    "proposed": {
+      "term": "Pulmonary Disease, Chronic Obstructive",
+      "coverage": 95,
+      "registry": 5409,
+      "ratio": 0.97,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Respiratory Tract Diseases",
+        "coverage": 97,
+        "registry": 52438,
+        "ratio": 9.37,
+        "passed": false
+      },
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 96,
+        "registry": 144420,
+        "ratio": 25.82,
+        "passed": false
+      },
+      {
+        "term": "Lung Diseases",
+        "coverage": 96,
+        "registry": 40075,
+        "ratio": 7.16,
+        "passed": false
+      },
+      {
+        "term": "Pathologic Processes",
+        "coverage": 96,
+        "registry": 77490,
+        "ratio": 13.85,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "ADHD",
+    "broad": 2003,
+    "proposed": {
+      "term": "Attention Deficit Disorder with Hyperactivity",
+      "coverage": 88,
+      "registry": 1910,
+      "ratio": 0.95,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Mental Disorders",
+        "coverage": 95,
+        "registry": 49570,
+        "ratio": 24.75,
+        "passed": false
+      },
+      {
+        "term": "Neurodevelopmental Disorders",
+        "coverage": 94,
+        "registry": 5597,
+        "ratio": 2.79,
+        "passed": false
+      },
+      {
+        "term": "Attention Deficit and Disruptive Behavior Disorders",
+        "coverage": 94,
+        "registry": 1910,
+        "ratio": 0.95,
+        "passed": true
+      },
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 13,
+        "registry": 76746,
+        "ratio": 38.32,
+        "passed": false
+      }
+    ],
+    "others_passing": [
+      "Attention Deficit and Disruptive Behavior Disorders"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "HIV",
+    "broad": 10191,
+    "proposed": {
+      "term": "HIV Infections",
+      "coverage": 64,
+      "registry": 6744,
+      "ratio": 0.66,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Infections",
+        "coverage": 73,
+        "registry": 46453,
+        "ratio": 4.56,
+        "passed": false
+      },
+      {
+        "term": "Communicable Diseases",
+        "coverage": 70,
+        "registry": 16988,
+        "ratio": 1.67,
+        "passed": false
+      },
+      {
+        "term": "Urogenital Diseases",
+        "coverage": 70,
+        "registry": 54811,
+        "ratio": 5.38,
+        "passed": false
+      },
+      {
+        "term": "Genital Diseases",
+        "coverage": 70,
+        "registry": 29083,
+        "ratio": 2.85,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "AML",
+    "broad": 4189,
+    "proposed": {
+      "term": "Leukemia, Myeloid, Acute",
+      "coverage": 89,
+      "registry": 3702,
+      "ratio": 0.88,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Hemic and Lymphatic Diseases",
+        "coverage": 96,
+        "registry": 29549,
+        "ratio": 7.05,
+        "passed": false
+      },
+      {
+        "term": "Hematologic Diseases",
+        "coverage": 96,
+        "registry": 22285,
+        "ratio": 5.32,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms",
+        "coverage": 96,
+        "registry": 107882,
+        "ratio": 25.75,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms by Histologic Type",
+        "coverage": 95,
+        "registry": 43544,
+        "ratio": 10.39,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "CKD",
+    "broad": 3880,
+    "proposed": {
+      "term": "Renal Insufficiency, Chronic",
+      "coverage": 83,
+      "registry": 4764,
+      "ratio": 1.23,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Kidney Diseases",
+        "coverage": 87,
+        "registry": 13326,
+        "ratio": 3.43,
+        "passed": false
+      },
+      {
+        "term": "Female Urogenital Diseases and Pregnancy Complications",
+        "coverage": 87,
+        "registry": 37676,
+        "ratio": 9.71,
+        "passed": false
+      },
+      {
+        "term": "Urogenital Diseases",
+        "coverage": 87,
+        "registry": 54811,
+        "ratio": 14.13,
+        "passed": false
+      },
+      {
+        "term": "Male Urogenital Diseases",
+        "coverage": 87,
+        "registry": 28511,
+        "ratio": 7.35,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "TB",
+    "broad": 778,
+    "proposed": {
+      "term": "Tuberculosis",
+      "coverage": 89,
+      "registry": 1536,
+      "ratio": 1.97,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Infections",
+        "coverage": 92,
+        "registry": 46453,
+        "ratio": 59.71,
+        "passed": false
+      },
+      {
+        "term": "Actinomycetales Infections",
+        "coverage": 89,
+        "registry": 1984,
+        "ratio": 2.55,
+        "passed": false
+      },
+      {
+        "term": "Bacterial Infections",
+        "coverage": 89,
+        "registry": 7584,
+        "ratio": 9.75,
+        "passed": false
+      },
+      {
+        "term": "Mycobacterium Infections",
+        "coverage": 89,
+        "registry": 1719,
+        "ratio": 2.21,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "alzheimer's",
+    "broad": 3191,
+    "proposed": {
+      "term": "Alzheimer Disease",
+      "coverage": 86,
+      "registry": 3900,
+      "ratio": 1.22,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Mental Disorders",
+        "coverage": 92,
+        "registry": 49570,
+        "ratio": 15.53,
+        "passed": false
+      },
+      {
+        "term": "Neurocognitive Disorders",
+        "coverage": 91,
+        "registry": 10619,
+        "ratio": 3.33,
+        "passed": false
+      },
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 90,
+        "registry": 76746,
+        "ratio": 24.05,
+        "passed": false
+      },
+      {
+        "term": "Central Nervous System Diseases",
+        "coverage": 89,
+        "registry": 41795,
+        "ratio": 13.1,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "parkinson's",
+    "broad": 3990,
+    "proposed": {
+      "term": "Parkinson Disease",
+      "coverage": 94,
+      "registry": 4748,
+      "ratio": 1.19,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 97,
+        "registry": 76746,
+        "ratio": 19.23,
+        "passed": false
+      },
+      {
+        "term": "Central Nervous System Diseases",
+        "coverage": 97,
+        "registry": 41795,
+        "ratio": 10.47,
+        "passed": false
+      },
+      {
+        "term": "Movement Disorders",
+        "coverage": 97,
+        "registry": 6073,
+        "ratio": 1.52,
+        "passed": false
+      },
+      {
+        "term": "Brain Diseases",
+        "coverage": 96,
+        "registry": 37437,
+        "ratio": 9.38,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "multiple sclerosis",
+    "broad": 3957,
+    "proposed": {
+      "term": "Multiple Sclerosis",
+      "coverage": 90,
+      "registry": 3558,
+      "ratio": 0.9,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 96,
+        "registry": 76746,
+        "ratio": 19.39,
+        "passed": false
+      },
+      {
+        "term": "Immune System Diseases",
+        "coverage": 91,
+        "registry": 47543,
+        "ratio": 12.01,
+        "passed": false
+      },
+      {
+        "term": "Autoimmune Diseases",
+        "coverage": 90,
+        "registry": 15297,
+        "ratio": 3.87,
+        "passed": false
+      },
+      {
+        "term": "Demyelinating Autoimmune Diseases, CNS",
+        "coverage": 90,
+        "registry": 3698,
+        "ratio": 0.93,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Demyelinating Autoimmune Diseases, CNS"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "epilepsy",
+    "broad": 2553,
+    "proposed": {
+      "term": "Epilepsy",
+      "coverage": 90,
+      "registry": 2346,
+      "ratio": 0.92,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 96,
+        "registry": 76746,
+        "ratio": 30.06,
+        "passed": false
+      },
+      {
+        "term": "Central Nervous System Diseases",
+        "coverage": 91,
+        "registry": 41795,
+        "ratio": 16.37,
+        "passed": false
+      },
+      {
+        "term": "Brain Diseases",
+        "coverage": 91,
+        "registry": 37437,
+        "ratio": 14.66,
+        "passed": false
+      },
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 31,
+        "registry": 144420,
+        "ratio": 56.57,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "migraine",
+    "broad": 1830,
+    "proposed": {
+      "term": "Migraine Disorders",
+      "coverage": 83,
+      "registry": 1554,
+      "ratio": 0.85,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 86,
+        "registry": 76746,
+        "ratio": 41.94,
+        "passed": false
+      },
+      {
+        "term": "Central Nervous System Diseases",
+        "coverage": 84,
+        "registry": 41795,
+        "ratio": 22.84,
+        "passed": false
+      },
+      {
+        "term": "Brain Diseases",
+        "coverage": 84,
+        "registry": 37437,
+        "ratio": 20.46,
+        "passed": false
+      },
+      {
+        "term": "Headache Disorders",
+        "coverage": 84,
+        "registry": 2136,
+        "ratio": 1.17,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Headache Disorders"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "depression",
+    "broad": 12953,
+    "proposed": {
+      "term": "Depressive Disorder",
+      "coverage": 33,
+      "registry": 11227,
+      "ratio": 0.87,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Mental Disorders",
+        "coverage": 70,
+        "registry": 49570,
+        "ratio": 3.83,
+        "passed": false
+      },
+      {
+        "term": "Behavior",
+        "coverage": 70,
+        "registry": 43990,
+        "ratio": 3.4,
+        "passed": false
+      },
+      {
+        "term": "Behavioral Symptoms",
+        "coverage": 69,
+        "registry": 12339,
+        "ratio": 0.95,
+        "passed": true
+      },
+      {
+        "term": "Depression",
+        "coverage": 66,
+        "registry": 11227,
+        "ratio": 0.87,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Behavioral Symptoms",
+      "Depression"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "schizophrenia",
+    "broad": 4266,
+    "proposed": {
+      "term": "Schizophrenia",
+      "coverage": 81,
+      "registry": 4079,
+      "ratio": 0.96,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Mental Disorders",
+        "coverage": 96,
+        "registry": 49570,
+        "ratio": 11.62,
+        "passed": false
+      },
+      {
+        "term": "Schizophrenia Spectrum and Other Psychotic Disorders",
+        "coverage": 95,
+        "registry": 4079,
+        "ratio": 0.96,
+        "passed": true
+      },
+      {
+        "term": "Psychotic Disorders",
+        "coverage": 38,
+        "registry": 4079,
+        "ratio": 0.96,
+        "passed": false
+      },
+      {
+        "term": "Mood Disorders",
+        "coverage": 14,
+        "registry": 6135,
+        "ratio": 1.44,
+        "passed": false
+      }
+    ],
+    "others_passing": [
+      "Schizophrenia Spectrum and Other Psychotic Disorders"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "autism",
+    "broad": 2350,
+    "proposed": {
+      "term": "Autism Spectrum Disorder",
+      "coverage": 96,
+      "registry": 2251,
+      "ratio": 0.96,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Mental Disorders",
+        "coverage": 97,
+        "registry": 49570,
+        "ratio": 21.09,
+        "passed": false
+      },
+      {
+        "term": "Neurodevelopmental Disorders",
+        "coverage": 96,
+        "registry": 5597,
+        "ratio": 2.38,
+        "passed": false
+      },
+      {
+        "term": "Child Development Disorders, Pervasive",
+        "coverage": 96,
+        "registry": 2271,
+        "ratio": 0.97,
+        "passed": true
+      },
+      {
+        "term": "Autistic Disorder",
+        "coverage": 40,
+        "registry": 2251,
+        "ratio": 0.96,
+        "passed": false
+      }
+    ],
+    "others_passing": [
+      "Child Development Disorders, Pervasive"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "stroke",
+    "broad": 11368,
+    "proposed": {
+      "term": "Stroke",
+      "coverage": 83,
+      "registry": 9842,
+      "ratio": 0.87,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Cardiovascular Diseases",
+        "coverage": 89,
+        "registry": 64837,
+        "ratio": 5.7,
+        "passed": false
+      },
+      {
+        "term": "Nervous System Diseases",
+        "coverage": 89,
+        "registry": 76746,
+        "ratio": 6.75,
+        "passed": false
+      },
+      {
+        "term": "Vascular Diseases",
+        "coverage": 87,
+        "registry": 46220,
+        "ratio": 4.07,
+        "passed": false
+      },
+      {
+        "term": "Central Nervous System Diseases",
+        "coverage": 86,
+        "registry": 41795,
+        "ratio": 3.68,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "rheumatoid arthritis",
+    "broad": 3810,
+    "proposed": {
+      "term": "Arthritis, Rheumatoid",
+      "coverage": 94,
+      "registry": 3590,
+      "ratio": 0.94,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Joint Diseases",
+        "coverage": 96,
+        "registry": 14258,
+        "ratio": 3.74,
+        "passed": false
+      },
+      {
+        "term": "Arthritis",
+        "coverage": 96,
+        "registry": 11048,
+        "ratio": 2.9,
+        "passed": false
+      },
+      {
+        "term": "Musculoskeletal Diseases",
+        "coverage": 96,
+        "registry": 28209,
+        "ratio": 7.4,
+        "passed": false
+      },
+      {
+        "term": "Rheumatic Diseases",
+        "coverage": 96,
+        "registry": 10986,
+        "ratio": 2.88,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "lupus",
+    "broad": 1679,
+    "proposed": {
+      "term": "Lupus Erythematosus, Systemic",
+      "coverage": 89,
+      "registry": 1402,
+      "ratio": 0.84,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Connective Tissue Diseases",
+        "coverage": 94,
+        "registry": 38127,
+        "ratio": 22.71,
+        "passed": false
+      },
+      {
+        "term": "Skin and Connective Tissue Diseases",
+        "coverage": 94,
+        "registry": 38127,
+        "ratio": 22.71,
+        "passed": false
+      },
+      {
+        "term": "Immune System Diseases",
+        "coverage": 92,
+        "registry": 47543,
+        "ratio": 28.32,
+        "passed": false
+      },
+      {
+        "term": "Autoimmune Diseases",
+        "coverage": 92,
+        "registry": 15297,
+        "ratio": 9.11,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "crohn's disease",
+    "broad": 2109,
+    "proposed": {
+      "term": "Crohn Disease",
+      "coverage": 94,
+      "registry": 1955,
+      "ratio": 0.93,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Intestinal Diseases",
+        "coverage": 96,
+        "registry": 17365,
+        "ratio": 8.23,
+        "passed": false
+      },
+      {
+        "term": "Gastrointestinal Diseases",
+        "coverage": 96,
+        "registry": 26569,
+        "ratio": 12.6,
+        "passed": false
+      },
+      {
+        "term": "Digestive System Diseases",
+        "coverage": 96,
+        "registry": 46464,
+        "ratio": 22.03,
+        "passed": false
+      },
+      {
+        "term": "Gastroenteritis",
+        "coverage": 96,
+        "registry": 5702,
+        "ratio": 2.7,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "psoriasis",
+    "broad": 2577,
+    "proposed": {
+      "term": "Psoriasis",
+      "coverage": 80,
+      "registry": 1937,
+      "ratio": 0.75,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Skin and Connective Tissue Diseases",
+        "coverage": 82,
+        "registry": 38127,
+        "ratio": 14.8,
+        "passed": false
+      },
+      {
+        "term": "Skin Diseases",
+        "coverage": 82,
+        "registry": 31969,
+        "ratio": 12.41,
+        "passed": false
+      },
+      {
+        "term": "Skin Diseases, Papulosquamous",
+        "coverage": 81,
+        "registry": 2223,
+        "ratio": 0.86,
+        "passed": true
+      },
+      {
+        "term": "Joint Diseases",
+        "coverage": 27,
+        "registry": 14258,
+        "ratio": 5.53,
+        "passed": false
+      }
+    ],
+    "others_passing": [
+      "Skin Diseases, Papulosquamous"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "hepatitis C",
+    "broad": 2573,
+    "proposed": {
+      "term": "Hepatitis C",
+      "coverage": 90,
+      "registry": 2310,
+      "ratio": 0.9,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Liver Diseases",
+        "coverage": 92,
+        "registry": 13206,
+        "ratio": 5.13,
+        "passed": false
+      },
+      {
+        "term": "Digestive System Diseases",
+        "coverage": 92,
+        "registry": 46464,
+        "ratio": 18.06,
+        "passed": false
+      },
+      {
+        "term": "Infections",
+        "coverage": 92,
+        "registry": 46453,
+        "ratio": 18.05,
+        "passed": false
+      },
+      {
+        "term": "Hepatitis",
+        "coverage": 92,
+        "registry": 4437,
+        "ratio": 1.72,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "covid",
+    "broad": 4916,
+    "proposed": {
+      "term": "COVID-19",
+      "coverage": 74,
+      "registry": 7978,
+      "ratio": 1.62,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Infections",
+        "coverage": 78,
+        "registry": 46453,
+        "ratio": 9.45,
+        "passed": false
+      },
+      {
+        "term": "Virus Diseases",
+        "coverage": 77,
+        "registry": 26355,
+        "ratio": 5.36,
+        "passed": false
+      },
+      {
+        "term": "RNA Virus Infections",
+        "coverage": 77,
+        "registry": 21322,
+        "ratio": 4.34,
+        "passed": false
+      },
+      {
+        "term": "Coronavirus Infections",
+        "coverage": 76,
+        "registry": 8358,
+        "ratio": 1.7,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "sepsis",
+    "broad": 3872,
+    "proposed": {
+      "term": "Sepsis",
+      "coverage": 85,
+      "registry": 3438,
+      "ratio": 0.89,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 89,
+        "registry": 144420,
+        "ratio": 37.3,
+        "passed": false
+      },
+      {
+        "term": "Infections",
+        "coverage": 88,
+        "registry": 46453,
+        "ratio": 12.0,
+        "passed": false
+      },
+      {
+        "term": "Pathologic Processes",
+        "coverage": 87,
+        "registry": 77490,
+        "ratio": 20.01,
+        "passed": false
+      },
+      {
+        "term": "Inflammation",
+        "coverage": 85,
+        "registry": 7617,
+        "ratio": 1.97,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "obesity",
+    "broad": 15150,
+    "proposed": {
+      "term": "Obesity",
+      "coverage": 85,
+      "registry": 13234,
+      "ratio": 0.87,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Nutritional and Metabolic Diseases",
+        "coverage": 89,
+        "registry": 50406,
+        "ratio": 3.33,
+        "passed": false
+      },
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 87,
+        "registry": 144420,
+        "ratio": 9.53,
+        "passed": false
+      },
+      {
+        "term": "Signs and Symptoms",
+        "coverage": 86,
+        "registry": 144420,
+        "ratio": 9.53,
+        "passed": false
+      },
+      {
+        "term": "Nutrition Disorders",
+        "coverage": 85,
+        "registry": 16486,
+        "ratio": 1.09,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Nutrition Disorders"
+    ]
+  },
+  {
+    "kind": "condition",
+    "query": "type 1 diabetes",
+    "broad": 4682,
+    "proposed": {
+      "term": "Diabetes Mellitus, Type 1",
+      "coverage": 76,
+      "registry": 3673,
+      "ratio": 0.78,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Diabetes Mellitus",
+        "coverage": 92,
+        "registry": 22527,
+        "ratio": 4.81,
+        "passed": false
+      },
+      {
+        "term": "Endocrine System Diseases",
+        "coverage": 92,
+        "registry": 35786,
+        "ratio": 7.64,
+        "passed": false
+      },
+      {
+        "term": "Nutritional and Metabolic Diseases",
+        "coverage": 92,
+        "registry": 50406,
+        "ratio": 10.77,
+        "passed": false
+      },
+      {
+        "term": "Glucose Metabolism Disorders",
+        "coverage": 91,
+        "registry": 24369,
+        "ratio": 5.2,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "sickle cell",
+    "broad": 1223,
+    "proposed": {
+      "term": "Anemia, Sickle Cell",
+      "coverage": 96,
+      "registry": 1161,
+      "ratio": 0.95,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Hemic and Lymphatic Diseases",
+        "coverage": 97,
+        "registry": 29549,
+        "ratio": 24.16,
+        "passed": false
+      },
+      {
+        "term": "Anemia",
+        "coverage": 97,
+        "registry": 4722,
+        "ratio": 3.86,
+        "passed": false
+      },
+      {
+        "term": "Anemia, Hemolytic",
+        "coverage": 97,
+        "registry": 1896,
+        "ratio": 1.55,
+        "passed": false
+      },
+      {
+        "term": "Hematologic Diseases",
+        "coverage": 97,
+        "registry": 22285,
+        "ratio": 18.22,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "cystic fibrosis",
+    "broad": 1784,
+    "proposed": {
+      "term": "Cystic Fibrosis",
+      "coverage": 89,
+      "registry": 1583,
+      "ratio": 0.89,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Respiratory Tract Diseases",
+        "coverage": 93,
+        "registry": 52438,
+        "ratio": 29.39,
+        "passed": false
+      },
+      {
+        "term": "Lung Diseases",
+        "coverage": 89,
+        "registry": 40075,
+        "ratio": 22.46,
+        "passed": false
+      },
+      {
+        "term": "Infant, Newborn, Diseases",
+        "coverage": 89,
+        "registry": 24831,
+        "ratio": 13.92,
+        "passed": false
+      },
+      {
+        "term": "Pancreatic Diseases",
+        "coverage": 89,
+        "registry": 6459,
+        "ratio": 3.62,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "atrial fibrillation",
+    "broad": 4220,
+    "proposed": {
+      "term": "Atrial Fibrillation",
+      "coverage": 90,
+      "registry": 3837,
+      "ratio": 0.91,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Cardiovascular Diseases",
+        "coverage": 94,
+        "registry": 64837,
+        "ratio": 15.36,
+        "passed": false
+      },
+      {
+        "term": "Heart Diseases",
+        "coverage": 92,
+        "registry": 28214,
+        "ratio": 6.69,
+        "passed": false
+      },
+      {
+        "term": "Pathologic Processes",
+        "coverage": 92,
+        "registry": 77490,
+        "ratio": 18.36,
+        "passed": false
+      },
+      {
+        "term": "Pathological Conditions, Signs and Symptoms",
+        "coverage": 92,
+        "registry": 144420,
+        "ratio": 34.22,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "prostate cancer",
+    "broad": 7648,
+    "proposed": {
+      "term": "Prostatic Neoplasms",
+      "coverage": 86,
+      "registry": 6510,
+      "ratio": 0.85,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Neoplasms",
+        "coverage": 88,
+        "registry": 107882,
+        "ratio": 14.11,
+        "passed": false
+      },
+      {
+        "term": "Urogenital Diseases",
+        "coverage": 88,
+        "registry": 54811,
+        "ratio": 7.17,
+        "passed": false
+      },
+      {
+        "term": "Male Urogenital Diseases",
+        "coverage": 88,
+        "registry": 28511,
+        "ratio": 3.73,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms by Site",
+        "coverage": 88,
+        "registry": 72932,
+        "ratio": 9.54,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "colon cancer",
+    "broad": 8362,
+    "proposed": {
+      "term": "Colonic Neoplasms",
+      "coverage": 29,
+      "registry": 2400,
+      "ratio": 0.29,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Neoplasms",
+        "coverage": 97,
+        "registry": 107882,
+        "ratio": 12.9,
+        "passed": false
+      },
+      {
+        "term": "Digestive System Diseases",
+        "coverage": 97,
+        "registry": 46464,
+        "ratio": 5.56,
+        "passed": false
+      },
+      {
+        "term": "Gastrointestinal Diseases",
+        "coverage": 96,
+        "registry": 26569,
+        "ratio": 3.18,
+        "passed": false
+      },
+      {
+        "term": "Intestinal Diseases",
+        "coverage": 96,
+        "registry": 17365,
+        "ratio": 2.08,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "pancreatic cancer",
+    "broad": 5126,
+    "proposed": {
+      "term": "Pancreatic Neoplasms",
+      "coverage": 72,
+      "registry": 3899,
+      "ratio": 0.76,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Neoplasms",
+        "coverage": 85,
+        "registry": 107882,
+        "ratio": 21.05,
+        "passed": false
+      },
+      {
+        "term": "Digestive System Diseases",
+        "coverage": 82,
+        "registry": 46464,
+        "ratio": 9.06,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms by Site",
+        "coverage": 80,
+        "registry": 72932,
+        "ratio": 14.23,
+        "passed": false
+      },
+      {
+        "term": "Digestive System Neoplasms",
+        "coverage": 79,
+        "registry": 21804,
+        "ratio": 4.25,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "condition",
+    "query": "glioblastoma",
+    "broad": 2281,
+    "proposed": {
+      "term": "Glioblastoma",
+      "coverage": 93,
+      "registry": 2070,
+      "ratio": 0.91,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Neoplasms by Histologic Type",
+        "coverage": 97,
+        "registry": 43544,
+        "ratio": 19.09,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms",
+        "coverage": 97,
+        "registry": 107882,
+        "ratio": 47.3,
+        "passed": false
+      },
+      {
+        "term": "Neoplasms, Germ Cell and Embryonal",
+        "coverage": 96,
+        "registry": 8810,
+        "ratio": 3.86,
+        "passed": false
+      },
+      {
+        "term": "Neuroectodermal Tumors",
+        "coverage": 96,
+        "registry": 8537,
+        "ratio": 3.74,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "metformin",
+    "broad": 3138,
+    "proposed": {
+      "term": "Metformin",
+      "coverage": 64,
+      "registry": 2021,
+      "ratio": 0.64,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 70,
+        "registry": 70465,
+        "ratio": 22.46,
+        "passed": false
+      },
+      {
+        "term": "Biguanides",
+        "coverage": 64,
+        "registry": 2270,
+        "ratio": 0.72,
+        "passed": true
+      },
+      {
+        "term": "Guanidines",
+        "coverage": 64,
+        "registry": 2622,
+        "ratio": 0.84,
+        "passed": true
+      },
+      {
+        "term": "Amidines",
+        "coverage": 64,
+        "registry": 2657,
+        "ratio": 0.85,
+        "passed": true
+      }
+    ],
+    "others_passing": [
+      "Biguanides",
+      "Guanidines",
+      "Amidines"
+    ]
+  },
+  {
+    "kind": "drug",
+    "query": "atorvastatin",
+    "broad": 1202,
+    "proposed": {
+      "term": "Atorvastatin",
+      "coverage": 77,
+      "registry": 936,
+      "ratio": 0.78,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds, 1-Ring",
+        "coverage": 82,
+        "registry": 40830,
+        "ratio": 33.97,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 82,
+        "registry": 60391,
+        "ratio": 50.24,
+        "passed": false
+      },
+      {
+        "term": "Azoles",
+        "coverage": 78,
+        "registry": 13828,
+        "ratio": 11.5,
+        "passed": false
+      },
+      {
+        "term": "Lipids",
+        "coverage": 77,
+        "registry": 7621,
+        "ratio": 6.34,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "aspirin",
+    "broad": 2206,
+    "proposed": {
+      "term": "Aspirin",
+      "coverage": 51,
+      "registry": 1180,
+      "ratio": 0.53,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 63,
+        "registry": 70465,
+        "ratio": 31.94,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons",
+        "coverage": 52,
+        "registry": 32106,
+        "ratio": 14.55,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons, Aromatic",
+        "coverage": 52,
+        "registry": 19713,
+        "ratio": 8.94,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons, Cyclic",
+        "coverage": 52,
+        "registry": 25082,
+        "ratio": 11.37,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "warfarin",
+    "broad": 790,
+    "proposed": {
+      "term": "Warfarin",
+      "coverage": 58,
+      "registry": 444,
+      "ratio": 0.56,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 62,
+        "registry": 60391,
+        "ratio": 76.44,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, 1-Ring",
+        "coverage": 62,
+        "registry": 40830,
+        "ratio": 51.68,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, Fused-Ring",
+        "coverage": 60,
+        "registry": 32409,
+        "ratio": 41.02,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, 2-Ring",
+        "coverage": 60,
+        "registry": 28378,
+        "ratio": 35.92,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "tamoxifen",
+    "broad": 687,
+    "proposed": {
+      "term": "Tamoxifen",
+      "coverage": 71,
+      "registry": 484,
+      "ratio": 0.7,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 76,
+        "registry": 70465,
+        "ratio": 102.57,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons",
+        "coverage": 72,
+        "registry": 32106,
+        "ratio": 46.73,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons, Aromatic",
+        "coverage": 72,
+        "registry": 19713,
+        "ratio": 28.69,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons, Cyclic",
+        "coverage": 72,
+        "registry": 25082,
+        "ratio": 36.51,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "sertraline",
+    "broad": 438,
+    "proposed": {
+      "term": "Sertraline",
+      "coverage": 70,
+      "registry": 312,
+      "ratio": 0.71,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 75,
+        "registry": 70465,
+        "ratio": 160.88,
+        "passed": false
+      },
+      {
+        "term": "Amines",
+        "coverage": 74,
+        "registry": 13701,
+        "ratio": 31.28,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons",
+        "coverage": 72,
+        "registry": 32106,
+        "ratio": 73.3,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons, Cyclic",
+        "coverage": 72,
+        "registry": 25082,
+        "ratio": 57.26,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "apixaban",
+    "broad": 485,
+    "proposed": {
+      "term": "apixaban",
+      "coverage": 65,
+      "registry": 315,
+      "ratio": 0.65,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds, 1-Ring",
+        "coverage": 32,
+        "registry": 40830,
+        "ratio": 84.19,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 32,
+        "registry": 60391,
+        "ratio": 124.52,
+        "passed": false
+      },
+      {
+        "term": "Organic Chemicals",
+        "coverage": 27,
+        "registry": 70465,
+        "ratio": 145.29,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, Fused-Ring",
+        "coverage": 24,
+        "registry": 32409,
+        "ratio": 66.82,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "semaglutide",
+    "broad": 799,
+    "proposed": {
+      "term": "semaglutide",
+      "coverage": 74,
+      "registry": 596,
+      "ratio": 0.75,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 9,
+        "registry": 33326,
+        "ratio": 41.71,
+        "passed": false
+      },
+      {
+        "term": "Hormones",
+        "coverage": 7,
+        "registry": 9413,
+        "ratio": 11.78,
+        "passed": false
+      },
+      {
+        "term": "Hormones, Hormone Substitutes, and Hormone Antagonists",
+        "coverage": 7,
+        "registry": 9042,
+        "ratio": 11.32,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 6,
+        "registry": 35047,
+        "ratio": 43.86,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "osimertinib",
+    "broad": 393,
+    "proposed": {
+      "term": "osimertinib",
+      "coverage": 73,
+      "registry": 284,
+      "ratio": 0.72,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 22,
+        "registry": 70465,
+        "ratio": 179.3,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 20,
+        "registry": 60391,
+        "ratio": 153.67,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 20,
+        "registry": 33326,
+        "ratio": 84.8,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, Fused-Ring",
+        "coverage": 17,
+        "registry": 32409,
+        "ratio": 82.47,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "remdesivir",
+    "broad": 132,
+    "proposed": {
+      "term": "remdesivir",
+      "coverage": 70,
+      "registry": 93,
+      "ratio": 0.7,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 15,
+        "registry": 60391,
+        "ratio": 457.51,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 13,
+        "registry": 33326,
+        "ratio": 252.47,
+        "passed": false
+      },
+      {
+        "term": "Polycyclic Compounds",
+        "coverage": 12,
+        "registry": 24205,
+        "ratio": 183.37,
+        "passed": false
+      },
+      {
+        "term": "Organic Chemicals",
+        "coverage": 12,
+        "registry": 70465,
+        "ratio": 533.83,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "adalimumab",
+    "broad": 802,
+    "proposed": {
+      "term": "Adalimumab",
+      "coverage": 66,
+      "registry": 511,
+      "ratio": 0.64,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Globulins",
+        "coverage": 68,
+        "registry": 13491,
+        "ratio": 16.82,
+        "passed": false
+      },
+      {
+        "term": "Serum Globulins",
+        "coverage": 68,
+        "registry": 13389,
+        "ratio": 16.69,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 68,
+        "registry": 35047,
+        "ratio": 43.7,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 68,
+        "registry": 33326,
+        "ratio": 41.55,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "trastuzumab",
+    "broad": 1750,
+    "proposed": {
+      "term": "Trastuzumab",
+      "coverage": 62,
+      "registry": 1220,
+      "ratio": 0.7,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 65,
+        "registry": 33326,
+        "ratio": 19.04,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 65,
+        "registry": 35047,
+        "ratio": 20.03,
+        "passed": false
+      },
+      {
+        "term": "Globulins",
+        "coverage": 64,
+        "registry": 13491,
+        "ratio": 7.71,
+        "passed": false
+      },
+      {
+        "term": "Antibodies, Monoclonal",
+        "coverage": 64,
+        "registry": 11952,
+        "ratio": 6.83,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "rituximab",
+    "broad": 2821,
+    "proposed": {
+      "term": "Rituximab",
+      "coverage": 79,
+      "registry": 2172,
+      "ratio": 0.77,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Proteins",
+        "coverage": 80,
+        "registry": 35047,
+        "ratio": 12.42,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 80,
+        "registry": 33326,
+        "ratio": 11.81,
+        "passed": false
+      },
+      {
+        "term": "Immunoglobulins",
+        "coverage": 80,
+        "registry": 13515,
+        "ratio": 4.79,
+        "passed": false
+      },
+      {
+        "term": "Antibodies",
+        "coverage": 80,
+        "registry": 13068,
+        "ratio": 4.63,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "imatinib",
+    "broad": 780,
+    "proposed": {
+      "term": "Imatinib Mesylate",
+      "coverage": 64,
+      "registry": 517,
+      "ratio": 0.66,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 75,
+        "registry": 60391,
+        "ratio": 77.42,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, 1-Ring",
+        "coverage": 74,
+        "registry": 40830,
+        "ratio": 52.35,
+        "passed": false
+      },
+      {
+        "term": "Organic Chemicals",
+        "coverage": 73,
+        "registry": 70465,
+        "ratio": 90.34,
+        "passed": false
+      },
+      {
+        "term": "Pyrimidines",
+        "coverage": 70,
+        "registry": 12938,
+        "ratio": 16.59,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "Humira",
+    "broad": 802,
+    "proposed": {
+      "term": "Adalimumab",
+      "coverage": 66,
+      "registry": 511,
+      "ratio": 0.64,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Globulins",
+        "coverage": 68,
+        "registry": 13491,
+        "ratio": 16.82,
+        "passed": false
+      },
+      {
+        "term": "Serum Globulins",
+        "coverage": 68,
+        "registry": 13389,
+        "ratio": 16.69,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 68,
+        "registry": 35047,
+        "ratio": 43.7,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 68,
+        "registry": 33326,
+        "ratio": 41.55,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "Herceptin",
+    "broad": 1781,
+    "proposed": {
+      "term": "Trastuzumab",
+      "coverage": 61,
+      "registry": 1220,
+      "ratio": 0.69,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 64,
+        "registry": 33326,
+        "ratio": 18.71,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 64,
+        "registry": 35047,
+        "ratio": 19.68,
+        "passed": false
+      },
+      {
+        "term": "Globulins",
+        "coverage": 63,
+        "registry": 13491,
+        "ratio": 7.57,
+        "passed": false
+      },
+      {
+        "term": "Antibodies, Monoclonal",
+        "coverage": 63,
+        "registry": 11952,
+        "ratio": 6.71,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "Gleevec",
+    "broad": 780,
+    "proposed": {
+      "term": "Imatinib Mesylate",
+      "coverage": 64,
+      "registry": 517,
+      "ratio": 0.66,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Heterocyclic Compounds",
+        "coverage": 75,
+        "registry": 60391,
+        "ratio": 77.42,
+        "passed": false
+      },
+      {
+        "term": "Heterocyclic Compounds, 1-Ring",
+        "coverage": 74,
+        "registry": 40830,
+        "ratio": 52.35,
+        "passed": false
+      },
+      {
+        "term": "Organic Chemicals",
+        "coverage": 73,
+        "registry": 70465,
+        "ratio": 90.34,
+        "passed": false
+      },
+      {
+        "term": "Pyrimidines",
+        "coverage": 70,
+        "registry": 12938,
+        "ratio": 16.59,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "Ozempic",
+    "broad": 104,
+    "proposed": {
+      "term": "semaglutide",
+      "coverage": 85,
+      "registry": 596,
+      "ratio": 5.73,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 11,
+        "registry": 33326,
+        "ratio": 320.44,
+        "passed": false
+      },
+      {
+        "term": "Hormones, Hormone Substitutes, and Hormone Antagonists",
+        "coverage": 8,
+        "registry": 9042,
+        "ratio": 86.94,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 7,
+        "registry": 35047,
+        "ratio": 336.99,
+        "passed": false
+      },
+      {
+        "term": "Hormones",
+        "coverage": 7,
+        "registry": 9413,
+        "ratio": 90.51,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "MK-3475",
+    "broad": 3003,
+    "proposed": {
+      "term": "pembrolizumab",
+      "coverage": 85,
+      "registry": 2584,
+      "ratio": 0.86,
+      "passed": true
+    },
+    "others": [
+      {
+        "term": "Organic Chemicals",
+        "coverage": 25,
+        "registry": 70465,
+        "ratio": 23.46,
+        "passed": false
+      },
+      {
+        "term": "Amino Acids, Peptides, and Proteins",
+        "coverage": 21,
+        "registry": 33326,
+        "ratio": 11.1,
+        "passed": false
+      },
+      {
+        "term": "Hydrocarbons",
+        "coverage": 18,
+        "registry": 32106,
+        "ratio": 10.69,
+        "passed": false
+      },
+      {
+        "term": "Proteins",
+        "coverage": 18,
+        "registry": 35047,
+        "ratio": 11.67,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  },
+  {
+    "kind": "drug",
+    "query": "lithium",
+    "broad": 463,
+    "proposed": {
+      "term": "Lithium Carbonate",
+      "coverage": 21,
+      "registry": 187,
+      "ratio": 0.4,
+      "passed": false
+    },
+    "others": [
+      {
+        "term": "Inorganic Chemicals",
+        "coverage": 40,
+        "registry": 13346,
+        "ratio": 28.83,
+        "passed": false
+      },
+      {
+        "term": "Metals",
+        "coverage": 26,
+        "registry": 1440,
+        "ratio": 3.11,
+        "passed": false
+      },
+      {
+        "term": "Elements",
+        "coverage": 26,
+        "registry": 2191,
+        "ratio": 4.73,
+        "passed": false
+      },
+      {
+        "term": "Metals, Light",
+        "coverage": 26,
+        "registry": 312,
+        "ratio": 0.67,
+        "passed": false
+      }
+    ],
+    "others_passing": []
+  }
+]

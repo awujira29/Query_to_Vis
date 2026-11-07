@@ -1,0 +1,441 @@
+[
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "shingles",
+  "expected": [
+   "Herpes Zoster"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "pink eye",
+  "expected": [
+   "Conjunctivitis"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "high cholesterol",
+  "expected": [
+   "Hypercholesterolemia",
+   "Hyperlipidemias"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "broken hip",
+  "expected": [
+   "Hip Fractures"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "bed sores",
+  "expected": [
+   "Pressure Ulcer"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "lazy eye",
+  "expected": [
+   "Amblyopia"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "hives",
+  "expected": [
+   "Urticaria"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "brain tumor",
+  "expected": [
+   "Brain Neoplasms"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "kidney cancer",
+  "expected": [
+   "Kidney Neoplasms",
+   "Carcinoma, Renal Cell"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "eczema",
+  "expected": [
+   "Dermatitis, Atopic",
+   "Eczema"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "ALS",
+  "expected": [
+   "Amyotrophic Lateral Sclerosis"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "PTSD",
+  "expected": [
+   "Stress Disorders, Post-Traumatic"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "DVT",
+  "expected": [
+   "Venous Thrombosis"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "UTI",
+  "expected": [
+   "Urinary Tract Infections"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "MDD",
+  "expected": [
+   "Depressive Disorder, Major"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "DLBCL",
+  "expected": [
+   "Lymphoma, Large B-Cell, Diffuse"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "NASH",
+  "expected": [
+   "Non-alcoholic Fatty Liver Disease"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "type 2 diabetes",
+  "expected": [
+   "Diabetes Mellitus, Type 2"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "ulcerative colitis",
+  "expected": [
+   "Colitis, Ulcerative"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "multiple myeloma",
+  "expected": [
+   "Multiple Myeloma"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "preeclampsia",
+  "expected": [
+   "Pre-Eclampsia"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "sleep apnea",
+  "expected": [
+   "Sleep Apnea, Obstructive",
+   "Sleep Apnea Syndromes"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "celiac disease",
+  "expected": [
+   "Celiac Disease"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "fibromyalgia",
+  "expected": [
+   "Fibromyalgia"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "lyme disease",
+  "expected": [
+   "Lyme Disease"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "hepatitis B",
+  "expected": [
+   "Hepatitis B",
+   "Hepatitis B, Chronic"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "glaucoma",
+  "expected": [
+   "Glaucoma"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "rare",
+  "kind": "condition",
+  "query": "Fabry disease",
+  "expected": [
+   "Fabry Disease"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "rare",
+  "kind": "condition",
+  "query": "Duchenne muscular dystrophy",
+  "expected": [
+   "Muscular Dystrophy, Duchenne"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "alzhiemers",
+  "expected": [
+   "Alzheimer Disease"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "diabetis",
+  "expected": [
+   "Diabetes Mellitus"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Eliquis",
+  "expected": [
+   "apixaban"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Jardiance",
+  "expected": [
+   "empagliflozin"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Xarelto",
+  "expected": [
+   "Rivaroxaban"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Opdivo",
+  "expected": [
+   "Nivolumab"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Revlimid",
+  "expected": [
+   "Lenalidomide"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Prozac",
+  "expected": [
+   "Fluoxetine"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Botox",
+  "expected": [
+   "Botulinum Toxins, Type A",
+   "Botulinum Toxins"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "methotrexate",
+  "expected": [
+   "Methotrexate"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "cisplatin",
+  "expected": [
+   "Cisplatin"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "tofacitinib",
+  "expected": [
+   "tofacitinib"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "prednisone",
+  "expected": [
+   "Prednisone"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "vitamin D",
+  "expected": [
+   "Vitamin D",
+   "Cholecalciferol"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "salt",
+  "kind": "drug",
+  "query": "sildenafil",
+  "expected": [
+   "Sildenafil Citrate"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "salt",
+  "kind": "drug",
+  "query": "metoprolol",
+  "expected": [
+   "Metoprolol"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "MEDI4736",
+  "expected": [
+   "durvalumab"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "ONO-4538",
+  "expected": [
+   "Nivolumab"
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "BNT162b2",
+  "expected": [
+   "BNT162 Vaccine"
+  ]
+ }
+]

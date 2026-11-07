@@ -1,0 +1,2781 @@
+[
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "heart attack",
+  "expected": [
+   "Myocardial Infarction"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Myocardial Infarction"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Myocardial Infarction"
+    ],
+    "source": "llm",
+    "reason": "This term is the most specific and accurate representation of a heart attack.",
+    "passed": true,
+    "coverage": 78.3,
+    "registry": 3002,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "high blood pressure",
+  "expected": [
+   "Hypertension"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Hypertension"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Hypertension"
+    ],
+    "source": "llm",
+    "reason": "Hypertension is the specific medical term for high blood pressure.",
+    "passed": true,
+    "coverage": 59.3,
+    "registry": 11717,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "kidney failure",
+  "expected": [
+   "Renal Insufficiency"
+  ],
+  "outcome": "differs",
+  "status": "resolved",
+  "terms": [
+   "Kidney Failure, Chronic",
+   "Renal Insufficiency, Chronic"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Kidney Diseases",
+     "Renal Insufficiency"
+    ],
+    "source": "llm",
+    "reason": "These terms are commonly used in clinical trials related to kidney failure.",
+    "passed": false,
+    "coverage": 94.3,
+    "registry": 13328,
+    "ratio": 1.68,
+    "rejected_because": [
+     "too broad: 'kidney diseases' (more specific term covers nearly as much: renal insufficiency)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Kidney Failure, Chronic",
+     "Renal Insufficiency, Chronic"
+    ],
+    "source": "llm",
+    "reason": "These specific terms directly correspond to chronic forms of kidney failure.",
+    "passed": true,
+    "coverage": 64.3,
+    "registry": 4764,
+    "ratio": 0.6,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "flu",
+  "expected": [
+   "Influenza, Human"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Influenza, Human"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Influenza, Human"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to the human form of the flu, matching the user's condition 'flu' directly.",
+    "passed": true,
+    "coverage": 78.3,
+    "registry": 2191,
+    "ratio": 0.78,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "preterm birth",
+  "expected": [
+   "Premature Birth"
+  ],
+  "outcome": "broadened",
+  "status": "resolved",
+  "terms": [
+   "Premature Birth",
+   "Obstetric Labor, Premature"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Premature Birth",
+     "Obstetric Labor, Premature"
+    ],
+    "source": "llm",
+    "reason": "These terms directly represent preterm birth and its complications as stored in MeSH.",
+    "passed": true,
+    "coverage": 69.7,
+    "registry": 3573,
+    "ratio": 0.89,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "insomnia",
+  "expected": [
+   "Sleep Initiation and Maintenance Disorders"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Sleep Initiation and Maintenance Disorders"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Sleep Disorders, Intrinsic"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to disorders like insomnia that are intrinsic to sleep.",
+    "passed": false,
+    "coverage": 75.7,
+    "registry": 6054,
+    "ratio": 1.78,
+    "rejected_because": [
+     "too broad: 'sleep disorders, intrinsic' (more specific term covers nearly as much: sleep initiation and maintenance disorders)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Dyssomnias"
+    ],
+    "source": "llm",
+    "reason": "Dyssomnias includes disturbances in sleep patterns, such as insomnia.",
+    "passed": false,
+    "coverage": 77.0,
+    "registry": 6418,
+    "ratio": 1.89,
+    "rejected_because": [
+     "too broad: 'dyssomnias' (more specific term covers nearly as much: sleep disorders, intrinsic)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Sleep Wake Disorders"
+    ],
+    "source": "llm",
+    "reason": "This broader term encompasses various conditions related to sleep disturbances, including insomnia.",
+    "passed": false,
+    "coverage": 80.0,
+    "registry": 7456,
+    "ratio": 2.19,
+    "rejected_because": [
+     "too broad: 'sleep wake disorders' (more specific term covers nearly as much: dyssomnias)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "insomnia"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 17,
+    "ratio": 0.0,
+    "rejected_because": [
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.00x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Sleep Initiation and Maintenance Disorders"
+    ],
+    "source": "llm",
+    "reason": "This term is specific to disorders related to insomnia and matches the context of the trials.",
+    "passed": true,
+    "coverage": 75.0,
+    "registry": 2702,
+    "ratio": 0.79,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "chronic pain",
+  "expected": "fallback",
+  "outcome": "differs",
+  "status": "resolved",
+  "terms": [
+   "Pain"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Chronic Pain"
+    ],
+    "source": "llm",
+    "reason": "Direct match for the specified condition.",
+    "passed": false,
+    "coverage": 33.3,
+    "registry": 3122,
+    "ratio": 0.4,
+    "rejected_because": [
+     "covers only 33% of trials found by the words",
+     "too narrow (registry size 0.40x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Pain"
+    ],
+    "source": "llm",
+    "reason": "General term that encompasses all types of pain, including chronic.",
+    "passed": true,
+    "coverage": 70.7,
+    "registry": 27291,
+    "ratio": 3.45,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "COPD",
+  "expected": [
+   "Pulmonary Disease, Chronic Obstructive"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Pulmonary Disease, Chronic Obstructive"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Pulmonary Disease, Chronic Obstructive"
+    ],
+    "source": "llm",
+    "reason": "This term specifically describes COPD directly.",
+    "passed": true,
+    "coverage": 95.0,
+    "registry": 5409,
+    "ratio": 0.97,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "ADHD",
+  "expected": [
+   "Attention Deficit Disorder with Hyperactivity"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Attention Deficit Disorder with Hyperactivity"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Attention Deficit and Disruptive Behavior Disorders"
+    ],
+    "source": "llm",
+    "reason": "This term specifically describes the broader category that includes ADHD and is assigned directly.",
+    "passed": false,
+    "coverage": 93.7,
+    "registry": 1910,
+    "ratio": 0.95,
+    "rejected_because": [
+     "too broad: 'attention deficit and disruptive behavior disorders' (more specific term covers nearly as much: attention deficit disorder with hyperactivity)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Attention Deficit Disorder with Hyperactivity"
+    ],
+    "source": "llm",
+    "reason": "This term is more specific to ADHD, as it encompasses the hyperactivity aspect of the disorder, and is commonly used in trials.",
+    "passed": true,
+    "coverage": 88.0,
+    "registry": 1910,
+    "ratio": 0.95,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "HIV",
+  "expected": [
+   "HIV Infections"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "HIV Infections"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "HIV Infections"
+    ],
+    "source": "llm",
+    "reason": "This term is directly assigned and specifically corresponds to HIV.",
+    "passed": true,
+    "coverage": 64.3,
+    "registry": 6744,
+    "ratio": 0.66,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "AML",
+  "expected": [
+   "Leukemia, Myeloid, Acute"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Leukemia, Myeloid, Acute"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Leukemia, Myeloid, Acute"
+    ],
+    "source": "llm",
+    "reason": "specifically matches AML, which stands for Acute Myeloid Leukemia.",
+    "passed": true,
+    "coverage": 89.0,
+    "registry": 3702,
+    "ratio": 0.88,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "CKD",
+  "expected": [
+   "Renal Insufficiency, Chronic"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Renal Insufficiency, Chronic"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Kidney Diseases"
+    ],
+    "source": "llm",
+    "reason": "Direct match for CKD, which refers to chronic kidney disease.",
+    "passed": false,
+    "coverage": 87.0,
+    "registry": 13326,
+    "ratio": 3.43,
+    "rejected_because": [
+     "too broad: 'kidney diseases' (more specific term covers nearly as much: renal insufficiency)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Chronic Disease"
+    ],
+    "source": "llm",
+    "reason": "Broad category that encompasses chronic conditions including CKD.",
+    "passed": false,
+    "coverage": 84.0,
+    "registry": 18818,
+    "ratio": 4.85,
+    "rejected_because": [
+     "too broad: 'chronic disease' (more specific term covers nearly as much: renal insufficiency, chronic)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Renal Insufficiency, Chronic"
+    ],
+    "source": "llm",
+    "reason": "Specific term that directly relates to chronic kidney disease.",
+    "passed": true,
+    "coverage": 83.3,
+    "registry": 4764,
+    "ratio": 1.23,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "TB",
+  "expected": [
+   "Tuberculosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Tuberculosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Tuberculosis"
+    ],
+    "source": "llm",
+    "reason": "This term directly corresponds to TB, which is the common abbreviation for Tuberculosis.",
+    "passed": true,
+    "coverage": 89.3,
+    "registry": 1536,
+    "ratio": 1.97,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "alzheimer's",
+  "expected": [
+   "Alzheimer Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Alzheimer Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Alzheimer Disease"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to Alzheimer\u2019s and is the most direct match for the condition.",
+    "passed": true,
+    "coverage": 86.0,
+    "registry": 3900,
+    "ratio": 1.22,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "parkinson's",
+  "expected": [
+   "Parkinson Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Parkinson Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Parkinson Disease"
+    ],
+    "source": "llm",
+    "reason": "This is the most specific term directly related to Parkinson's.",
+    "passed": true,
+    "coverage": 94.3,
+    "registry": 4748,
+    "ratio": 1.19,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "multiple sclerosis",
+  "expected": [
+   "Multiple Sclerosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Multiple Sclerosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Multiple Sclerosis"
+    ],
+    "source": "llm",
+    "reason": "Direct match for the condition.",
+    "passed": true,
+    "coverage": 90.0,
+    "registry": 3558,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "epilepsy",
+  "expected": [
+   "Epilepsy"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Epilepsy"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Epilepsy"
+    ],
+    "source": "llm",
+    "reason": "This term directly corresponds to the user's search word and is the most specific and relevant MeSH term.",
+    "passed": true,
+    "coverage": 90.0,
+    "registry": 2346,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "migraine",
+  "expected": [
+   "Migraine Disorders"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Migraine Disorders"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Migraine Disorders"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the condition 'migraine' as a specific disorder.",
+    "passed": true,
+    "coverage": 83.0,
+    "registry": 1554,
+    "ratio": 0.85,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "depression",
+  "expected": [
+   "Depression",
+   "Depressive Disorder"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Depression"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Depression"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the condition 'depression' as used in clinical trials.",
+    "passed": true,
+    "coverage": 66.3,
+    "registry": 11227,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "schizophrenia",
+  "expected": [
+   "Schizophrenia"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Schizophrenia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Schizophrenia"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the term 'schizophrenia' as used by MeSH.",
+    "passed": true,
+    "coverage": 80.7,
+    "registry": 4079,
+    "ratio": 0.96,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "autism",
+  "expected": [
+   "Autism Spectrum Disorder"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Autism Spectrum Disorder"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Autism Spectrum Disorder"
+    ],
+    "source": "llm",
+    "reason": "This term specifically describes the condition 'autism' and is the most precise representation.",
+    "passed": true,
+    "coverage": 95.7,
+    "registry": 2251,
+    "ratio": 0.96,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "stroke",
+  "expected": [
+   "Stroke"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Stroke"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Stroke"
+    ],
+    "source": "llm",
+    "reason": "This is the most specific and preferred term for the condition 'stroke' as stored by ClinicalTrials.gov.",
+    "passed": true,
+    "coverage": 83.0,
+    "registry": 9842,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "rheumatoid arthritis",
+  "expected": [
+   "Arthritis, Rheumatoid"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Arthritis, Rheumatoid"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Arthritis, Rheumatoid"
+    ],
+    "source": "llm",
+    "reason": "Most specific and directly matches 'rheumatoid arthritis'.",
+    "passed": true,
+    "coverage": 94.3,
+    "registry": 3590,
+    "ratio": 0.94,
+    "rejected_because": [],
+    "dropped_terms": [
+     "Arthritis"
+    ]
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "lupus",
+  "expected": [
+   "Lupus Erythematosus, Systemic"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Lupus Erythematosus, Systemic"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Lupus Erythematosus, Systemic"
+    ],
+    "source": "llm",
+    "reason": "This term directly corresponds to lupus, particularly the systemic form commonly referred to.",
+    "passed": true,
+    "coverage": 89.0,
+    "registry": 1402,
+    "ratio": 0.84,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "crohn's disease",
+  "expected": [
+   "Crohn Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Crohn Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Crohn Disease"
+    ],
+    "source": "llm",
+    "reason": "The specific condition being searched for is directly matched with the MeSH term.",
+    "passed": true,
+    "coverage": 94.0,
+    "registry": 1955,
+    "ratio": 0.93,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "psoriasis",
+  "expected": [
+   "Psoriasis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Psoriasis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Psoriasis"
+    ],
+    "source": "llm",
+    "reason": "Directly matches the specified condition and is a specific term for psoriasis.",
+    "passed": true,
+    "coverage": 80.3,
+    "registry": 1937,
+    "ratio": 0.75,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "hepatitis C",
+  "expected": [
+   "Hepatitis C"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Hepatitis C"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Hepatitis C"
+    ],
+    "source": "llm",
+    "reason": "Specifically matches the user's query for hepatitis C.",
+    "passed": true,
+    "coverage": 90.0,
+    "registry": 2310,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "covid",
+  "expected": [
+   "COVID-19"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "COVID-19"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "COVID-19"
+    ],
+    "source": "llm",
+    "reason": "This term is specifically designated for trials related to COVID-19 and observed in a significant number of sampled trials.",
+    "passed": true,
+    "coverage": 73.7,
+    "registry": 7978,
+    "ratio": 1.62,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "sepsis",
+  "expected": [
+   "Sepsis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Sepsis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Sepsis"
+    ],
+    "source": "llm",
+    "reason": "Direct match for the condition 'sepsis' as stored in MeSH.",
+    "passed": true,
+    "coverage": 85.0,
+    "registry": 3438,
+    "ratio": 0.89,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "obesity",
+  "expected": [
+   "Obesity"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Obesity"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Obesity"
+    ],
+    "source": "llm",
+    "reason": "This term is specifically assigned to trials matching the user's search for obesity.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 13234,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "type 1 diabetes",
+  "expected": [
+   "Diabetes Mellitus, Type 1"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Diabetes Mellitus, Type 1"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Diabetes Mellitus, Type 1"
+    ],
+    "source": "llm",
+    "reason": "This term specifically denotes Type 1 diabetes, directly matching the search words.",
+    "passed": true,
+    "coverage": 76.3,
+    "registry": 3673,
+    "ratio": 0.78,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "sickle cell",
+  "expected": [
+   "Anemia, Sickle Cell"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Anemia, Sickle Cell"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Anemia, Sickle Cell"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to sickle cell disease and is the most directly relevant to the user's query.",
+    "passed": true,
+    "coverage": 96.0,
+    "registry": 1161,
+    "ratio": 0.95,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "cystic fibrosis",
+  "expected": [
+   "Cystic Fibrosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Cystic Fibrosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Cystic Fibrosis"
+    ],
+    "source": "llm",
+    "reason": "This is the specific condition the user is inquiring about.",
+    "passed": true,
+    "coverage": 88.7,
+    "registry": 1583,
+    "ratio": 0.89,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "atrial fibrillation",
+  "expected": [
+   "Atrial Fibrillation"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Atrial Fibrillation"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Atrial Fibrillation"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the specified condition.",
+    "passed": true,
+    "coverage": 90.0,
+    "registry": 3837,
+    "ratio": 0.91,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "prostate cancer",
+  "expected": [
+   "Prostatic Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Prostatic Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Prostatic Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "Specifically refers to neoplasms occurring in the prostate, matching the condition of prostate cancer.",
+    "passed": true,
+    "coverage": 86.0,
+    "registry": 6510,
+    "ratio": 0.85,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "colon cancer",
+  "expected": [
+   "Colonic Neoplasms",
+   "Colorectal Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Colorectal Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Colorectal Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to cancers located in the colon and rectum, which aligns directly with 'colon cancer'.",
+    "passed": true,
+    "coverage": 95.0,
+    "registry": 9367,
+    "ratio": 1.12,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "pancreatic cancer",
+  "expected": [
+   "Pancreatic Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Pancreatic Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Pancreatic Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to tumors located in the pancreas, which is the precise condition the user is interested in.",
+    "passed": true,
+    "coverage": 72.3,
+    "registry": 3899,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "glioblastoma",
+  "expected": [
+   "Glioblastoma"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Glioblastoma"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Glioblastoma"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the condition specified.",
+    "passed": true,
+    "coverage": 93.3,
+    "registry": 2070,
+    "ratio": 0.91,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "lung cancer",
+  "expected": [
+   "Lung Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Lung Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Lung Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to neoplasms in the lungs, which is directly related to lung cancer.",
+    "passed": true,
+    "coverage": 80.0,
+    "registry": 11790,
+    "ratio": 0.8,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "nsclc",
+  "expected": [
+   "Carcinoma, Non-Small-Cell Lung"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Carcinoma, Non-Small-Cell Lung"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Carcinoma, Non-Small-Cell Lung"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to the type of lung cancer that NSCLC denotes.",
+    "passed": true,
+    "coverage": 76.3,
+    "registry": 7095,
+    "ratio": 0.8,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "breast cancer",
+  "expected": [
+   "Breast Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Breast Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Breast Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "Directly matches the condition 'breast cancer' with a specific focus on neoplasms of the breast.",
+    "passed": true,
+    "coverage": 83.3,
+    "registry": 14571,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "condition",
+  "query": "melanoma",
+  "expected": [
+   "Melanoma"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Melanoma"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Melanoma"
+    ],
+    "source": "llm",
+    "reason": "Directly corresponds to the specific condition 'melanoma'.",
+    "passed": true,
+    "coverage": 88.0,
+    "registry": 3424,
+    "ratio": 0.91,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "metformin",
+  "expected": [
+   "Metformin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Metformin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Metformin"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the drug term provided by the user.",
+    "passed": true,
+    "coverage": 64.3,
+    "registry": 2021,
+    "ratio": 0.64,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "atorvastatin",
+  "expected": [
+   "Atorvastatin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Atorvastatin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Atorvastatin"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the drug atorvastatin in the MeSH terms.",
+    "passed": true,
+    "coverage": 77.0,
+    "registry": 936,
+    "ratio": 0.78,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "aspirin",
+  "expected": [
+   "Aspirin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "aspirin"
+  ],
+  "source": "rxnorm",
+  "tried": [
+   {
+    "terms": [
+     "Aspirin",
+     "Salicylates"
+    ],
+    "source": "llm",
+    "reason": "Aspirin is the specific drug term assigned directly; Salicylates is a related term that encompasses a broader category of compounds including aspirin.",
+    "passed": false,
+    "coverage": 51.0,
+    "registry": 1406,
+    "ratio": 0.64,
+    "rejected_because": [
+     "too broad: 'salicylates' (more specific term covers nearly as much: aspirin)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "aspirin"
+    ],
+    "source": "rxnorm",
+    "reason": "RxNorm ingredient of 'aspirin'",
+    "passed": true,
+    "coverage": 51.0,
+    "registry": 1180,
+    "ratio": 0.53,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "warfarin",
+  "expected": [
+   "Warfarin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Warfarin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Warfarin"
+    ],
+    "source": "llm",
+    "reason": "The specific drug is directly represented in the MeSH terms.",
+    "passed": true,
+    "coverage": 57.7,
+    "registry": 444,
+    "ratio": 0.56,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "tamoxifen",
+  "expected": [
+   "Tamoxifen"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Tamoxifen"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Tamoxifen"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH term corresponding to the drug tamoxifen.",
+    "passed": true,
+    "coverage": 70.7,
+    "registry": 484,
+    "ratio": 0.7,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "sertraline",
+  "expected": [
+   "Sertraline"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Sertraline"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Sertraline"
+    ],
+    "source": "llm",
+    "reason": "This term is the exact match for the drug the user is interested in.",
+    "passed": true,
+    "coverage": 70.3,
+    "registry": 312,
+    "ratio": 0.71,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "apixaban",
+  "expected": [
+   "apixaban"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "apixaban"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "apixaban"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH term for the drug.",
+    "passed": true,
+    "coverage": 65.3,
+    "registry": 315,
+    "ratio": 0.65,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "semaglutide",
+  "expected": [
+   "semaglutide"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "semaglutide"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "semaglutide"
+    ],
+    "source": "llm",
+    "reason": "Term assigned directly to trials",
+    "passed": true,
+    "coverage": 74.3,
+    "registry": 596,
+    "ratio": 0.75,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "osimertinib",
+  "expected": [
+   "osimertinib"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Osimertinib"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Osimertinib"
+    ],
+    "source": "llm",
+    "reason": "Matched directly as the specific drug.",
+    "passed": true,
+    "coverage": 73.0,
+    "registry": 284,
+    "ratio": 0.72,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "remdesivir",
+  "expected": [
+   "remdesivir"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "remdesivir"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "remdesivir"
+    ],
+    "source": "llm",
+    "reason": "MeSH term directly assigned to trials involving the drug.",
+    "passed": true,
+    "coverage": 70.5,
+    "registry": 93,
+    "ratio": 0.7,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "adalimumab",
+  "expected": [
+   "Adalimumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Adalimumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Adalimumab"
+    ],
+    "source": "llm",
+    "reason": "Adalimumab is directly assigned as a MeSH term.",
+    "passed": true,
+    "coverage": 65.7,
+    "registry": 511,
+    "ratio": 0.64,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "trastuzumab",
+  "expected": [
+   "Trastuzumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Trastuzumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Trastuzumab"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term assigned to the drug in the trials.",
+    "passed": true,
+    "coverage": 62.3,
+    "registry": 1220,
+    "ratio": 0.7,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "rituximab",
+  "expected": [
+   "Rituximab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Rituximab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Rituximab"
+    ],
+    "source": "llm",
+    "reason": "Rituximab is a specific drug, and it is directly assigned as a term. 'Antibodies, Monoclonal' captures the class of the drug.",
+    "passed": true,
+    "coverage": 78.7,
+    "registry": 2172,
+    "ratio": 0.77,
+    "rejected_because": [],
+    "dropped_terms": [
+     "Antibodies, Monoclonal"
+    ]
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "imatinib",
+  "expected": [
+   "Imatinib Mesylate"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Imatinib Mesylate"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Imatinib Mesylate"
+    ],
+    "source": "llm",
+    "reason": "The exact drug name stored in MeSH is 'Imatinib Mesylate', which matches the search term directly.",
+    "passed": true,
+    "coverage": 64.3,
+    "registry": 517,
+    "ratio": 0.66,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Humira",
+  "expected": [
+   "Adalimumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Adalimumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Adalimumab"
+    ],
+    "source": "llm",
+    "reason": "This term specifically identifies the drug Humira, as Adalimumab is its active ingredient.",
+    "passed": true,
+    "coverage": 65.7,
+    "registry": 511,
+    "ratio": 0.64,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Herceptin",
+  "expected": [
+   "Trastuzumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Trastuzumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Trastuzumab"
+    ],
+    "source": "llm",
+    "reason": "Trastuzumab is the active ingredient of Herceptin and is the specific term assigned directly to trials.",
+    "passed": true,
+    "coverage": 61.3,
+    "registry": 1220,
+    "ratio": 0.69,
+    "rejected_because": [],
+    "dropped_terms": [
+     "Antibodies, Monoclonal"
+    ]
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Gleevec",
+  "expected": [
+   "Imatinib Mesylate"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Imatinib Mesylate"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Imatinib Mesylate"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term for Gleevec, which is the drug's active ingredient.",
+    "passed": true,
+    "coverage": 64.3,
+    "registry": 517,
+    "ratio": 0.66,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "Ozempic",
+  "expected": [
+   "semaglutide"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "semaglutide"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "semaglutide"
+    ],
+    "source": "llm",
+    "reason": "Ozempic is the brand name for the drug semaglutide.",
+    "passed": true,
+    "coverage": 84.6,
+    "registry": 596,
+    "ratio": 5.73,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "MK-3475",
+  "expected": [
+   "pembrolizumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Pembrolizumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Pembrolizumab"
+    ],
+    "source": "llm",
+    "reason": "MK-3475 is the developmental code name for Pembrolizumab, which is the most relevant and specific MeSH term associated with the trials.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 2584,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "tuning",
+  "kind": "drug",
+  "query": "lithium",
+  "expected": "fallback",
+  "outcome": "fallback-ok",
+  "status": "fallback",
+  "terms": [],
+  "source": null,
+  "tried": [
+   {
+    "terms": [
+     "Lithium"
+    ],
+    "source": "llm",
+    "reason": "Direct assignment of the term 'Lithium' to trials related specifically to the drug.",
+    "passed": false,
+    "coverage": 26.0,
+    "registry": 187,
+    "ratio": 0.4,
+    "rejected_because": [
+     "covers only 26% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Lithium Carbonate"
+    ],
+    "source": "llm",
+    "reason": "Direct assignment of 'Lithium Carbonate' as a specific form of lithium used in trials.",
+    "passed": false,
+    "coverage": 21.3,
+    "registry": 187,
+    "ratio": 0.4,
+    "rejected_because": [
+     "covers only 21% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Lithium Compounds"
+    ],
+    "source": "llm",
+    "reason": "A broader category that encompasses various lithium compounds, relevant for trials involving different formulations.",
+    "passed": false,
+    "coverage": 21.3,
+    "registry": 101,
+    "ratio": 0.22,
+    "rejected_because": [
+     "covers only 21% of trials found by the words",
+     "too narrow (registry size 0.22x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Lithium"
+    ],
+    "source": "llm",
+    "reason": "Covers a broader range of trials while including the specific term lithium.",
+    "passed": false,
+    "coverage": 26.0,
+    "registry": 187,
+    "ratio": 0.4,
+    "rejected_because": [
+     "covers only 26% of trials found by the words"
+    ],
+    "dropped_terms": [
+     "Inorganic Chemicals"
+    ]
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "heart failure",
+  "expected": [
+   "Heart Failure"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Heart Failure"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Heart Failure"
+    ],
+    "source": "llm",
+    "reason": "This term is the most specific and directly matches the user's input regarding the condition.",
+    "passed": true,
+    "coverage": 74.7,
+    "registry": 5870,
+    "ratio": 0.74,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "osteoporosis",
+  "expected": [
+   "Osteoporosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Osteoporosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Osteoporosis"
+    ],
+    "source": "llm",
+    "reason": "The term 'Osteoporosis' is the most specific and directly matches the user's query for the condition.",
+    "passed": true,
+    "coverage": 91.7,
+    "registry": 1765,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "anxiety",
+  "expected": [
+   "Anxiety Disorders",
+   "Anxiety"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Anxiety Disorders"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Anxiety Disorders"
+    ],
+    "source": "llm",
+    "reason": "Direct match with the condition 'anxiety'.",
+    "passed": true,
+    "coverage": 81.3,
+    "registry": 8680,
+    "ratio": 0.8,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "bipolar",
+  "expected": [
+   "Bipolar Disorder"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Bipolar Disorder"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Bipolar and Related Disorders"
+    ],
+    "source": "llm",
+    "reason": "This term specifically encompasses bipolar disorder, directly matching the user's query.",
+    "passed": false,
+    "coverage": 79.0,
+    "registry": 1675,
+    "ratio": 0.77,
+    "rejected_because": [
+     "too broad: 'bipolar and related disorders' (more specific term covers nearly as much: bipolar disorder)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Bipolar Disorder"
+    ],
+    "source": "llm",
+    "reason": "An alternative term that directly refers to the condition of bipolar disorder.",
+    "passed": true,
+    "coverage": 78.7,
+    "registry": 1669,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "ovarian cancer",
+  "expected": [
+   "Ovarian Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Ovarian Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Ovarian Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to neoplasms of the ovaries, directly related to ovarian cancer.",
+    "passed": true,
+    "coverage": 70.7,
+    "registry": 3695,
+    "ratio": 0.69,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "liver cancer",
+  "expected": [
+   "Liver Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Liver Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Liver Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to tumors in the liver, aligning directly with 'liver cancer'.",
+    "passed": true,
+    "coverage": 76.0,
+    "registry": 4148,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "leukemia",
+  "expected": [
+   "Leukemia"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Leukemia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Leukemia"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term that corresponds to the user's search query.",
+    "passed": true,
+    "coverage": 89.7,
+    "registry": 8795,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "malaria",
+  "expected": [
+   "Malaria"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Malaria"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Malaria"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the search term 'malaria' as assigned in ClinicalTrials.gov.",
+    "passed": true,
+    "coverage": 93.7,
+    "registry": 1381,
+    "ratio": 0.93,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "RSV",
+  "expected": [
+   "Respiratory Syncytial Virus Infections"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Respiratory Syncytial Virus Infections"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Respiratory Syncytial Virus Infections"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to infections caused by the Respiratory Syncytial Virus, which is commonly abbreviated as RSV.",
+    "passed": true,
+    "coverage": 50.7,
+    "registry": 303,
+    "ratio": 0.48,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "endometriosis",
+  "expected": [
+   "Endometriosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Endometriosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Endometriosis"
+    ],
+    "source": "llm",
+    "reason": "Direct match to the specific condition requested.",
+    "passed": true,
+    "coverage": 93.3,
+    "registry": 890,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "PCOS",
+  "expected": [
+   "Polycystic Ovary Syndrome"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Polycystic Ovary Syndrome"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Polycystic Ovary Syndrome"
+    ],
+    "source": "llm",
+    "reason": "This term specifically represents the condition known as PCOS.",
+    "passed": true,
+    "coverage": 80.7,
+    "registry": 954,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "gout",
+  "expected": [
+   "Gout"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Gout"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Gout"
+    ],
+    "source": "llm",
+    "reason": "The term directly corresponds to the condition gout, which is the focus of the search.",
+    "passed": true,
+    "coverage": 80.0,
+    "registry": 332,
+    "ratio": 0.81,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "macular degeneration",
+  "expected": [
+   "Macular Degeneration"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Macular Degeneration"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Macular Degeneration"
+    ],
+    "source": "llm",
+    "reason": "This term is specifically the one the user is referring to and is directly assigned to trials.",
+    "passed": true,
+    "coverage": 76.3,
+    "registry": 1727,
+    "ratio": 0.79,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "opioid addiction",
+  "expected": [
+   "Opioid-Related Disorders"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Opioid-Related Disorders"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Substance-Related Disorders"
+    ],
+    "source": "llm",
+    "reason": "This term encompasses disorders related to the misuse of substances, including opioids.",
+    "passed": false,
+    "coverage": 96.0,
+    "registry": 7444,
+    "ratio": 11.49,
+    "rejected_because": [
+     "too broad: 'substance-related disorders' (more specific term covers nearly as much: opioid-related disorders)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Opioid-Related Disorders"
+    ],
+    "source": "llm",
+    "reason": "This term specifically references disorders associated with opioid use, making it highly relevant to opioid addiction.",
+    "passed": true,
+    "coverage": 92.7,
+    "registry": 1556,
+    "ratio": 2.4,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "condition",
+  "query": "IBS",
+  "expected": [
+   "Irritable Bowel Syndrome"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Irritable Bowel Syndrome"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Irritable Bowel Syndrome"
+    ],
+    "source": "llm",
+    "reason": "This is the specific MeSH term directly corresponding to IBS.",
+    "passed": true,
+    "coverage": 76.0,
+    "registry": 998,
+    "ratio": 1.4,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "ibuprofen",
+  "expected": [
+   "Ibuprofen"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Ibuprofen"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Ibuprofen"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH term corresponding to the drug.",
+    "passed": true,
+    "coverage": 62.0,
+    "registry": 694,
+    "ratio": 0.62,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Keytruda",
+  "expected": [
+   "pembrolizumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "pembrolizumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "pembrolizumab"
+    ],
+    "source": "llm",
+    "reason": "This is the MeSH preferred heading directly assigned to Keytruda.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 2584,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Lipitor",
+  "expected": [
+   "Atorvastatin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Atorvastatin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Atorvastatin"
+    ],
+    "source": "llm",
+    "reason": "Atorvastatin is the active ingredient in Lipitor, making it the most specific and relevant MeSH term.",
+    "passed": true,
+    "coverage": 77.0,
+    "registry": 936,
+    "ratio": 0.78,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "insulin glargine",
+  "expected": [
+   "Insulin Glargine"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Insulin Glargine"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Insulin Glargine"
+    ],
+    "source": "llm",
+    "reason": "The term directly matches the drug name and was assigned in 80% of the trials.",
+    "passed": true,
+    "coverage": 80.0,
+    "registry": 569,
+    "ratio": 0.78,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "dexamethasone",
+  "expected": [
+   "Dexamethasone"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Dexamethasone"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Dexamethasone"
+    ],
+    "source": "llm",
+    "reason": "The term is assigned directly and specifically matches the drug in question.",
+    "passed": true,
+    "coverage": 65.3,
+    "registry": 3096,
+    "ratio": 0.64,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "bevacizumab",
+  "expected": [
+   "Bevacizumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Bevacizumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Bevacizumab"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term for the drug in question.",
+    "passed": true,
+    "coverage": 78.7,
+    "registry": 2640,
+    "ratio": 0.77,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "Avastin",
+  "expected": [
+   "Bevacizumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Bevacizumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Bevacizumab"
+    ],
+    "source": "llm",
+    "reason": "Bevacizumab is the generic name for Avastin, and it is directly assigned as a MeSH term in the trials.",
+    "passed": true,
+    "coverage": 78.3,
+    "registry": 2640,
+    "ratio": 0.77,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "levothyroxine",
+  "expected": [
+   "Thyroxine"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Thyroxine"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Thyroid Hormones"
+    ],
+    "source": "llm",
+    "reason": "This term encompasses the function and effects of levothyroxine in the body.",
+    "passed": false,
+    "coverage": 63.0,
+    "registry": 234,
+    "ratio": 0.68,
+    "rejected_because": [
+     "too broad: 'thyroid hormones' (more specific term covers nearly as much: thyroxine)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Thyroxine"
+    ],
+    "source": "llm",
+    "reason": "Levothyroxine is a synthetic form of thyroxine, making this term directly relevant.",
+    "passed": true,
+    "coverage": 61.7,
+    "registry": 210,
+    "ratio": 0.61,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "dupilumab",
+  "expected": [
+   "dupilumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "dupilumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "dupilumab"
+    ],
+    "source": "llm",
+    "reason": "Assigned directly from MeSH terms in a majority of trials.",
+    "passed": true,
+    "coverage": 81.3,
+    "registry": 252,
+    "ratio": 0.81,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "holdout",
+  "kind": "drug",
+  "query": "ketamine",
+  "expected": [
+   "Ketamine"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Ketamine"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Ketamine"
+    ],
+    "source": "llm",
+    "reason": "The term is directly assigned to trials and represents the specific drug the user is inquiring about.",
+    "passed": true,
+    "coverage": 53.7,
+    "registry": 1274,
+    "ratio": 0.66,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ }
+]

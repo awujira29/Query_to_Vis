@@ -1,0 +1,1766 @@
+[
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "shingles",
+  "expected": [
+   "Herpes Zoster"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Herpes Zoster"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Herpes Zoster"
+    ],
+    "source": "llm",
+    "reason": "The specific term for shingles, directly assigned in trials.",
+    "passed": true,
+    "coverage": 53.0,
+    "registry": 421,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "pink eye",
+  "expected": [
+   "Conjunctivitis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Conjunctivitis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Conjunctivitis",
+     "Conjunctival Diseases"
+    ],
+    "source": "llm",
+    "reason": "Conjunctivitis is the specific condition commonly known as pink eye, and Conjunctival Diseases encompasses it broadly.",
+    "passed": false,
+    "coverage": 87.3,
+    "registry": 586,
+    "ratio": 1.18,
+    "rejected_because": [
+     "too broad: 'conjunctival diseases' (more specific term covers nearly as much: conjunctivitis)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Eye Diseases"
+    ],
+    "source": "llm",
+    "reason": "This term is a broader categorization that includes conjunctivitis and other general eye conditions.",
+    "passed": false,
+    "coverage": 89.3,
+    "registry": 14654,
+    "ratio": 29.6,
+    "rejected_because": [
+     "too broad: 'eye diseases' (more specific term covers nearly as much: conjunctival diseases)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Eye Infections"
+    ],
+    "source": "llm",
+    "reason": "This term includes various infectious forms of pink eye, particularly significant in cases of bacterial conjunctivitis.",
+    "passed": false,
+    "coverage": 18.3,
+    "registry": 337,
+    "ratio": 0.68,
+    "rejected_because": [
+     "covers only 18% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "pink eye"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 429,
+    "ratio": 0.87,
+    "rejected_because": [
+     "covers only 0% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Conjunctivitis"
+    ],
+    "source": "llm",
+    "reason": "Conjunctivitis is the precise medical term that corresponds directly to 'pink eye', covering the majority of relevant trials.",
+    "passed": true,
+    "coverage": 86.7,
+    "registry": 429,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "high cholesterol",
+  "expected": [
+   "Hypercholesterolemia",
+   "Hyperlipidemias"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Hypercholesterolemia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Hypercholesterolemia"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to high cholesterol levels and is most directly relevant to the user's query.",
+    "passed": true,
+    "coverage": 68.0,
+    "registry": 1194,
+    "ratio": 0.72,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "broken hip",
+  "expected": [
+   "Hip Fractures"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Hip Fractures"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Hip Fractures"
+    ],
+    "source": "llm",
+    "reason": "Most specific term directly related to 'broken hip'.",
+    "passed": true,
+    "coverage": 89.0,
+    "registry": 997,
+    "ratio": 0.89,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "bed sores",
+  "expected": [
+   "Pressure Ulcer"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Pressure Ulcer"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Pressure Ulcer"
+    ],
+    "source": "llm",
+    "reason": "The term 'Pressure Ulcer' specifically refers to bed sores, which are localized injuries to the skin and underlying tissue.",
+    "passed": true,
+    "coverage": 87.7,
+    "registry": 525,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "lazy eye",
+  "expected": [
+   "Amblyopia"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Amblyopia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Amblyopia"
+    ],
+    "source": "llm",
+    "reason": "Amblyopia is the specific medical term for 'lazy eye'.",
+    "passed": true,
+    "coverage": 94.8,
+    "registry": 183,
+    "ratio": 0.95,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "hives",
+  "expected": [
+   "Urticaria"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Urticaria"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Urticaria"
+    ],
+    "source": "llm",
+    "reason": "This term directly refers to hives, which is a medical condition characterized by raised, itchy welts on the skin.",
+    "passed": true,
+    "coverage": 93.0,
+    "registry": 535,
+    "ratio": 0.93,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "brain tumor",
+  "expected": [
+   "Brain Neoplasms"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Brain Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Brain Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to tumors located in the brain, which aligns directly with 'brain tumor'.",
+    "passed": true,
+    "coverage": 67.3,
+    "registry": 2758,
+    "ratio": 0.61,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "kidney cancer",
+  "expected": [
+   "Kidney Neoplasms",
+   "Carcinoma, Renal Cell"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Kidney Neoplasms"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Kidney Neoplasms"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to tumors in the kidneys, accurately capturing the condition of kidney cancer.",
+    "passed": true,
+    "coverage": 76.7,
+    "registry": 2587,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "eczema",
+  "expected": [
+   "Dermatitis, Atopic",
+   "Eczema"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Dermatitis, Atopic"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Eczema"
+    ],
+    "source": "llm",
+    "reason": "Direct match as a specific term for eczema.",
+    "passed": false,
+    "coverage": 28.0,
+    "registry": 456,
+    "ratio": 0.26,
+    "rejected_because": [
+     "covers only 28% of trials found by the words",
+     "too narrow (registry size 0.26x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Dermatitis"
+    ],
+    "source": "llm",
+    "reason": "Broad term often associated with eczema.",
+    "passed": false,
+    "coverage": 92.7,
+    "registry": 2231,
+    "ratio": 1.26,
+    "rejected_because": [
+     "too broad: 'dermatitis' (more specific term covers nearly as much: skin diseases, eczematous)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Dermatitis, Atopic"
+    ],
+    "source": "llm",
+    "reason": "Specific type of dermatitis that includes atopic eczema.",
+    "passed": true,
+    "coverage": 85.0,
+    "registry": 1520,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "ALS",
+  "expected": [
+   "Amyotrophic Lateral Sclerosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Amyotrophic Lateral Sclerosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Amyotrophic Lateral Sclerosis"
+    ],
+    "source": "llm",
+    "reason": "This is the specific term for ALS, which directly matches the user's query.",
+    "passed": true,
+    "coverage": 91.0,
+    "registry": 981,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "PTSD",
+  "expected": [
+   "Stress Disorders, Post-Traumatic"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Stress Disorders, Post-Traumatic"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Stress Disorders, Post-Traumatic"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to post-traumatic stress disorder (PTSD), aligning exactly with the user's query.",
+    "passed": true,
+    "coverage": 94.3,
+    "registry": 2653,
+    "ratio": 0.98,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "DVT",
+  "expected": [
+   "Venous Thrombosis"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Venous Thrombosis"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Venous Thrombosis"
+    ],
+    "source": "llm",
+    "reason": "Venous Thrombosis is the specific condition associated with DVT (Deep Vein Thrombosis) and is frequently used in clinical trials.",
+    "passed": true,
+    "coverage": 83.3,
+    "registry": 1105,
+    "ratio": 1.49,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "UTI",
+  "expected": [
+   "Urinary Tract Infections"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Urinary Tract Infections"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Urinary Tract Infections"
+    ],
+    "source": "llm",
+    "reason": "This term directly corresponds to UTI and is the most specific and relevant option in the context of clinical trials.",
+    "passed": true,
+    "coverage": 76.7,
+    "registry": 760,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "MDD",
+  "expected": [
+   "Depressive Disorder, Major"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Depressive Disorder, Major"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Depressive Disorder, Major"
+    ],
+    "source": "llm",
+    "reason": "MDD is commonly referred to as Major Depressive Disorder, which corresponds to the exact MeSH term.",
+    "passed": true,
+    "coverage": 82.7,
+    "registry": 2972,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "DLBCL",
+  "expected": [
+   "Lymphoma, Large B-Cell, Diffuse"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Lymphoma, Large B-Cell, Diffuse"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Lymphoma, Large B-Cell, Diffuse"
+    ],
+    "source": "llm",
+    "reason": "DLBCL refers specifically to Diffuse Large B-Cell Lymphoma, making this the most precise MeSH term.",
+    "passed": true,
+    "coverage": 68.0,
+    "registry": 1840,
+    "ratio": 2.22,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "NASH",
+  "expected": [
+   "Non-alcoholic Fatty Liver Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Non-alcoholic Fatty Liver Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Non-alcoholic Fatty Liver Disease",
+     "Fatty Liver"
+    ],
+    "source": "llm",
+    "reason": "These terms specifically refer to NASH, which is characterized by fat accumulation in the liver without alcohol-related causes.",
+    "passed": false,
+    "coverage": 88.0,
+    "registry": 1937,
+    "ratio": 1.05,
+    "rejected_because": [
+     "too broad: 'fatty liver' (more specific term covers nearly as much: non-alcoholic fatty liver disease)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "NASH"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 1601,
+    "ratio": 0.87,
+    "rejected_because": [
+     "covers only 0% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Non-alcoholic Fatty Liver Disease"
+    ],
+    "source": "llm",
+    "reason": "This term is specific to the condition of interest, capturing the essence of NASH, the condition with which it is synonymous.",
+    "passed": true,
+    "coverage": 86.0,
+    "registry": 1601,
+    "ratio": 0.87,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "type 2 diabetes",
+  "expected": [
+   "Diabetes Mellitus, Type 2"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Diabetes Mellitus, Type 2"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Diabetes Mellitus, Type 2"
+    ],
+    "source": "llm",
+    "reason": "This is the specific MeSH term for type 2 diabetes, matching the user's query directly.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 10052,
+    "ratio": 0.83,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "ulcerative colitis",
+  "expected": [
+   "Colitis, Ulcerative"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Colitis, Ulcerative"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Colitis, Ulcerative"
+    ],
+    "source": "llm",
+    "reason": "This term specifically refers to ulcerative colitis, the condition in question.",
+    "passed": true,
+    "coverage": 94.3,
+    "registry": 1805,
+    "ratio": 0.94,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "multiple myeloma",
+  "expected": [
+   "Multiple Myeloma"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Multiple Myeloma"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Multiple Myeloma"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the condition 'multiple myeloma'.",
+    "passed": true,
+    "coverage": 89.7,
+    "registry": 3734,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "preeclampsia",
+  "expected": [
+   "Pre-Eclampsia"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Pre-Eclampsia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Pre-Eclampsia"
+    ],
+    "source": "llm",
+    "reason": "This term directly matches 'preeclampsia' and is used in a majority of relevant trials.",
+    "passed": true,
+    "coverage": 90.7,
+    "registry": 883,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "sleep apnea",
+  "expected": [
+   "Sleep Apnea, Obstructive",
+   "Sleep Apnea Syndromes"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Sleep Apnea Syndromes"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Sleep Apnea Syndromes"
+    ],
+    "source": "llm",
+    "reason": "This term directly represents the condition of sleep apnea.",
+    "passed": true,
+    "coverage": 92.0,
+    "registry": 2954,
+    "ratio": 0.92,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "celiac disease",
+  "expected": [
+   "Celiac Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Celiac Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Celiac Disease"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term assigned to trials specifically matching the search words.",
+    "passed": true,
+    "coverage": 71.0,
+    "registry": 332,
+    "ratio": 0.72,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "fibromyalgia",
+  "expected": [
+   "Fibromyalgia"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Fibromyalgia"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Fibromyalgia"
+    ],
+    "source": "llm",
+    "reason": "The specific term for fibromyalgia is directly listed and corresponds to the user's query.",
+    "passed": true,
+    "coverage": 84.0,
+    "registry": 1237,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "lyme disease",
+  "expected": [
+   "Lyme Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Lyme Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Lyme Disease"
+    ],
+    "source": "llm",
+    "reason": "This term is a specific and direct match for 'lyme disease'.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 122,
+    "ratio": 0.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "hepatitis B",
+  "expected": [
+   "Hepatitis B",
+   "Hepatitis B, Chronic"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Hepatitis B"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Hepatitis B"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the specified condition.",
+    "passed": true,
+    "coverage": 83.7,
+    "registry": 1705,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "glaucoma",
+  "expected": [
+   "Glaucoma"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Glaucoma"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Glaucoma"
+    ],
+    "source": "llm",
+    "reason": "This term is the most specific and directly corresponds to the search word.",
+    "passed": true,
+    "coverage": 93.3,
+    "registry": 2118,
+    "ratio": 0.94,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "rare",
+  "kind": "condition",
+  "query": "Fabry disease",
+  "expected": [
+   "Fabry Disease"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Fabry Disease"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Fabry Disease"
+    ],
+    "source": "llm",
+    "reason": "The exact term 'Fabry Disease' is directly listed and assigned to many trials.",
+    "passed": true,
+    "coverage": 94.2,
+    "registry": 246,
+    "ratio": 0.95,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "rare",
+  "kind": "condition",
+  "query": "Duchenne muscular dystrophy",
+  "expected": [
+   "Muscular Dystrophy, Duchenne"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Muscular Dystrophy, Duchenne"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Muscular Dystrophy, Duchenne"
+    ],
+    "source": "llm",
+    "reason": "This is the specific term for Duchenne muscular dystrophy, which is the exact condition referred to.",
+    "passed": true,
+    "coverage": 95.0,
+    "registry": 480,
+    "ratio": 0.95,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "alzhiemers",
+  "expected": [
+   "Alzheimer Disease"
+  ],
+  "outcome": "missed",
+  "status": "fallback",
+  "terms": [],
+  "source": null,
+  "tried": [
+   {
+    "terms": [
+     "Alzheimer Disease"
+    ],
+    "source": "llm",
+    "reason": "The correct spelling is 'Alzheimer' and it refers specifically to the condition.",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 3900,
+    "ratio": 0.0,
+    "rejected_because": [
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.00x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "alzhiemers"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 0,
+    "ratio": 0.0,
+    "rejected_because": [
+     "no trials in the registry",
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.00x the text search)"
+    ],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "diabetis",
+  "expected": [
+   "Diabetes Mellitus"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Diabetes Mellitus"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Diabetes Mellitus"
+    ],
+    "source": "llm",
+    "reason": "This term directly matches the condition 'diabetis' and is the preferred MeSH heading.",
+    "passed": true,
+    "coverage": 57.1,
+    "registry": 22527,
+    "ratio": 3218.14,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Eliquis",
+  "expected": [
+   "apixaban"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "apixaban"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "apixaban"
+    ],
+    "source": "llm",
+    "reason": "Eliquis is the brand name for the drug apixaban, which is directly assigned to a majority of the trials.",
+    "passed": true,
+    "coverage": 85.5,
+    "registry": 315,
+    "ratio": 1.9,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Jardiance",
+  "expected": [
+   "empagliflozin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "empagliflozin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "empagliflozin"
+    ],
+    "source": "llm",
+    "reason": "Assigned directly to the drug Jardiance.",
+    "passed": true,
+    "coverage": 84.3,
+    "registry": 527,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Xarelto",
+  "expected": [
+   "Rivaroxaban"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Rivaroxaban"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Rivaroxaban"
+    ],
+    "source": "llm",
+    "reason": "Rivaroxaban is the active ingredient in Xarelto and directly assigned in the trials.",
+    "passed": true,
+    "coverage": 67.7,
+    "registry": 484,
+    "ratio": 0.7,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Opdivo",
+  "expected": [
+   "Nivolumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Nivolumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Nivolumab"
+    ],
+    "source": "llm",
+    "reason": "Nivolumab is the active ingredient in Opdivo, directly reflecting the drug's classification as a monoclonal antibody.",
+    "passed": true,
+    "coverage": 83.3,
+    "registry": 1717,
+    "ratio": 0.84,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Revlimid",
+  "expected": [
+   "Lenalidomide"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Lenalidomide"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Lenalidomide"
+    ],
+    "source": "llm",
+    "reason": "This term directly corresponds to Revlimid, which is the brand name for Lenalidomide.",
+    "passed": true,
+    "coverage": 82.3,
+    "registry": 1109,
+    "ratio": 0.84,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Prozac",
+  "expected": [
+   "Fluoxetine"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Fluoxetine"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Fluoxetine"
+    ],
+    "source": "llm",
+    "reason": "Fluoxetine is the specific MeSH term for the drug Prozac.",
+    "passed": true,
+    "coverage": 79.0,
+    "registry": 260,
+    "ratio": 1.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Botox",
+  "expected": [
+   "Botulinum Toxins, Type A",
+   "Botulinum Toxins"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Botulinum Toxins, Type A"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Botulinum Toxins",
+     "Botulinum Toxins, Type A"
+    ],
+    "source": "llm",
+    "reason": "These terms specifically refer to the active component in Botox, capturing both the general and specific types relevant to the drug.",
+    "passed": false,
+    "coverage": 71.0,
+    "registry": 1031,
+    "ratio": 0.76,
+    "rejected_because": [
+     "too broad: 'botulinum toxins' (more specific term covers nearly as much: botulinum toxins, type a)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "abobotulinumtoxinA",
+     "incobotulinumtoxinA"
+    ],
+    "source": "llm",
+    "reason": "These are specific formulations of Botulinum Toxins that are directly referenced in some trials.",
+    "passed": false,
+    "coverage": 15.3,
+    "registry": 255,
+    "ratio": 0.19,
+    "rejected_because": [
+     "covers only 15% of trials found by the words",
+     "too narrow (registry size 0.19x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Proteins"
+    ],
+    "source": "llm",
+    "reason": "A broader category that includes Botulinum Toxins and may be useful contextually in trials focused on protein-related properties.",
+    "passed": false,
+    "coverage": 71.0,
+    "registry": 35047,
+    "ratio": 25.92,
+    "rejected_because": [
+     "too broad: 'proteins' (more specific term covers nearly as much: botulinum toxins)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "botulinum toxin type A"
+    ],
+    "source": "rxnorm",
+    "reason": "RxNorm ingredient of 'Botox'",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 127,
+    "ratio": 0.09,
+    "rejected_because": [
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.09x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Botox"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 127,
+    "ratio": 0.09,
+    "rejected_because": [
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.09x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Botulinum Toxins, Type A"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned and specific to Botox, which is a type of botulinum toxin.",
+    "passed": true,
+    "coverage": 70.0,
+    "registry": 964,
+    "ratio": 0.71,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "methotrexate",
+  "expected": [
+   "Methotrexate"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Methotrexate"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Methotrexate"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term assigned to the drug.",
+    "passed": true,
+    "coverage": 62.0,
+    "registry": 1453,
+    "ratio": 0.61,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "cisplatin",
+  "expected": [
+   "Cisplatin"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Cisplatin"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Cisplatin"
+    ],
+    "source": "llm",
+    "reason": "Cisplatin is the specific MeSH term assigned directly to the drug.",
+    "passed": true,
+    "coverage": 65.0,
+    "registry": 3423,
+    "ratio": 0.64,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "tofacitinib",
+  "expected": [
+   "tofacitinib"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "tofacitinib"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "tofacitinib"
+    ],
+    "source": "llm",
+    "reason": "Assigned directly as a MeSH term in the majority of sampled trials.",
+    "passed": true,
+    "coverage": 76.0,
+    "registry": 243,
+    "ratio": 0.76,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "prednisone",
+  "expected": [
+   "Prednisone"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Prednisone"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Prednisone"
+    ],
+    "source": "llm",
+    "reason": "Exact match for the drug searched, assigned directly to trials.",
+    "passed": true,
+    "coverage": 70.3,
+    "registry": 1656,
+    "ratio": 0.66,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "vitamin D",
+  "expected": [
+   "Vitamin D",
+   "Cholecalciferol"
+  ],
+  "outcome": "missed",
+  "status": "fallback",
+  "terms": [],
+  "source": null,
+  "tried": [
+   {
+    "terms": [
+     "Vitamin D"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH term for vitamin D.",
+    "passed": false,
+    "coverage": 47.3,
+    "registry": 1736,
+    "ratio": 0.49,
+    "rejected_because": [
+     "covers only 47% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Cholecalciferol"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH term for vitamin D3, a form of vitamin D.",
+    "passed": false,
+    "coverage": 33.7,
+    "registry": 1736,
+    "ratio": 0.49,
+    "rejected_because": [
+     "covers only 34% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Calcium"
+    ],
+    "source": "llm",
+    "reason": "Commonly associated with vitamin D in clinical trials related to bone health.",
+    "passed": false,
+    "coverage": 4.7,
+    "registry": 2245,
+    "ratio": 0.63,
+    "rejected_because": [
+     "covers only 5% of trials found by the words"
+    ],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "salt",
+  "kind": "drug",
+  "query": "sildenafil",
+  "expected": [
+   "Sildenafil Citrate"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Sildenafil Citrate"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Sildenafil Citrate"
+    ],
+    "source": "llm",
+    "reason": "This is the specific MeSH term used for sildenafil.",
+    "passed": true,
+    "coverage": 80.3,
+    "registry": 406,
+    "ratio": 0.82,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "salt",
+  "kind": "drug",
+  "query": "metoprolol",
+  "expected": [
+   "Metoprolol"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Metoprolol"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Metoprolol"
+    ],
+    "source": "llm",
+    "reason": "This is the exact MeSH term assigned to the drug.",
+    "passed": true,
+    "coverage": 70.7,
+    "registry": 249,
+    "ratio": 0.71,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "MEDI4736",
+  "expected": [
+   "durvalumab"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "Durvalumab"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "Durvalumab"
+    ],
+    "source": "llm",
+    "reason": "This is the MeSH term directly corresponding to MEDI4736, which is the drug's name.",
+    "passed": true,
+    "coverage": 85.3,
+    "registry": 796,
+    "ratio": 0.86,
+    "rejected_because": [],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "ONO-4538",
+  "expected": [
+   "Nivolumab"
+  ],
+  "outcome": "missed",
+  "status": "fallback",
+  "terms": [],
+  "source": null,
+  "tried": [
+   {
+    "terms": [
+     "Nivolumab",
+     "Ipilimumab"
+    ],
+    "source": "llm",
+    "reason": "These are specific monoclonal antibodies that are associated with trials involving ONO-4538.",
+    "passed": false,
+    "coverage": 99.7,
+    "registry": 1993,
+    "ratio": 6.67,
+    "rejected_because": [
+     "too broad: 'ipilimumab' (more specific term covers nearly as much: immune checkpoint proteins)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "ONO-4538"
+    ],
+    "source": "exact",
+    "reason": "the words themselves",
+    "passed": false,
+    "coverage": 0.0,
+    "registry": 0,
+    "ratio": 0.0,
+    "rejected_because": [
+     "no trials in the registry",
+     "covers only 0% of trials found by the words",
+     "too narrow (registry size 0.00x the text search)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Antibodies, Monoclonal, Humanized"
+    ],
+    "source": "llm",
+    "reason": "Matches the type of drug and is commonly used in trials related to ONO-4538.",
+    "passed": false,
+    "coverage": 99.7,
+    "registry": 9423,
+    "ratio": 31.52,
+    "rejected_because": [
+     "too broad: 'antibodies, monoclonal, humanized' (more specific term covers nearly as much: nivolumab)"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "CTLA-4 Antigen"
+    ],
+    "source": "llm",
+    "reason": "Specific targeted therapy involved in immunotherapy that aligns with the characteristics of ONO-4538.",
+    "passed": false,
+    "coverage": 34.4,
+    "registry": 150,
+    "ratio": 0.5,
+    "rejected_because": [
+     "covers only 34% of trials found by the words"
+    ],
+    "dropped_terms": []
+   },
+   {
+    "terms": [
+     "Antibodies, Monoclonal"
+    ],
+    "source": "llm",
+    "reason": "Broad term that encompasses various related immunotherapies relevant to the drug under consideration.",
+    "passed": false,
+    "coverage": 99.7,
+    "registry": 11952,
+    "ratio": 39.97,
+    "rejected_because": [
+     "too broad: 'antibodies, monoclonal' (more specific term covers nearly as much: antibodies, monoclonal, humanized)"
+    ],
+    "dropped_terms": []
+   }
+  ]
+ },
+ {
+  "set": "fresh",
+  "tag": "code",
+  "kind": "drug",
+  "query": "BNT162b2",
+  "expected": [
+   "BNT162 Vaccine"
+  ],
+  "outcome": "correct",
+  "status": "resolved",
+  "terms": [
+   "BNT162 Vaccine"
+  ],
+  "source": "llm",
+  "tried": [
+   {
+    "terms": [
+     "BNT162 Vaccine"
+    ],
+    "source": "llm",
+    "reason": "Directly assigned MeSH terms related to BNT162b2, a COVID-19 vaccine.",
+    "passed": true,
+    "coverage": 65.1,
+    "registry": 127,
+    "ratio": 0.65,
+    "rejected_because": [],
+    "dropped_terms": [
+     "Vaccines",
+     "COVID-19 Vaccines"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,588 @@
+protocolSection  [ProtocolSection]  (ProtocolSection)  protocolSection
+  identificationModule  [IdentificationModule]  (IdentificationModule)  protocolSection.identificationModule
+    nctId  [NCTId]  (nct)  protocolSection.identificationModule.nctId
+        # The unique identification code given to each clinical study upon registration at ClinicalTrials
+    nctIdAliases  [NCTIdAlias]  (nct[])  protocolSection.identificationModule.nctIdAliases
+        # Identifier(s) that are considered "Obsolete" or "Duplicate"
+    orgStudyIdInfo  [OrgStudyIdInfo]  (OrgStudyIdInfo)  protocolSection.identificationModule.orgStudyIdInfo
+      id  [OrgStudyId]  (text)  protocolSection.identificationModule.orgStudyIdInfo.id
+      type  [OrgStudyIdType]  (OrgStudyIdType)  protocolSection.identificationModule.orgStudyIdInfo.type
+          # Type of organization's unique protocol ID
+      link  [OrgStudyIdLink]  (text)  protocolSection.identificationModule.orgStudyIdInfo.link
+          # URL link based on OrgStudyId and OrgStudyIdType input in PRS, include system-generated links to NIH 
+    secondaryIdInfos  [SecondaryIdInfo]  (SecondaryIdInfo[])  protocolSection.identificationModule.secondaryIdInfos
+      id  [SecondaryId]  (text)  protocolSection.identificationModule.secondaryIdInfos.id
+      type  [SecondaryIdType]  (SecondaryIdType)  protocolSection.identificationModule.secondaryIdInfos.type
+      domain  [SecondaryIdDomain]  (text)  protocolSection.identificationModule.secondaryIdInfos.domain
+      link  [SecondaryIdLink]  (text)  protocolSection.identificationModule.secondaryIdInfos.link
+          # URL link based on SecondaryId and SecondaryIdType, including system-generated links to NIH RePORTER,
+    briefTitle  [BriefTitle]  (text)  protocolSection.identificationModule.briefTitle
+    officialTitle  [OfficialTitle]  (text)  protocolSection.identificationModule.officialTitle
+    acronym  [Acronym]  (text)  protocolSection.identificationModule.acronym
+    organization  [Organization]  (Organization)  protocolSection.identificationModule.organization
+      fullName  [OrgFullName]  (text)  protocolSection.identificationModule.organization.fullName
+          # A (registered) organization (typically the Responsible Party) that sponsors the clinical  trial (stu
+      class  [OrgClass]  (AgencyClass)  protocolSection.identificationModule.organization.class
+          # Organization type
+  statusModule  [StatusModule]  (StatusModule)  protocolSection.statusModule
+    statusVerifiedDate  [StatusVerifiedDate]  (PartialDate)  protocolSection.statusModule.statusVerifiedDate
+    overallStatus  [OverallStatus]  (Status)  protocolSection.statusModule.overallStatus
+    lastKnownStatus  [LastKnownStatus]  (Status)  protocolSection.statusModule.lastKnownStatus
+        # A study on ClinicalTrials
+    delayedPosting  [DelayedPosting]  (boolean)  protocolSection.statusModule.delayedPosting
+    whyStopped  [WhyStopped]  (markup)  protocolSection.statusModule.whyStopped
+    expandedAccessInfo  [ExpandedAccessInfo]  (ExpandedAccessInfo)  protocolSection.statusModule.expandedAccessInfo
+        # EA study info related to an INT/OBS study
+      hasExpandedAccess  [HasExpandedAccess]  (boolean)  protocolSection.statusModule.expandedAccessInfo.hasExpandedAccess
+      nctId  [ExpandedAccessNCTId]  (nct)  protocolSection.statusModule.expandedAccessInfo.nctId
+      statusForNctId  [ExpandedAccessStatusForNCTId]  (ExpandedAccessStatus)  protocolSection.statusModule.expandedAccessInfo.statusForNctId
+          # recruitment status of the EA study that's linked to INT/OBS
+    startDateStruct  [StartDateStruct]  (PartialDateStruct)  protocolSection.statusModule.startDateStruct
+      date  [StartDate]  (PartialDate)  protocolSection.statusModule.startDateStruct.date
+      type  [StartDateType]  (DateType)  protocolSection.statusModule.startDateStruct.type
+          # Date Type
+    primaryCompletionDateStruct  [PrimaryCompletionDateStruct]  (PartialDateStruct)  protocolSection.statusModule.primaryCompletionDateStruct
+      date  [PrimaryCompletionDate]  (PartialDate)  protocolSection.statusModule.primaryCompletionDateStruct.date
+      type  [PrimaryCompletionDateType]  (DateType)  protocolSection.statusModule.primaryCompletionDateStruct.type
+    completionDateStruct  [CompletionDateStruct]  (PartialDateStruct)  protocolSection.statusModule.completionDateStruct
+      date  [CompletionDate]  (PartialDate)  protocolSection.statusModule.completionDateStruct.date
+      type  [CompletionDateType]  (DateType)  protocolSection.statusModule.completionDateStruct.type
+    studyFirstSubmitDate  [StudyFirstSubmitDate]  (NormalizedDate)  protocolSection.statusModule.studyFirstSubmitDate
+        # The date on which the study sponsor or investigator first submitted a study record to ClinicalTrials
+    studyFirstSubmitQcDate  [StudyFirstSubmitQCDate]  (NormalizedDate)  protocolSection.statusModule.studyFirstSubmitQcDate
+        # The date on which the study sponsor or investigator first submits a study record that is consistent 
+    studyFirstPostDateStruct  [StudyFirstPostDateStruct]  (DateStruct)  protocolSection.statusModule.studyFirstPostDateStruct
+      date  [StudyFirstPostDate]  (NormalizedDate)  protocolSection.statusModule.studyFirstPostDateStruct.date
+          # The date on which the study record was first available on ClinicalTrials
+      type  [StudyFirstPostDateType]  (DateType)  protocolSection.statusModule.studyFirstPostDateStruct.type
+    resultsWaived  [ResultsWaived]  (boolean)  protocolSection.statusModule.resultsWaived
+    resultsFirstSubmitDate  [ResultsFirstSubmitDate]  (NormalizedDate)  protocolSection.statusModule.resultsFirstSubmitDate
+        # The date on which the study sponsor or investigator first submits a study record with summary result
+    resultsFirstSubmitQcDate  [ResultsFirstSubmitQCDate]  (NormalizedDate)  protocolSection.statusModule.resultsFirstSubmitQcDate
+        # The date on which the study sponsor or investigator first submits a study record with summary result
+    resultsFirstPostDateStruct  [ResultsFirstPostDateStruct]  (DateStruct)  protocolSection.statusModule.resultsFirstPostDateStruct
+      date  [ResultsFirstPostDate]  (NormalizedDate)  protocolSection.statusModule.resultsFirstPostDateStruct.date
+          # The date on which summary results information was first available on ClinicalTrials
+      type  [ResultsFirstPostDateType]  (DateType)  protocolSection.statusModule.resultsFirstPostDateStruct.type
+          # Results first posted date type
+    dispFirstSubmitDate  [DispFirstSubmitDate]  (NormalizedDate)  protocolSection.statusModule.dispFirstSubmitDate
+        # The date on which the study sponsor or investigator first submitted a certification or an extension 
+    dispFirstSubmitQcDate  [DispFirstSubmitQCDate]  (NormalizedDate)  protocolSection.statusModule.dispFirstSubmitQcDate
+        # Certification/extension first submitted that met QC criteria
+    dispFirstPostDateStruct  [DispFirstPostDateStruct]  (DateStruct)  protocolSection.statusModule.dispFirstPostDateStruct
+      date  [DispFirstPostDate]  (NormalizedDate)  protocolSection.statusModule.dispFirstPostDateStruct.date
+          # The date on which information about a certification to delay submission of results or an extension r
+      type  [DispFirstPostDateType]  (DateType)  protocolSection.statusModule.dispFirstPostDateStruct.type
+          # Due to data requirements and collections over the years, some studies might have "Estimate" dates
+    lastUpdateSubmitDate  [LastUpdateSubmitDate]  (NormalizedDate)  protocolSection.statusModule.lastUpdateSubmitDate
+        # The most recent date on which the study sponsor or investigator submitted changes to a study record 
+    lastUpdatePostDateStruct  [LastUpdatePostDateStruct]  (DateStruct)  protocolSection.statusModule.lastUpdatePostDateStruct
+        # Data structure for last update posted
+      date  [LastUpdatePostDate]  (NormalizedDate)  protocolSection.statusModule.lastUpdatePostDateStruct.date
+          # The most recent date on which changes to a study record were made available on ClinicalTrials
+      type  [LastUpdatePostDateType]  (DateType)  protocolSection.statusModule.lastUpdatePostDateStruct.type
+          # Due to data requirements and collections over the years, some studies might have "Estimate" dates
+  sponsorCollaboratorsModule  [SponsorCollaboratorsModule]  (SponsorCollaboratorsModule)  protocolSection.sponsorCollaboratorsModule
+    responsibleParty  [ResponsibleParty]  (ResponsibleParty)  protocolSection.sponsorCollaboratorsModule.responsibleParty
+      type  [ResponsiblePartyType]  (ResponsiblePartyType)  protocolSection.sponsorCollaboratorsModule.responsibleParty.type
+      investigatorFullName  [ResponsiblePartyInvestigatorFullName]  (text)  protocolSection.sponsorCollaboratorsModule.responsibleParty.investigatorFullName
+      investigatorTitle  [ResponsiblePartyInvestigatorTitle]  (text)  protocolSection.sponsorCollaboratorsModule.responsibleParty.investigatorTitle
+      investigatorAffiliation  [ResponsiblePartyInvestigatorAffiliation]  (text)  protocolSection.sponsorCollaboratorsModule.responsibleParty.investigatorAffiliation
+      oldNameTitle  [ResponsiblePartyOldNameTitle]  (text)  protocolSection.sponsorCollaboratorsModule.responsibleParty.oldNameTitle
+      oldOrganization  [ResponsiblePartyOldOrganization]  (text)  protocolSection.sponsorCollaboratorsModule.responsibleParty.oldOrganization
+    leadSponsor  [LeadSponsor]  (Sponsor)  protocolSection.sponsorCollaboratorsModule.leadSponsor
+        # The organization or person who initiates the study and who has authority and control over the study
+      name  [LeadSponsorName]  (text)  protocolSection.sponsorCollaboratorsModule.leadSponsor.name
+      class  [LeadSponsorClass]  (AgencyClass)  protocolSection.sponsorCollaboratorsModule.leadSponsor.class
+          # Sponsor organization type: Type of lead sponsor
+    collaborators  [Collaborator]  (Sponsor[])  protocolSection.sponsorCollaboratorsModule.collaborators
+        # Other organizations, if any, providing support
+      name  [CollaboratorName]  (text)  protocolSection.sponsorCollaboratorsModule.collaborators.name
+      class  [CollaboratorClass]  (AgencyClass)  protocolSection.sponsorCollaboratorsModule.collaborators.class
+          # Type of collaborator
+  oversightModule  [OversightModule]  (OversightModule)  protocolSection.oversightModule
+    oversightHasDmc  [OversightHasDMC]  (boolean)  protocolSection.oversightModule.oversightHasDmc
+    isFdaRegulatedDrug  [IsFDARegulatedDrug]  (boolean)  protocolSection.oversightModule.isFdaRegulatedDrug
+    isFdaRegulatedDevice  [IsFDARegulatedDevice]  (boolean)  protocolSection.oversightModule.isFdaRegulatedDevice
+    isUnapprovedDevice  [IsUnapprovedDevice]  (boolean)  protocolSection.oversightModule.isUnapprovedDevice
+    isPpsd  [IsPPSD]  (boolean)  protocolSection.oversightModule.isPpsd
+    isUsExport  [IsUSExport]  (boolean)  protocolSection.oversightModule.isUsExport
+    fdaaa801Violation  [FDAAA801Violation]  (boolean)  protocolSection.oversightModule.fdaaa801Violation
+  descriptionModule  [DescriptionModule]  (DescriptionModule)  protocolSection.descriptionModule
+    briefSummary  [BriefSummary]  (markup)  protocolSection.descriptionModule.briefSummary
+    detailedDescription  [DetailedDescription]  (markup)  protocolSection.descriptionModule.detailedDescription
+  conditionsModule  [ConditionsModule]  (ConditionsModule)  protocolSection.conditionsModule
+    conditions  [Condition]  (text[])  protocolSection.conditionsModule.conditions
+    keywords  [Keyword]  (text[])  protocolSection.conditionsModule.keywords
+  designModule  [DesignModule]  (DesignModule)  protocolSection.designModule
+    studyType  [StudyType]  (StudyType)  protocolSection.designModule.studyType
+    nPtrsToThisExpAccNctId  [NPtrsToThisExpAccNCTId]  (integer)  protocolSection.designModule.nPtrsToThisExpAccNctId
+        # Number of studies that reference this EA study
+    expandedAccessTypes  [ExpandedAccessTypes]  (ExpandedAccessTypes)  protocolSection.designModule.expandedAccessTypes
+        # The type(s) of expanded access for which the investigational drug product (including a biological pr
+      individual  [ExpAccTypeIndividual]  (boolean)  protocolSection.designModule.expandedAccessTypes.individual
+          # For individual participants, including for emergency use, as specified in 21 CFR 312
+      intermediate  [ExpAccTypeIntermediate]  (boolean)  protocolSection.designModule.expandedAccessTypes.intermediate
+          # For intermediate-size participant populations, as specified in 21 CFR 312
+      treatment  [ExpAccTypeTreatment]  (boolean)  protocolSection.designModule.expandedAccessTypes.treatment
+          # Under a treatment IND or treatment protocol, as specified in 21 CFR 312
+    patientRegistry  [PatientRegistry]  (boolean)  protocolSection.designModule.patientRegistry
+        # A type of observational study that collects information about patients' medical conditions and/or tr
+    targetDuration  [TargetDuration]  (NormalizedTime)  protocolSection.designModule.targetDuration
+    phases  [Phase]  (Phase[])  protocolSection.designModule.phases
+    designInfo  [DesignInfo]  (DesignInfo)  protocolSection.designModule.designInfo
+      allocation  [DesignAllocation]  (DesignAllocation)  protocolSection.designModule.designInfo.allocation
+      interventionModel  [DesignInterventionModel]  (InterventionalAssignment)  protocolSection.designModule.designInfo.interventionModel
+      interventionModelDescription  [DesignInterventionModelDescription]  (markup)  protocolSection.designModule.designInfo.interventionModelDescription
+      primaryPurpose  [DesignPrimaryPurpose]  (PrimaryPurpose)  protocolSection.designModule.designInfo.primaryPurpose
+      observationalModel  [DesignObservationalModel]  (ObservationalModel)  protocolSection.designModule.designInfo.observationalModel
+      timePerspective  [DesignTimePerspective]  (DesignTimePerspective)  protocolSection.designModule.designInfo.timePerspective
+      maskingInfo  [DesignMaskingInfo]  (MaskingBlock)  protocolSection.designModule.designInfo.maskingInfo
+        masking  [DesignMasking]  (DesignMasking)  protocolSection.designModule.designInfo.maskingInfo.masking
+        maskingDescription  [DesignMaskingDescription]  (markup)  protocolSection.designModule.designInfo.maskingInfo.maskingDescription
+        whoMasked  [DesignWhoMasked]  (WhoMasked[])  protocolSection.designModule.designInfo.maskingInfo.whoMasked
+    bioSpec  [BioSpec]  (BioSpec)  protocolSection.designModule.bioSpec
+      retention  [BioSpecRetention]  (BioSpecRetention)  protocolSection.designModule.bioSpec.retention
+      description  [BioSpecDescription]  (markup)  protocolSection.designModule.bioSpec.description
+    enrollmentInfo  [EnrollmentInfo]  (EnrollmentInfo)  protocolSection.designModule.enrollmentInfo
+      count  [EnrollmentCount]  (integer)  protocolSection.designModule.enrollmentInfo.count
+      type  [EnrollmentType]  (EnrollmentType)  protocolSection.designModule.enrollmentInfo.type
+  armsInterventionsModule  [ArmsInterventionsModule]  (ArmsInterventionsModule)  protocolSection.armsInterventionsModule
+    armGroups  [ArmGroup]  (ArmGroup[])  protocolSection.armsInterventionsModule.armGroups
+      label  [ArmGroupLabel]  (text)  protocolSection.armsInterventionsModule.armGroups.label
+      type  [ArmGroupType]  (ArmGroupType)  protocolSection.armsInterventionsModule.armGroups.type
+      description  [ArmGroupDescription]  (markup)  protocolSection.armsInterventionsModule.armGroups.description
+      interventionNames  [ArmGroupInterventionName]  (text[])  protocolSection.armsInterventionsModule.armGroups.interventionNames
+    interventions  [Intervention]  (Intervention[])  protocolSection.armsInterventionsModule.interventions
+      type  [InterventionType]  (InterventionType)  protocolSection.armsInterventionsModule.interventions.type
+      name  [InterventionName]  (text)  protocolSection.armsInterventionsModule.interventions.name
+      description  [InterventionDescription]  (markup)  protocolSection.armsInterventionsModule.interventions.description
+      armGroupLabels  [InterventionArmGroupLabel]  (text[])  protocolSection.armsInterventionsModule.interventions.armGroupLabels
+          # Arm/Group and Intervention Cross Reference
+      otherNames  [InterventionOtherName]  (text[])  protocolSection.armsInterventionsModule.interventions.otherNames
+  outcomesModule  [OutcomesModule]  (OutcomesModule)  protocolSection.outcomesModule
+    primaryOutcomes  [PrimaryOutcome]  (Outcome[])  protocolSection.outcomesModule.primaryOutcomes
+      measure  [PrimaryOutcomeMeasure]  (text)  protocolSection.outcomesModule.primaryOutcomes.measure
+      description  [PrimaryOutcomeDescription]  (markup)  protocolSection.outcomesModule.primaryOutcomes.description
+      timeFrame  [PrimaryOutcomeTimeFrame]  (text)  protocolSection.outcomesModule.primaryOutcomes.timeFrame
+    secondaryOutcomes  [SecondaryOutcome]  (Outcome[])  protocolSection.outcomesModule.secondaryOutcomes
+      measure  [SecondaryOutcomeMeasure]  (text)  protocolSection.outcomesModule.secondaryOutcomes.measure
+      description  [SecondaryOutcomeDescription]  (markup)  protocolSection.outcomesModule.secondaryOutcomes.description
+      timeFrame  [SecondaryOutcomeTimeFrame]  (text)  protocolSection.outcomesModule.secondaryOutcomes.timeFrame
+    otherOutcomes  [OtherOutcome]  (Outcome[])  protocolSection.outcomesModule.otherOutcomes
+      measure  [OtherOutcomeMeasure]  (text)  protocolSection.outcomesModule.otherOutcomes.measure
+      description  [OtherOutcomeDescription]  (markup)  protocolSection.outcomesModule.otherOutcomes.description
+      timeFrame  [OtherOutcomeTimeFrame]  (text)  protocolSection.outcomesModule.otherOutcomes.timeFrame
+  eligibilityModule  [EligibilityModule]  (EligibilityModule)  protocolSection.eligibilityModule
+    eligibilityCriteria  [EligibilityCriteria]  (markup)  protocolSection.eligibilityModule.eligibilityCriteria
+    healthyVolunteers  [HealthyVolunteers]  (boolean)  protocolSection.eligibilityModule.healthyVolunteers
+    sex  [Sex]  (Sex)  protocolSection.eligibilityModule.sex
+    genderBased  [GenderBased]  (boolean)  protocolSection.eligibilityModule.genderBased
+    genderDescription  [GenderDescription]  (markup)  protocolSection.eligibilityModule.genderDescription
+    minimumAge  [MinimumAge]  (NormalizedTime)  protocolSection.eligibilityModule.minimumAge
+    maximumAge  [MaximumAge]  (NormalizedTime)  protocolSection.eligibilityModule.maximumAge
+    stdAges  [StdAge]  (StandardAge[])  protocolSection.eligibilityModule.stdAges
+        # Ingest calculated the StdAge if there is minimumAge and/or maximimumAge entered
+    studyPopulation  [StudyPopulation]  (markup)  protocolSection.eligibilityModule.studyPopulation
+    samplingMethod  [SamplingMethod]  (SamplingMethod)  protocolSection.eligibilityModule.samplingMethod
+  contactsLocationsModule  [ContactsLocationsModule]  (ContactsLocationsModule)  protocolSection.contactsLocationsModule
+    centralContacts  [CentralContact]  (Contact[])  protocolSection.contactsLocationsModule.centralContacts
+      name  [CentralContactName]  (text)  protocolSection.contactsLocationsModule.centralContacts.name
+      role  [CentralContactRole]  (ContactRole)  protocolSection.contactsLocationsModule.centralContacts.role
+          # Role for any Central Contact added
+      phone  [CentralContactPhone]  (text)  protocolSection.contactsLocationsModule.centralContacts.phone
+      phoneExt  [CentralContactPhoneExt]  (text)  protocolSection.contactsLocationsModule.centralContacts.phoneExt
+      email  [CentralContactEMail]  (text)  protocolSection.contactsLocationsModule.centralContacts.email
+    overallOfficials  [OverallOfficial]  (Official[])  protocolSection.contactsLocationsModule.overallOfficials
+      name  [OverallOfficialName]  (text)  protocolSection.contactsLocationsModule.overallOfficials.name
+      affiliation  [OverallOfficialAffiliation]  (text)  protocolSection.contactsLocationsModule.overallOfficials.affiliation
+      role  [OverallOfficialRole]  (OfficialRole)  protocolSection.contactsLocationsModule.overallOfficials.role
+    locations  [Location]  (Location[])  protocolSection.contactsLocationsModule.locations
+      facility  [LocationFacility]  (text)  protocolSection.contactsLocationsModule.locations.facility
+      status  [LocationStatus]  (RecruitmentStatus)  protocolSection.contactsLocationsModule.locations.status
+      city  [LocationCity]  (GeoName)  protocolSection.contactsLocationsModule.locations.city
+      state  [LocationState]  (GeoName)  protocolSection.contactsLocationsModule.locations.state
+      zip  [LocationZip]  (text)  protocolSection.contactsLocationsModule.locations.zip
+      country  [LocationCountry]  (text)  protocolSection.contactsLocationsModule.locations.country
+      contacts  [LocationContact]  (Contact[])  protocolSection.contactsLocationsModule.locations.contacts
+        name  [LocationContactName]  (text)  protocolSection.contactsLocationsModule.locations.contacts.name
+        role  [LocationContactRole]  (ContactRole)  protocolSection.contactsLocationsModule.locations.contacts.role
+        phone  [LocationContactPhone]  (text)  protocolSection.contactsLocationsModule.locations.contacts.phone
+        phoneExt  [LocationContactPhoneExt]  (text)  protocolSection.contactsLocationsModule.locations.contacts.phoneExt
+        email  [LocationContactEMail]  (text)  protocolSection.contactsLocationsModule.locations.contacts.email
+      geoPoint  [LocationGeoPoint]  (GeoPoint)  protocolSection.contactsLocationsModule.locations.geoPoint
+  referencesModule  [ReferencesModule]  (ReferencesModule)  protocolSection.referencesModule
+    references  [Reference]  (Reference[])  protocolSection.referencesModule.references
+      pmid  [ReferencePMID]  (text)  protocolSection.referencesModule.references.pmid
+      type  [ReferenceType]  (ReferenceType)  protocolSection.referencesModule.references.type
+      citation  [ReferenceCitation]  (text)  protocolSection.referencesModule.references.citation
+      retractions  [Retraction]  (Retraction[])  protocolSection.referencesModule.references.retractions
+        pmid  [RetractionPMID]  (text)  protocolSection.referencesModule.references.retractions.pmid
+            # PMID for publication retraction
+        source  [RetractionSource]  (text)  protocolSection.referencesModule.references.retractions.source
+    seeAlsoLinks  [SeeAlsoLink]  (SeeAlsoLink[])  protocolSection.referencesModule.seeAlsoLinks
+      label  [SeeAlsoLinkLabel]  (markup)  protocolSection.referencesModule.seeAlsoLinks.label
+      url  [SeeAlsoLinkURL]  (text)  protocolSection.referencesModule.seeAlsoLinks.url
+    availIpds  [AvailIPD]  (AvailIpd[])  protocolSection.referencesModule.availIpds
+        # The individual participant data (IPD) sets and supporting information that are being shared for the 
+      id  [AvailIPDId]  (text)  protocolSection.referencesModule.availIpds.id
+      type  [AvailIPDType]  (text)  protocolSection.referencesModule.availIpds.type
+      url  [AvailIPDURL]  (text)  protocolSection.referencesModule.availIpds.url
+      comment  [AvailIPDComment]  (markup)  protocolSection.referencesModule.availIpds.comment
+  ipdSharingStatementModule  [IPDSharingStatementModule]  (IpdSharingStatementModule)  protocolSection.ipdSharingStatementModule
+    ipdSharing  [IPDSharing]  (IpdSharing)  protocolSection.ipdSharingStatementModule.ipdSharing
+    description  [IPDSharingDescription]  (markup)  protocolSection.ipdSharingStatementModule.description
+    infoTypes  [IPDSharingInfoType]  (IpdSharingInfoType[])  protocolSection.ipdSharingStatementModule.infoTypes
+    timeFrame  [IPDSharingTimeFrame]  (markup)  protocolSection.ipdSharingStatementModule.timeFrame
+    accessCriteria  [IPDSharingAccessCriteria]  (markup)  protocolSection.ipdSharingStatementModule.accessCriteria
+    url  [IPDSharingURL]  (text)  protocolSection.ipdSharingStatementModule.url
+resultsSection  [ResultsSection]  (ResultsSection)  resultsSection
+  participantFlowModule  [ParticipantFlowModule]  (ParticipantFlowModule)  resultsSection.participantFlowModule
+    preAssignmentDetails  [FlowPreAssignmentDetails]  (markup)  resultsSection.participantFlowModule.preAssignmentDetails
+    recruitmentDetails  [FlowRecruitmentDetails]  (markup)  resultsSection.participantFlowModule.recruitmentDetails
+    typeUnitsAnalyzed  [FlowTypeUnitsAnalyzed]  (text)  resultsSection.participantFlowModule.typeUnitsAnalyzed
+    groups  [FlowGroup]  (FlowGroup[])  resultsSection.participantFlowModule.groups
+      id  [FlowGroupId]  (text)  resultsSection.participantFlowModule.groups.id
+          # Arm/Group ID generated by PRS
+      title  [FlowGroupTitle]  (text)  resultsSection.participantFlowModule.groups.title
+      description  [FlowGroupDescription]  (markup)  resultsSection.participantFlowModule.groups.description
+    periods  [FlowPeriod]  (FlowPeriod[])  resultsSection.participantFlowModule.periods
+      title  [FlowPeriodTitle]  (text)  resultsSection.participantFlowModule.periods.title
+      milestones  [FlowMilestone]  (FlowMilestone[])  resultsSection.participantFlowModule.periods.milestones
+        type  [FlowMilestoneType]  (text)  resultsSection.participantFlowModule.periods.milestones.type
+        comment  [FlowMilestoneComment]  (markup)  resultsSection.participantFlowModule.periods.milestones.comment
+        achievements  [FlowAchievement]  (FlowStats[])  resultsSection.participantFlowModule.periods.milestones.achievements
+            # Milestone Data (per arm/group)
+          groupId  [FlowAchievementGroupId]  (text)  resultsSection.participantFlowModule.periods.milestones.achievements.groupId
+              # ID
+          comment  [FlowAchievementComment]  (markup)  resultsSection.participantFlowModule.periods.milestones.achievements.comment
+          numSubjects  [FlowAchievementNumSubjects]  (text)  resultsSection.participantFlowModule.periods.milestones.achievements.numSubjects
+          numUnits  [FlowAchievementNumUnits]  (text)  resultsSection.participantFlowModule.periods.milestones.achievements.numUnits
+      dropWithdraws  [FlowDropWithdraw]  (DropWithdraw[])  resultsSection.participantFlowModule.periods.dropWithdraws
+        type  [FlowDropWithdrawType]  (text)  resultsSection.participantFlowModule.periods.dropWithdraws.type
+        comment  [FlowDropWithdrawComment]  (markup)  resultsSection.participantFlowModule.periods.dropWithdraws.comment
+            # A brief description of the reason for non-completion, if "Other" Reason Not Completed Type is select
+        reasons  [FlowReason]  (FlowStats[])  resultsSection.participantFlowModule.periods.dropWithdraws.reasons
+            # Reason for Not Completed per arm/group
+          groupId  [FlowReasonGroupId]  (text)  resultsSection.participantFlowModule.periods.dropWithdraws.reasons.groupId
+              # Internally generated ID for reason not completed per arm/group
+          comment  [FlowReasonComment]  (markup)  resultsSection.participantFlowModule.periods.dropWithdraws.reasons.comment
+          numSubjects  [FlowReasonNumSubjects]  (text)  resultsSection.participantFlowModule.periods.dropWithdraws.reasons.numSubjects
+  baselineCharacteristicsModule  [BaselineCharacteristicsModule]  (BaselineCharacteristicsModule)  resultsSection.baselineCharacteristicsModule
+    populationDescription  [BaselinePopulationDescription]  (markup)  resultsSection.baselineCharacteristicsModule.populationDescription
+    typeUnitsAnalyzed  [BaselineTypeUnitsAnalyzed]  (text)  resultsSection.baselineCharacteristicsModule.typeUnitsAnalyzed
+    groups  [BaselineGroup]  (MeasureGroup[])  resultsSection.baselineCharacteristicsModule.groups
+      id  [BaselineGroupId]  (text)  resultsSection.baselineCharacteristicsModule.groups.id
+          # Internally generated ID
+      title  [BaselineGroupTitle]  (text)  resultsSection.baselineCharacteristicsModule.groups.title
+      description  [BaselineGroupDescription]  (markup)  resultsSection.baselineCharacteristicsModule.groups.description
+    denoms  [BaselineDenom]  (Denom[])  resultsSection.baselineCharacteristicsModule.denoms
+        # Structure for Overall Baseline Measure Data (Row)
+      units  [BaselineDenomUnits]  (text)  resultsSection.baselineCharacteristicsModule.denoms.units
+      counts  [BaselineDenomCount]  (DenomCount[])  resultsSection.baselineCharacteristicsModule.denoms.counts
+          # Structure for overall number per arm/group
+        groupId  [BaselineDenomCountGroupId]  (text)  resultsSection.baselineCharacteristicsModule.denoms.counts.groupId
+            # Internally generated ID for each Arm/Group
+        value  [BaselineDenomCountValue]  (text)  resultsSection.baselineCharacteristicsModule.denoms.counts.value
+    measures  [BaselineMeasure]  (BaselineMeasure[])  resultsSection.baselineCharacteristicsModule.measures
+      title  [BaselineMeasureTitle]  (text)  resultsSection.baselineCharacteristicsModule.measures.title
+      description  [BaselineMeasureDescription]  (markup)  resultsSection.baselineCharacteristicsModule.measures.description
+      populationDescription  [BaselineMeasurePopulationDescription]  (markup)  resultsSection.baselineCharacteristicsModule.measures.populationDescription
+      paramType  [BaselineMeasureParamType]  (MeasureParam)  resultsSection.baselineCharacteristicsModule.measures.paramType
+      dispersionType  [BaselineMeasureDispersionType]  (MeasureDispersionType)  resultsSection.baselineCharacteristicsModule.measures.dispersionType
+      unitOfMeasure  [BaselineMeasureUnitOfMeasure]  (text)  resultsSection.baselineCharacteristicsModule.measures.unitOfMeasure
+      calculatePct  [BaselineMeasureCalculatePct]  (boolean)  resultsSection.baselineCharacteristicsModule.measures.calculatePct
+          # percentage of BaselineMeasurementValue/BaselineMeasureDenomCountValue
+      denomUnitsSelected  [BaselineMeasureDenomUnitsSelected]  (text)  resultsSection.baselineCharacteristicsModule.measures.denomUnitsSelected
+      denoms  [BaselineMeasureDenom]  (Denom[])  resultsSection.baselineCharacteristicsModule.measures.denoms
+        units  [BaselineMeasureDenomUnits]  (text)  resultsSection.baselineCharacteristicsModule.measures.denoms.units
+        counts  [BaselineMeasureDenomCount]  (DenomCount[])  resultsSection.baselineCharacteristicsModule.measures.denoms.counts
+            # number entered for unit of measure
+          groupId  [BaselineMeasureDenomCountGroupId]  (text)  resultsSection.baselineCharacteristicsModule.measures.denoms.counts.groupId
+              # Internally generated ID for each Arm/Group
+          value  [BaselineMeasureDenomCountValue]  (text)  resultsSection.baselineCharacteristicsModule.measures.denoms.counts.value
+      classes  [BaselineClass]  (MeasureClass[])  resultsSection.baselineCharacteristicsModule.measures.classes
+          # Structure for a Baseline Measure ROW
+        title  [BaselineClassTitle]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.title
+        denoms  [BaselineClassDenom]  (Denom[])  resultsSection.baselineCharacteristicsModule.measures.classes.denoms
+          units  [BaselineClassDenomUnits]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.denoms.units
+              # Possible analysis population when data are presented in rows (e
+          counts  [BaselineClassDenomCount]  (DenomCount[])  resultsSection.baselineCharacteristicsModule.measures.classes.denoms.counts
+              # Population Analyzed for a Row
+            groupId  [BaselineClassDenomCountGroupId]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.denoms.counts.groupId
+                # Internal ID per Arm/Group for a Baseline Measure
+            value  [BaselineClassDenomCountValue]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.denoms.counts.value
+                # Data per Arm/Group per Baseline Measure per Row
+        categories  [BaselineCategory]  (MeasureCategory[])  resultsSection.baselineCharacteristicsModule.measures.classes.categories
+            # Categories under a Baseline Measure (represented as rows in data table)
+          title  [BaselineCategoryTitle]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.title
+          measurements  [BaselineMeasurement]  (Measurement[])  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements
+              # Data structure per Arm/Group per Category
+            groupId  [BaselineMeasurementGroupId]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.groupId
+                # Internal ID per Arm/Group per Category
+            value  [BaselineMeasurementValue]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.value
+            spread  [BaselineMeasurementSpread]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.spread
+                # Data per Arm/Group per Category
+            lowerLimit  [BaselineMeasurementLowerLimit]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.lowerLimit
+                # Data per Arm/Group per Category
+            upperLimit  [BaselineMeasurementUpperLimit]  (text)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.upperLimit
+                # Data per Arm/Group per Category
+            comment  [BaselineMeasurementComment]  (markup)  resultsSection.baselineCharacteristicsModule.measures.classes.categories.measurements.comment
+                # Explain why baseline measure data are not available, if "NA" is reported for Baseline Measure Data
+  outcomeMeasuresModule  [OutcomeMeasuresModule]  (OutcomeMeasuresModule)  resultsSection.outcomeMeasuresModule
+    outcomeMeasures  [OutcomeMeasure]  (OutcomeMeasure[])  resultsSection.outcomeMeasuresModule.outcomeMeasures
+      type  [OutcomeMeasureType]  (OutcomeMeasureType)  resultsSection.outcomeMeasuresModule.outcomeMeasures.type
+      title  [OutcomeMeasureTitle]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.title
+      description  [OutcomeMeasureDescription]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.description
+      populationDescription  [OutcomeMeasurePopulationDescription]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.populationDescription
+      reportingStatus  [OutcomeMeasureReportingStatus]  (ReportingStatus)  resultsSection.outcomeMeasuresModule.outcomeMeasures.reportingStatus
+          # Whether there is Outcome Measure Data reported
+      anticipatedPostingDate  [OutcomeMeasureAnticipatedPostingDate]  (PartialDate)  resultsSection.outcomeMeasuresModule.outcomeMeasures.anticipatedPostingDate
+      paramType  [OutcomeMeasureParamType]  (MeasureParam)  resultsSection.outcomeMeasuresModule.outcomeMeasures.paramType
+      dispersionType  [OutcomeMeasureDispersionType]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.dispersionType
+      unitOfMeasure  [OutcomeMeasureUnitOfMeasure]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.unitOfMeasure
+      calculatePct  [OutcomeMeasureCalculatePct]  (boolean)  resultsSection.outcomeMeasuresModule.outcomeMeasures.calculatePct
+          # percentage of OutcomeMeasurementValue/OutcomeMeasureDenomCountValue (internally calculated)
+      timeFrame  [OutcomeMeasureTimeFrame]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.timeFrame
+      typeUnitsAnalyzed  [OutcomeMeasureTypeUnitsAnalyzed]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.typeUnitsAnalyzed
+      denomUnitsSelected  [OutcomeMeasureDenomUnitsSelected]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.denomUnitsSelected
+          # OutcomeMeasureTypeUnitsAnalyzed
+      groups  [OutcomeGroup]  (MeasureGroup[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.groups
+        id  [OutcomeGroupId]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.groups.id
+        title  [OutcomeGroupTitle]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.groups.title
+        description  [OutcomeGroupDescription]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.groups.description
+      denoms  [OutcomeDenom]  (Denom[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.denoms
+        units  [OutcomeDenomUnits]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.denoms.units
+        counts  [OutcomeDenomCount]  (DenomCount[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.denoms.counts
+          groupId  [OutcomeDenomCountGroupId]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.denoms.counts.groupId
+          value  [OutcomeDenomCountValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.denoms.counts.value
+      classes  [OutcomeClass]  (MeasureClass[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes
+        title  [OutcomeClassTitle]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.title
+        denoms  [OutcomeClassDenom]  (Denom[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.denoms
+          units  [OutcomeClassDenomUnits]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.denoms.units
+          counts  [OutcomeClassDenomCount]  (DenomCount[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.denoms.counts
+            groupId  [OutcomeClassDenomCountGroupId]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.denoms.counts.groupId
+            value  [OutcomeClassDenomCountValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.denoms.counts.value
+        categories  [OutcomeCategory]  (MeasureCategory[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories
+          title  [OutcomeCategoryTitle]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.title
+          measurements  [OutcomeMeasurement]  (Measurement[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements
+            groupId  [OutcomeMeasurementGroupId]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.groupId
+            value  [OutcomeMeasurementValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.value
+            spread  [OutcomeMeasurementSpread]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.spread
+            lowerLimit  [OutcomeMeasurementLowerLimit]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.lowerLimit
+            upperLimit  [OutcomeMeasurementUpperLimit]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.upperLimit
+            comment  [OutcomeMeasurementComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.classes.categories.measurements.comment
+      analyses  [OutcomeAnalysis]  (MeasureAnalysis[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses
+          # Result(s) of scientifically appropriate tests of statistical significance of the primary and seconda
+        paramType  [OutcomeAnalysisParamType]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.paramType
+        paramValue  [OutcomeAnalysisParamValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.paramValue
+        dispersionType  [OutcomeAnalysisDispersionType]  (AnalysisDispersionType)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.dispersionType
+        dispersionValue  [OutcomeAnalysisDispersionValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.dispersionValue
+        statisticalMethod  [OutcomeAnalysisStatisticalMethod]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.statisticalMethod
+        statisticalComment  [OutcomeAnalysisStatisticalComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.statisticalComment
+        pValue  [OutcomeAnalysisPValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.pValue
+        pValueComment  [OutcomeAnalysisPValueComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.pValueComment
+        ciNumSides  [OutcomeAnalysisCINumSides]  (ConfidenceIntervalNumSides)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciNumSides
+        ciPctValue  [OutcomeAnalysisCIPctValue]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciPctValue
+        ciLowerLimit  [OutcomeAnalysisCILowerLimit]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciLowerLimit
+        ciUpperLimit  [OutcomeAnalysisCIUpperLimit]  (text)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciUpperLimit
+        ciLowerLimitComment  [OutcomeAnalysisCILowerLimitComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciLowerLimitComment
+            # Confidence Interval - lower limit comment
+        ciUpperLimitComment  [OutcomeAnalysisCIUpperLimitComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.ciUpperLimitComment
+            # Confidence Interval - upper limit comment (Explain why the upper limit data are not available, if "N
+        estimateComment  [OutcomeAnalysisEstimateComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.estimateComment
+        testedNonInferiority  [OutcomeAnalysisTestedNonInferiority]  (boolean)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.testedNonInferiority
+        nonInferiorityType  [OutcomeAnalysisNonInferiorityType]  (NonInferiorityType)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.nonInferiorityType
+        nonInferiorityComment  [OutcomeAnalysisNonInferiorityComment]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.nonInferiorityComment
+        otherAnalysisDescription  [OutcomeAnalysisOtherAnalysisDescription]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.otherAnalysisDescription
+        groupDescription  [OutcomeAnalysisGroupDescription]  (markup)  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.groupDescription
+        groupIds  [OutcomeAnalysisGroupId]  (text[])  resultsSection.outcomeMeasuresModule.outcomeMeasures.analyses.groupIds
+  adverseEventsModule  [AdverseEventsModule]  (AdverseEventsModule)  resultsSection.adverseEventsModule
+    frequencyThreshold  [EventsFrequencyThreshold]  (text)  resultsSection.adverseEventsModule.frequencyThreshold
+    timeFrame  [EventsTimeFrame]  (text)  resultsSection.adverseEventsModule.timeFrame
+    description  [EventsDescription]  (markup)  resultsSection.adverseEventsModule.description
+    allCauseMortalityComment  [EventsAllCauseMortalityComment]  (markup)  resultsSection.adverseEventsModule.allCauseMortalityComment
+    eventGroups  [EventGroup]  (EventGroup[])  resultsSection.adverseEventsModule.eventGroups
+      id  [EventGroupId]  (text)  resultsSection.adverseEventsModule.eventGroups.id
+          # Internal group id
+      title  [EventGroupTitle]  (text)  resultsSection.adverseEventsModule.eventGroups.title
+      description  [EventGroupDescription]  (markup)  resultsSection.adverseEventsModule.eventGroups.description
+      deathsNumAffected  [EventGroupDeathsNumAffected]  (integer)  resultsSection.adverseEventsModule.eventGroups.deathsNumAffected
+      deathsNumAtRisk  [EventGroupDeathsNumAtRisk]  (integer)  resultsSection.adverseEventsModule.eventGroups.deathsNumAtRisk
+      seriousNumAffected  [EventGroupSeriousNumAffected]  (integer)  resultsSection.adverseEventsModule.eventGroups.seriousNumAffected
+      seriousNumAtRisk  [EventGroupSeriousNumAtRisk]  (integer)  resultsSection.adverseEventsModule.eventGroups.seriousNumAtRisk
+      otherNumAffected  [EventGroupOtherNumAffected]  (integer)  resultsSection.adverseEventsModule.eventGroups.otherNumAffected
+      otherNumAtRisk  [EventGroupOtherNumAtRisk]  (integer)  resultsSection.adverseEventsModule.eventGroups.otherNumAtRisk
+    seriousEvents  [SeriousEvent]  (AdverseEvent[])  resultsSection.adverseEventsModule.seriousEvents
+        # A table of all anticipated and unanticipated serious adverse events, grouped by organ system, with t
+      term  [SeriousEventTerm]  (text)  resultsSection.adverseEventsModule.seriousEvents.term
+      organSystem  [SeriousEventOrganSystem]  (text)  resultsSection.adverseEventsModule.seriousEvents.organSystem
+      sourceVocabulary  [SeriousEventSourceVocabulary]  (text)  resultsSection.adverseEventsModule.seriousEvents.sourceVocabulary
+      assessmentType  [SeriousEventAssessmentType]  (EventAssessment)  resultsSection.adverseEventsModule.seriousEvents.assessmentType
+      notes  [SeriousEventNotes]  (markup)  resultsSection.adverseEventsModule.seriousEvents.notes
+      stats  [SeriousEventStats]  (EventStats[])  resultsSection.adverseEventsModule.seriousEvents.stats
+          # Statistical information for each Serious Adverse Event
+        groupId  [SeriousEventStatsGroupId]  (text)  resultsSection.adverseEventsModule.seriousEvents.stats.groupId
+            # Internal Arm/Group ID
+        numEvents  [SeriousEventStatsNumEvents]  (integer)  resultsSection.adverseEventsModule.seriousEvents.stats.numEvents
+        numAffected  [SeriousEventStatsNumAffected]  (integer)  resultsSection.adverseEventsModule.seriousEvents.stats.numAffected
+        numAtRisk  [SeriousEventStatsNumAtRisk]  (integer)  resultsSection.adverseEventsModule.seriousEvents.stats.numAtRisk
+    otherEvents  [OtherEvent]  (AdverseEvent[])  resultsSection.adverseEventsModule.otherEvents
+        # Other (Not Including Serious) Adverse Events - similar to Serious AE
+      term  [OtherEventTerm]  (text)  resultsSection.adverseEventsModule.otherEvents.term
+      organSystem  [OtherEventOrganSystem]  (text)  resultsSection.adverseEventsModule.otherEvents.organSystem
+      sourceVocabulary  [OtherEventSourceVocabulary]  (text)  resultsSection.adverseEventsModule.otherEvents.sourceVocabulary
+      assessmentType  [OtherEventAssessmentType]  (EventAssessment)  resultsSection.adverseEventsModule.otherEvents.assessmentType
+      notes  [OtherEventNotes]  (markup)  resultsSection.adverseEventsModule.otherEvents.notes
+      stats  [OtherEventStats]  (EventStats[])  resultsSection.adverseEventsModule.otherEvents.stats
+        groupId  [OtherEventStatsGroupId]  (text)  resultsSection.adverseEventsModule.otherEvents.stats.groupId
+        numEvents  [OtherEventStatsNumEvents]  (integer)  resultsSection.adverseEventsModule.otherEvents.stats.numEvents
+        numAffected  [OtherEventStatsNumAffected]  (integer)  resultsSection.adverseEventsModule.otherEvents.stats.numAffected
+        numAtRisk  [OtherEventStatsNumAtRisk]  (integer)  resultsSection.adverseEventsModule.otherEvents.stats.numAtRisk
+  moreInfoModule  [MoreInfoModule]  (MoreInfoModule)  resultsSection.moreInfoModule
+    limitationsAndCaveats  [LimitationsAndCaveats]  (LimitationsAndCaveats)  resultsSection.moreInfoModule.limitationsAndCaveats
+      description  [LimitationsAndCaveatsDescription]  (markup)  resultsSection.moreInfoModule.limitationsAndCaveats.description
+    certainAgreement  [CertainAgreement]  (CertainAgreement)  resultsSection.moreInfoModule.certainAgreement
+      piSponsorEmployee  [AgreementPISponsorEmployee]  (boolean)  resultsSection.moreInfoModule.certainAgreement.piSponsorEmployee
+      restrictionType  [AgreementRestrictionType]  (AgreementRestrictionType)  resultsSection.moreInfoModule.certainAgreement.restrictionType
+      restrictiveAgreement  [AgreementRestrictiveAgreement]  (boolean)  resultsSection.moreInfoModule.certainAgreement.restrictiveAgreement
+      otherDetails  [AgreementOtherDetails]  (markup)  resultsSection.moreInfoModule.certainAgreement.otherDetails
+    pointOfContact  [PointOfContact]  (PointOfContact)  resultsSection.moreInfoModule.pointOfContact
+      title  [PointOfContactTitle]  (text)  resultsSection.moreInfoModule.pointOfContact.title
+      organization  [PointOfContactOrganization]  (text)  resultsSection.moreInfoModule.pointOfContact.organization
+      email  [PointOfContactEMail]  (text)  resultsSection.moreInfoModule.pointOfContact.email
+      phone  [PointOfContactPhone]  (text)  resultsSection.moreInfoModule.pointOfContact.phone
+      phoneExt  [PointOfContactPhoneExt]  (text)  resultsSection.moreInfoModule.pointOfContact.phoneExt
+annotationSection  [AnnotationSection]  (AnnotationSection)  annotationSection
+    # Internally generated Annotation section
+  annotationModule  [AnnotationModule]  (AnnotationModule)  annotationSection.annotationModule
+    unpostedAnnotation  [UnpostedAnnotation]  (UnpostedAnnotation)  annotationSection.annotationModule.unpostedAnnotation
+        # Tracking information for study results submission/QA review process (Results Submitted but not yet P
+      unpostedResponsibleParty  [UnpostedResponsibleParty]  (text)  annotationSection.annotationModule.unpostedAnnotation.unpostedResponsibleParty
+          # Information provider (Responsible Party)
+      unpostedEvents  [UnpostedEvent]  (UnpostedEvent[])  annotationSection.annotationModule.unpostedAnnotation.unpostedEvents
+          # A Results Release, UnRelease or Reset event
+        type  [UnpostedEventType]  (UnpostedEventType)  annotationSection.annotationModule.unpostedAnnotation.unpostedEvents.type
+            # Study Results Submission Type
+        date  [UnpostedEventDate]  (NormalizedDate)  annotationSection.annotationModule.unpostedAnnotation.unpostedEvents.date
+            # Study Results Submission Date
+        dateUnknown  [UnpostedEventDateUnknown]  (boolean)  annotationSection.annotationModule.unpostedAnnotation.unpostedEvents.dateUnknown
+    violationAnnotation  [ViolationAnnotation]  (ViolationAnnotation)  annotationSection.annotationModule.violationAnnotation
+        # FDAAA 801 Violations - entered by PRS admins
+      violationEvents  [ViolationEvent]  (ViolationEvent[])  annotationSection.annotationModule.violationAnnotation.violationEvents
+          # PRS admin can enter one of the following types and descriptions, or other text
+        type  [ViolationEventType]  (ViolationEventType)  annotationSection.annotationModule.violationAnnotation.violationEvents.type
+            # •	Violation Identified by FDA
+•	Correction Confirmed by FDA
+•	Penalty Imposed by FDA
+        description  [ViolationEventDescription]  (text)  annotationSection.annotationModule.violationAnnotation.violationEvents.description
+            # •	Failure to Submit
+        creationDate  [ViolationEventCreationDate]  (NormalizedDate)  annotationSection.annotationModule.violationAnnotation.violationEvents.creationDate
+            # Date the violation entered in PRS
+        issuedDate  [ViolationEventIssuedDate]  (NormalizedDate)  annotationSection.annotationModule.violationAnnotation.violationEvents.issuedDate
+            # Date the FDA issued the violation
+        releaseDate  [ViolationEventReleaseDate]  (NormalizedDate)  annotationSection.annotationModule.violationAnnotation.violationEvents.releaseDate
+            # Date the study record was submitted
+        postedDate  [ViolationEventPostedDate]  (NormalizedDate)  annotationSection.annotationModule.violationAnnotation.violationEvents.postedDate
+            # Date the violation is available on clinicaltrials
+documentSection  [DocumentSection]  (DocumentSection)  documentSection
+  largeDocumentModule  [LargeDocumentModule]  (LargeDocumentModule)  documentSection.largeDocumentModule
+    noSap  [LargeDocNoSAP]  (boolean)  documentSection.largeDocumentModule.noSap
+        # Indicate that No Statistical Analysis Plan (SAP) exists for this study
+    largeDocs  [LargeDoc]  (LargeDoc[])  documentSection.largeDocumentModule.largeDocs
+        # PDF/A document by data provider
+      typeAbbrev  [LargeDocTypeAbbrev]  (text)  documentSection.largeDocumentModule.largeDocs.typeAbbrev
+      hasProtocol  [LargeDocHasProtocol]  (boolean)  documentSection.largeDocumentModule.largeDocs.hasProtocol
+          # Indicate if document includes Study Protocol (Yes/No)
+      hasSap  [LargeDocHasSAP]  (boolean)  documentSection.largeDocumentModule.largeDocs.hasSap
+          # Indicate is document includes Statistical Analysis Plan (Yes/No)
+      hasIcf  [LargeDocHasICF]  (boolean)  documentSection.largeDocumentModule.largeDocs.hasIcf
+          # Indicate if document includes Informed Consent Form (Yes/No)
+      label  [LargeDocLabel]  (text)  documentSection.largeDocumentModule.largeDocs.label
+      date  [LargeDocDate]  (NormalizedDate)  documentSection.largeDocumentModule.largeDocs.date
+      uploadDate  [LargeDocUploadDate]  (DateTimeMinutes)  documentSection.largeDocumentModule.largeDocs.uploadDate
+          # Date the document was uploaded to PRS
+      filename  [LargeDocFilename]  (text)  documentSection.largeDocumentModule.largeDocs.filename
+          # Document file name (by data provider)
+      size  [LargeDocSize]  (long)  documentSection.largeDocumentModule.largeDocs.size
+          # Document file size
+derivedSection  [DerivedSection]  (DerivedSection)  derivedSection
+    # Internally Generated
+  miscInfoModule  [MiscInfoModule]  (MiscInfoModule)  derivedSection.miscInfoModule
+    versionHolder  [VersionHolder]  (NormalizedDate)  derivedSection.miscInfoModule.versionHolder
+        # The most recent date where Ingest ran successfully
+    removedCountries  [RemovedCountry]  (text[])  derivedSection.miscInfoModule.removedCountries
+        # Country for which all locations have been removed from the study
+    submissionTracking  [SubmissionTracking]  (SubmissionTracking)  derivedSection.miscInfoModule.submissionTracking
+        # Results submission tracking
+      estimatedResultsFirstSubmitDate  [EstimatedResultsFirstSubmitDate]  (NormalizedDate)  derivedSection.miscInfoModule.submissionTracking.estimatedResultsFirstSubmitDate
+          # Results First Submitted Date but not yet Posted (e
+      firstMcpInfo  [FirstMCPInfo]  (FirstMcpInfo)  derivedSection.miscInfoModule.submissionTracking.firstMcpInfo
+        postDateStruct  [FirstMCPPostDateStruct]  (DateStruct)  derivedSection.miscInfoModule.submissionTracking.firstMcpInfo.postDateStruct
+          date  [FirstMCPPostDate]  (NormalizedDate)  derivedSection.miscInfoModule.submissionTracking.firstMcpInfo.postDateStruct.date
+              # Date of first MCP posted date
+          type  [FirstMCPPostDateType]  (DateType)  derivedSection.miscInfoModule.submissionTracking.firstMcpInfo.postDateStruct.type
+              # Date type for first MCP posted date
+      submissionInfos  [SubmissionInfo]  (SubmissionInfo[])  derivedSection.miscInfoModule.submissionTracking.submissionInfos
+          # Results submission cycle information of a study
+        releaseDate  [SubmissionReleaseDate]  (NormalizedDate)  derivedSection.miscInfoModule.submissionTracking.submissionInfos.releaseDate
+            # Results released by DP to NLM
+        unreleaseDate  [SubmissionUnreleaseDate]  (NormalizedDate)  derivedSection.miscInfoModule.submissionTracking.submissionInfos.unreleaseDate
+            # Results unrelease (canceled release) by DP
+        unreleaseDateUnknown  [SubmissionUnreleaseDateUnknown]  (boolean)  derivedSection.miscInfoModule.submissionTracking.submissionInfos.unreleaseDateUnknown
+        resetDate  [SubmissionResetDate]  (NormalizedDate)  derivedSection.miscInfoModule.submissionTracking.submissionInfos.resetDate
+            # NLM QC reviewer reset/unlock study back to DP
+        mcpReleaseN  [SubmissionMCPReleaseN]  (integer)  derivedSection.miscInfoModule.submissionTracking.submissionInfos.mcpReleaseN
+            # Number of Major Comment Postings of a study
+  conditionBrowseModule  [ConditionBrowseModule]  (BrowseModule)  derivedSection.conditionBrowseModule
+      # Support for "Search By Topic"
+    meshes  [ConditionMesh]  (Mesh[])  derivedSection.conditionBrowseModule.meshes
+        # MeSH terms of Condition/Diseases field
+      id  [ConditionMeshId]  (text)  derivedSection.conditionBrowseModule.meshes.id
+          # MeSH ID
+      term  [ConditionMeshTerm]  (text)  derivedSection.conditionBrowseModule.meshes.term
+          # MeSH Heading
+    ancestors  [ConditionAncestor]  (Mesh[])  derivedSection.conditionBrowseModule.ancestors
+        # Ancestor (higher level and more broad) terms of Condition MeSH terms in MeSH Tree hierarchy
+      id  [ConditionAncestorId]  (text)  derivedSection.conditionBrowseModule.ancestors.id
+          # MeSH ID
+      term  [ConditionAncestorTerm]  (text)  derivedSection.conditionBrowseModule.ancestors.term
+          # MeSH Heading
+    browseLeaves  [ConditionBrowseLeaf]  (BrowseLeaf[])  derivedSection.conditionBrowseModule.browseLeaves
+        # Leaf browsing topics for Condition field
+      id  [ConditionBrowseLeafId]  (text)  derivedSection.conditionBrowseModule.browseLeaves.id
+      name  [ConditionBrowseLeafName]  (text)  derivedSection.conditionBrowseModule.browseLeaves.name
+      asFound  [ConditionBrowseLeafAsFound]  (text)  derivedSection.conditionBrowseModule.browseLeaves.asFound
+          # Normalized Condition term used to find the topic
+      relevance  [ConditionBrowseLeafRelevance]  (BrowseLeafRelevance)  derivedSection.conditionBrowseModule.browseLeaves.relevance
+    browseBranches  [ConditionBrowseBranch]  (BrowseBranch[])  derivedSection.conditionBrowseModule.browseBranches
+        # Branch browsing topics for Condition field
+      abbrev  [ConditionBrowseBranchAbbrev]  (text)  derivedSection.conditionBrowseModule.browseBranches.abbrev
+      name  [ConditionBrowseBranchName]  (text)  derivedSection.conditionBrowseModule.browseBranches.name
+  interventionBrowseModule  [InterventionBrowseModule]  (BrowseModule)  derivedSection.interventionBrowseModule
+      # Support for "Search By Topic"
+    meshes  [InterventionMesh]  (Mesh[])  derivedSection.interventionBrowseModule.meshes
+        # MeSH terms of Drug/Interventions field
+      id  [InterventionMeshId]  (text)  derivedSection.interventionBrowseModule.meshes.id
+          # MeSH ID
+      term  [InterventionMeshTerm]  (text)  derivedSection.interventionBrowseModule.meshes.term
+          # MeSH Heading
+    ancestors  [InterventionAncestor]  (Mesh[])  derivedSection.interventionBrowseModule.ancestors
+        # Ancestor (higher level and more broad) terms of Intervention MeSH terms in MeSH Tree hierarchy
+      id  [InterventionAncestorId]  (text)  derivedSection.interventionBrowseModule.ancestors.id
+          # MeSH ID
+      term  [InterventionAncestorTerm]  (text)  derivedSection.interventionBrowseModule.ancestors.term
+          # MeSH Heading
+    browseLeaves  [InterventionBrowseLeaf]  (BrowseLeaf[])  derivedSection.interventionBrowseModule.browseLeaves
+        # Leaf browsing topics for Intervention field
+      id  [InterventionBrowseLeafId]  (text)  derivedSection.interventionBrowseModule.browseLeaves.id
+      name  [InterventionBrowseLeafName]  (text)  derivedSection.interventionBrowseModule.browseLeaves.name
+      asFound  [InterventionBrowseLeafAsFound]  (text)  derivedSection.interventionBrowseModule.browseLeaves.asFound
+          # Normalized Intervention term used to find the topic
+      relevance  [InterventionBrowseLeafRelevance]  (BrowseLeafRelevance)  derivedSection.interventionBrowseModule.browseLeaves.relevance
+    browseBranches  [InterventionBrowseBranch]  (BrowseBranch[])  derivedSection.interventionBrowseModule.browseBranches
+        # Branch browsing topics for Intervention field
+      abbrev  [InterventionBrowseBranchAbbrev]  (text)  derivedSection.interventionBrowseModule.browseBranches.abbrev
+      name  [InterventionBrowseBranchName]  (text)  derivedSection.interventionBrowseModule.browseBranches.name
+hasResults  [HasResults]  (boolean)  hasResults
+    # Flag that indicates if a study has posted results on public site

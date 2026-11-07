@@ -1,0 +1,1577 @@
+[
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "heart attack",
+    "broad": 3971,
+    "proposal": {
+      "terms": [
+        "Myocardial Infarction"
+      ],
+      "coverage": 78,
+      "registry": 3002,
+      "ratio": 0.76,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Myocardial Infarction",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "high blood pressure",
+    "broad": 12716,
+    "proposal": {
+      "terms": [
+        "Hypertension"
+      ],
+      "coverage": 59,
+      "registry": 11717,
+      "ratio": 0.92,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Hypertension",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "kidney failure",
+    "broad": 7927,
+    "proposal": {
+      "terms": [
+        "Renal Insufficiency"
+      ],
+      "coverage": 93,
+      "registry": 7344,
+      "ratio": 0.93,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Renal Insufficiency",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "flu",
+    "broad": 2824,
+    "proposal": {
+      "terms": [
+        "Influenza, Human"
+      ],
+      "coverage": 78,
+      "registry": 2191,
+      "ratio": 0.78,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Influenza, Human",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "preterm birth",
+    "broad": 4007,
+    "proposal": {
+      "terms": [
+        "Premature Birth"
+      ],
+      "coverage": 67,
+      "registry": 3573,
+      "ratio": 0.89,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Obstetric Labor, Premature",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "insomnia",
+    "broad": 3404,
+    "proposal": {
+      "terms": [
+        "Sleep Initiation and Maintenance Disorders"
+      ],
+      "coverage": 75,
+      "registry": 2702,
+      "ratio": 0.79,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Sleep Initiation and Maintenance Disorders",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "chronic pain",
+    "broad": 7899,
+    "proposal": {
+      "terms": [
+        "Chronic Pain"
+      ],
+      "coverage": 33,
+      "registry": 3122,
+      "ratio": 0.4,
+      "passed": false,
+      "reasons": [
+        "coverage 33%",
+        "ratio 0.40"
+      ]
+    },
+    "data_only": "Pain",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "COPD",
+    "broad": 5594,
+    "proposal": {
+      "terms": [
+        "Pulmonary Disease, Chronic Obstructive"
+      ],
+      "coverage": 95,
+      "registry": 5409,
+      "ratio": 0.97,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Pulmonary Disease, Chronic Obstructive",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "ADHD",
+    "broad": 2003,
+    "proposal": {
+      "terms": [
+        "Attention Deficit Disorder with Hyperactivity"
+      ],
+      "coverage": 88,
+      "registry": 1910,
+      "ratio": 0.95,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Attention Deficit Disorder with Hyperactivity",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "HIV",
+    "broad": 10191,
+    "proposal": {
+      "terms": [
+        "HIV Infections"
+      ],
+      "coverage": 64,
+      "registry": 6744,
+      "ratio": 0.66,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "HIV Infections",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "AML",
+    "broad": 4189,
+    "proposal": {
+      "terms": [
+        "Leukemia, Myeloid, Acute"
+      ],
+      "coverage": 89,
+      "registry": 3702,
+      "ratio": 0.88,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Leukemia, Myeloid, Acute",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "CKD",
+    "broad": 3880,
+    "proposal": {
+      "terms": [
+        "Renal Insufficiency, Chronic"
+      ],
+      "coverage": 83,
+      "registry": 4764,
+      "ratio": 1.23,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Renal Insufficiency, Chronic",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "TB",
+    "broad": 778,
+    "proposal": {
+      "terms": [
+        "Tuberculosis"
+      ],
+      "coverage": 89,
+      "registry": 1536,
+      "ratio": 1.97,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Tuberculosis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "alzheimer's",
+    "broad": 3191,
+    "proposal": {
+      "terms": [
+        "Alzheimer Disease"
+      ],
+      "coverage": 86,
+      "registry": 3900,
+      "ratio": 1.22,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Alzheimer Disease",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "parkinson's",
+    "broad": 3990,
+    "proposal": {
+      "terms": [
+        "Parkinson Disease"
+      ],
+      "coverage": 94,
+      "registry": 4748,
+      "ratio": 1.19,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Parkinson Disease",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "multiple sclerosis",
+    "broad": 3957,
+    "proposal": {
+      "terms": [
+        "Multiple Sclerosis"
+      ],
+      "coverage": 90,
+      "registry": 3558,
+      "ratio": 0.9,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Multiple Sclerosis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "epilepsy",
+    "broad": 2553,
+    "proposal": {
+      "terms": [
+        "Epilepsy"
+      ],
+      "coverage": 90,
+      "registry": 2346,
+      "ratio": 0.92,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Epilepsy",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "migraine",
+    "broad": 1830,
+    "proposal": {
+      "terms": [
+        "Migraine Disorders"
+      ],
+      "coverage": 83,
+      "registry": 1554,
+      "ratio": 0.85,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Migraine Disorders",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "depression",
+    "broad": 12953,
+    "proposal": {
+      "terms": [
+        "Depression",
+        "Depressive Disorder"
+      ],
+      "coverage": 86,
+      "registry": 11227,
+      "ratio": 0.87,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Mental Disorders",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "schizophrenia",
+    "broad": 4266,
+    "proposal": {
+      "terms": [
+        "Schizophrenia"
+      ],
+      "coverage": 81,
+      "registry": 4079,
+      "ratio": 0.96,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Schizophrenia Spectrum and Other Psychotic Disorders",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "autism",
+    "broad": 2350,
+    "proposal": {
+      "terms": [
+        "Autism Spectrum Disorder"
+      ],
+      "coverage": 96,
+      "registry": 2251,
+      "ratio": 0.96,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Autism Spectrum Disorder",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "stroke",
+    "broad": 11368,
+    "proposal": {
+      "terms": [
+        "Stroke"
+      ],
+      "coverage": 83,
+      "registry": 9842,
+      "ratio": 0.87,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Stroke",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "rheumatoid arthritis",
+    "broad": 3810,
+    "proposal": {
+      "terms": [
+        "Arthritis, Rheumatoid"
+      ],
+      "coverage": 94,
+      "registry": 3590,
+      "ratio": 0.94,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Arthritis, Rheumatoid",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "lupus",
+    "broad": 1679,
+    "proposal": {
+      "terms": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "coverage": 89,
+      "registry": 1402,
+      "ratio": 0.84,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Lupus Erythematosus, Systemic",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "crohn's disease",
+    "broad": 2109,
+    "proposal": {
+      "terms": [
+        "Crohn Disease"
+      ],
+      "coverage": 94,
+      "registry": 1955,
+      "ratio": 0.93,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Crohn Disease",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "psoriasis",
+    "broad": 2577,
+    "proposal": {
+      "terms": [
+        "Psoriasis"
+      ],
+      "coverage": 80,
+      "registry": 1937,
+      "ratio": 0.75,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Psoriasis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "hepatitis C",
+    "broad": 2573,
+    "proposal": {
+      "terms": [
+        "Hepatitis C"
+      ],
+      "coverage": 90,
+      "registry": 2310,
+      "ratio": 0.9,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Hepatitis C",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "covid",
+    "broad": 4916,
+    "proposal": {
+      "terms": [
+        "COVID-19"
+      ],
+      "coverage": 74,
+      "registry": 7978,
+      "ratio": 1.62,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "COVID-19",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "sepsis",
+    "broad": 3872,
+    "proposal": {
+      "terms": [
+        "Sepsis"
+      ],
+      "coverage": 85,
+      "registry": 3438,
+      "ratio": 0.89,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Sepsis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "obesity",
+    "broad": 15150,
+    "proposal": {
+      "terms": [
+        "Obesity"
+      ],
+      "coverage": 85,
+      "registry": 13234,
+      "ratio": 0.87,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Obesity",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "type 1 diabetes",
+    "broad": 4682,
+    "proposal": {
+      "terms": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "coverage": 76,
+      "registry": 3673,
+      "ratio": 0.78,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Diabetes Mellitus",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "sickle cell",
+    "broad": 1223,
+    "proposal": {
+      "terms": [
+        "Anemia, Sickle Cell"
+      ],
+      "coverage": 96,
+      "registry": 1161,
+      "ratio": 0.95,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Anemia, Sickle Cell",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "cystic fibrosis",
+    "broad": 1784,
+    "proposal": {
+      "terms": [
+        "Cystic Fibrosis"
+      ],
+      "coverage": 89,
+      "registry": 1583,
+      "ratio": 0.89,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Cystic Fibrosis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "atrial fibrillation",
+    "broad": 4220,
+    "proposal": {
+      "terms": [
+        "Atrial Fibrillation"
+      ],
+      "coverage": 90,
+      "registry": 3837,
+      "ratio": 0.91,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Atrial Fibrillation",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "prostate cancer",
+    "broad": 7648,
+    "proposal": {
+      "terms": [
+        "Prostatic Neoplasms"
+      ],
+      "coverage": 86,
+      "registry": 6510,
+      "ratio": 0.85,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Prostatic Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "colon cancer",
+    "broad": 8362,
+    "proposal": {
+      "terms": [
+        "Colonic Neoplasms",
+        "Colorectal Neoplasms"
+      ],
+      "coverage": 95,
+      "registry": 9367,
+      "ratio": 1.12,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Colorectal Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "pancreatic cancer",
+    "broad": 5126,
+    "proposal": {
+      "terms": [
+        "Pancreatic Neoplasms"
+      ],
+      "coverage": 72,
+      "registry": 3899,
+      "ratio": 0.76,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Pancreatic Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "glioblastoma",
+    "broad": 2281,
+    "proposal": {
+      "terms": [
+        "Glioblastoma"
+      ],
+      "coverage": 93,
+      "registry": 2070,
+      "ratio": 0.91,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Glioblastoma",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "lung cancer",
+    "broad": 14711,
+    "proposal": {
+      "terms": [
+        "Lung Neoplasms"
+      ],
+      "coverage": 80,
+      "registry": 11790,
+      "ratio": 0.8,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Lung Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "nsclc",
+    "broad": 8856,
+    "proposal": {
+      "terms": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "coverage": 76,
+      "registry": 7095,
+      "ratio": 0.8,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Carcinoma, Non-Small-Cell Lung",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "breast cancer",
+    "broad": 16998,
+    "proposal": {
+      "terms": [
+        "Breast Neoplasms"
+      ],
+      "coverage": 83,
+      "registry": 14571,
+      "ratio": 0.86,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Breast Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "condition",
+    "query": "melanoma",
+    "broad": 3782,
+    "proposal": {
+      "terms": [
+        "Melanoma"
+      ],
+      "coverage": 88,
+      "registry": 3424,
+      "ratio": 0.91,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Melanoma",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "metformin",
+    "broad": 3138,
+    "proposal": {
+      "terms": [
+        "Metformin"
+      ],
+      "coverage": 64,
+      "registry": 2021,
+      "ratio": 0.64,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Metformin",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "atorvastatin",
+    "broad": 1202,
+    "proposal": {
+      "terms": [
+        "Atorvastatin"
+      ],
+      "coverage": 77,
+      "registry": 936,
+      "ratio": 0.78,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Atorvastatin",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "aspirin",
+    "broad": 2206,
+    "proposal": {
+      "terms": [
+        "Aspirin"
+      ],
+      "coverage": 51,
+      "registry": 1180,
+      "ratio": 0.53,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Organic Chemicals",
+    "data_only_agrees": false
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "warfarin",
+    "broad": 790,
+    "proposal": {
+      "terms": [
+        "Warfarin"
+      ],
+      "coverage": 58,
+      "registry": 444,
+      "ratio": 0.56,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Warfarin",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "tamoxifen",
+    "broad": 687,
+    "proposal": {
+      "terms": [
+        "Tamoxifen"
+      ],
+      "coverage": 71,
+      "registry": 484,
+      "ratio": 0.7,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Tamoxifen",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "sertraline",
+    "broad": 438,
+    "proposal": {
+      "terms": [
+        "Sertraline"
+      ],
+      "coverage": 70,
+      "registry": 312,
+      "ratio": 0.71,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Sertraline",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "apixaban",
+    "broad": 485,
+    "proposal": {
+      "terms": [
+        "apixaban"
+      ],
+      "coverage": 65,
+      "registry": 315,
+      "ratio": 0.65,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "apixaban",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "semaglutide",
+    "broad": 799,
+    "proposal": {
+      "terms": [
+        "semaglutide"
+      ],
+      "coverage": 74,
+      "registry": 596,
+      "ratio": 0.75,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "semaglutide",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "osimertinib",
+    "broad": 393,
+    "proposal": {
+      "terms": [
+        "osimertinib"
+      ],
+      "coverage": 73,
+      "registry": 284,
+      "ratio": 0.72,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "osimertinib",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "remdesivir",
+    "broad": 132,
+    "proposal": {
+      "terms": [
+        "remdesivir"
+      ],
+      "coverage": 70,
+      "registry": 93,
+      "ratio": 0.7,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "remdesivir",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "adalimumab",
+    "broad": 802,
+    "proposal": {
+      "terms": [
+        "Adalimumab"
+      ],
+      "coverage": 66,
+      "registry": 511,
+      "ratio": 0.64,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Adalimumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "trastuzumab",
+    "broad": 1750,
+    "proposal": {
+      "terms": [
+        "Trastuzumab"
+      ],
+      "coverage": 62,
+      "registry": 1220,
+      "ratio": 0.7,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Trastuzumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "rituximab",
+    "broad": 2821,
+    "proposal": {
+      "terms": [
+        "Rituximab"
+      ],
+      "coverage": 79,
+      "registry": 2172,
+      "ratio": 0.77,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Rituximab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "imatinib",
+    "broad": 780,
+    "proposal": {
+      "terms": [
+        "Imatinib Mesylate"
+      ],
+      "coverage": 64,
+      "registry": 517,
+      "ratio": 0.66,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Imatinib Mesylate",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "Humira",
+    "broad": 802,
+    "proposal": {
+      "terms": [
+        "Adalimumab"
+      ],
+      "coverage": 66,
+      "registry": 511,
+      "ratio": 0.64,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Adalimumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "Herceptin",
+    "broad": 1781,
+    "proposal": {
+      "terms": [
+        "Trastuzumab"
+      ],
+      "coverage": 61,
+      "registry": 1220,
+      "ratio": 0.69,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Trastuzumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "Gleevec",
+    "broad": 780,
+    "proposal": {
+      "terms": [
+        "Imatinib Mesylate"
+      ],
+      "coverage": 64,
+      "registry": 517,
+      "ratio": 0.66,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Imatinib Mesylate",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "Ozempic",
+    "broad": 104,
+    "proposal": {
+      "terms": [
+        "semaglutide"
+      ],
+      "coverage": 85,
+      "registry": 596,
+      "ratio": 5.73,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "semaglutide",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "MK-3475",
+    "broad": 3003,
+    "proposal": {
+      "terms": [
+        "pembrolizumab"
+      ],
+      "coverage": 85,
+      "registry": 2584,
+      "ratio": 0.86,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "pembrolizumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "tuning",
+    "kind": "drug",
+    "query": "lithium",
+    "broad": 463,
+    "proposal": {
+      "terms": [
+        "Lithium Carbonate",
+        "Lithium Compounds"
+      ],
+      "coverage": 21,
+      "registry": 187,
+      "ratio": 0.4,
+      "passed": false,
+      "reasons": [
+        "coverage 21%"
+      ]
+    },
+    "data_only": null,
+    "data_only_agrees": false
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "heart failure",
+    "broad": 7932,
+    "proposal": {
+      "terms": [
+        "Heart Failure"
+      ],
+      "coverage": 75,
+      "registry": 5870,
+      "ratio": 0.74,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Heart Diseases",
+    "data_only_agrees": false
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "osteoporosis",
+    "broad": 1914,
+    "proposal": {
+      "terms": [
+        "Osteoporosis"
+      ],
+      "coverage": 92,
+      "registry": 1765,
+      "ratio": 0.92,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Osteoporosis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "anxiety",
+    "broad": 10853,
+    "proposal": {
+      "terms": [
+        "Anxiety Disorders",
+        "Anxiety"
+      ],
+      "coverage": 81,
+      "registry": 8680,
+      "ratio": 0.8,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Anxiety Disorders",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "bipolar",
+    "broad": 2182,
+    "proposal": {
+      "terms": [
+        "Bipolar Disorder"
+      ],
+      "coverage": 79,
+      "registry": 1669,
+      "ratio": 0.76,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Bipolar Disorder",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "ovarian cancer",
+    "broad": 5343,
+    "proposal": {
+      "terms": [
+        "Ovarian Neoplasms"
+      ],
+      "coverage": 71,
+      "registry": 3695,
+      "ratio": 0.69,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Ovarian Diseases",
+    "data_only_agrees": false
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "liver cancer",
+    "broad": 5491,
+    "proposal": {
+      "terms": [
+        "Liver Neoplasms"
+      ],
+      "coverage": 76,
+      "registry": 4148,
+      "ratio": 0.76,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Liver Neoplasms",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "leukemia",
+    "broad": 9804,
+    "proposal": {
+      "terms": [
+        "Leukemia"
+      ],
+      "coverage": 90,
+      "registry": 8795,
+      "ratio": 0.9,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Leukemia",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "malaria",
+    "broad": 1490,
+    "proposal": {
+      "terms": [
+        "Malaria"
+      ],
+      "coverage": 94,
+      "registry": 1381,
+      "ratio": 0.93,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Malaria",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "RSV",
+    "broad": 630,
+    "proposal": {
+      "terms": [
+        "Respiratory Syncytial Virus Infections"
+      ],
+      "coverage": 51,
+      "registry": 303,
+      "ratio": 0.48,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Infections",
+    "data_only_agrees": false
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "endometriosis",
+    "broad": 964,
+    "proposal": {
+      "terms": [
+        "Endometriosis"
+      ],
+      "coverage": 93,
+      "registry": 890,
+      "ratio": 0.92,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Endometriosis",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "PCOS",
+    "broad": 1163,
+    "proposal": {
+      "terms": [
+        "Polycystic Ovary Syndrome"
+      ],
+      "coverage": 81,
+      "registry": 954,
+      "ratio": 0.82,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Polycystic Ovary Syndrome",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "gout",
+    "broad": 409,
+    "proposal": {
+      "terms": [
+        "Gout"
+      ],
+      "coverage": 80,
+      "registry": 332,
+      "ratio": 0.81,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Gout",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "macular degeneration",
+    "broad": 2174,
+    "proposal": {
+      "terms": [
+        "Macular Degeneration"
+      ],
+      "coverage": 76,
+      "registry": 1727,
+      "ratio": 0.79,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Macular Degeneration",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "opioid addiction",
+    "broad": 648,
+    "proposal": {
+      "terms": [
+        "Opioid-Related Disorders"
+      ],
+      "coverage": 93,
+      "registry": 1556,
+      "ratio": 2.4,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Opioid-Related Disorders",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "condition",
+    "query": "IBS",
+    "broad": 712,
+    "proposal": {
+      "terms": [
+        "Irritable Bowel Syndrome"
+      ],
+      "coverage": 76,
+      "registry": 998,
+      "ratio": 1.4,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Irritable Bowel Syndrome",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "ibuprofen",
+    "broad": 1121,
+    "proposal": {
+      "terms": [
+        "Ibuprofen"
+      ],
+      "coverage": 62,
+      "registry": 694,
+      "ratio": 0.62,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Ibuprofen",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "Keytruda",
+    "broad": 3003,
+    "proposal": {
+      "terms": [
+        "pembrolizumab"
+      ],
+      "coverage": 85,
+      "registry": 2584,
+      "ratio": 0.86,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "pembrolizumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "Lipitor",
+    "broad": 1202,
+    "proposal": {
+      "terms": [
+        "Atorvastatin"
+      ],
+      "coverage": 77,
+      "registry": 936,
+      "ratio": 0.78,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Atorvastatin",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "insulin glargine",
+    "broad": 727,
+    "proposal": {
+      "terms": [
+        "Insulin Glargine"
+      ],
+      "coverage": 80,
+      "registry": 569,
+      "ratio": 0.78,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Insulin Glargine",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "dexamethasone",
+    "broad": 4845,
+    "proposal": {
+      "terms": [
+        "Dexamethasone"
+      ],
+      "coverage": 65,
+      "registry": 3096,
+      "ratio": 0.64,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Dexamethasone",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "bevacizumab",
+    "broad": 3411,
+    "proposal": {
+      "terms": [
+        "Bevacizumab"
+      ],
+      "coverage": 79,
+      "registry": 2640,
+      "ratio": 0.77,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Bevacizumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "Avastin",
+    "broad": 3434,
+    "proposal": {
+      "terms": [
+        "Bevacizumab"
+      ],
+      "coverage": 78,
+      "registry": 2640,
+      "ratio": 0.77,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Bevacizumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "levothyroxine",
+    "broad": 342,
+    "proposal": {
+      "terms": [
+        "Thyroxine"
+      ],
+      "coverage": 62,
+      "registry": 210,
+      "ratio": 0.61,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Thyroxine",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "dupilumab",
+    "broad": 312,
+    "proposal": {
+      "terms": [
+        "dupilumab"
+      ],
+      "coverage": 81,
+      "registry": 252,
+      "ratio": 0.81,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "dupilumab",
+    "data_only_agrees": true
+  },
+  {
+    "set": "holdout",
+    "kind": "drug",
+    "query": "ketamine",
+    "broad": 1918,
+    "proposal": {
+      "terms": [
+        "Ketamine"
+      ],
+      "coverage": 54,
+      "registry": 1274,
+      "ratio": 0.66,
+      "passed": true,
+      "reasons": []
+    },
+    "data_only": "Ketamine",
+    "data_only_agrees": true
+  }
+]

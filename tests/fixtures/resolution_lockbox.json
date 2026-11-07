@@ -1,0 +1,332 @@
+[
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "stomach ulcer",
+  "expected": [
+   "Peptic Ulcer",
+   "Stomach Ulcer"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "chickenpox",
+  "expected": [
+   "Chickenpox"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "hay fever",
+  "expected": [
+   "Rhinitis, Allergic, Seasonal",
+   "Rhinitis, Allergic"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "cold sores",
+  "expected": [
+   "Herpes Labialis"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "gallstones",
+  "expected": [
+   "Gallstones",
+   "Cholelithiasis"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "whooping cough",
+  "expected": [
+   "Whooping Cough"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "lay",
+  "kind": "condition",
+  "query": "heartburn",
+  "expected": [
+   "Heartburn",
+   "Gastroesophageal Reflux"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "GERD",
+  "expected": [
+   "Gastroesophageal Reflux"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "CLL",
+  "expected": [
+   "Leukemia, Lymphocytic, Chronic, B-Cell"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "HCC",
+  "expected": [
+   "Carcinoma, Hepatocellular"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "OCD",
+  "expected": [
+   "Obsessive-Compulsive Disorder"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "HPV",
+  "expected": [
+   "Papillomavirus Infections"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "abbrev",
+  "kind": "condition",
+  "query": "SLE",
+  "expected": [
+   "Lupus Erythematosus, Systemic"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "myasthenia gravis",
+  "expected": [
+   "Myasthenia Gravis"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "sarcoidosis",
+  "expected": [
+   "Sarcoidosis"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "hemophilia",
+  "expected": [
+   "Hemophilia A",
+   "Hemophilia B",
+   "Hemophilia"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "spinal muscular atrophy",
+  "expected": [
+   "Muscular Atrophy, Spinal"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "cervical cancer",
+  "expected": [
+   "Uterine Cervical Neoplasms"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "bladder cancer",
+  "expected": [
+   "Urinary Bladder Neoplasms"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "clinical",
+  "kind": "condition",
+  "query": "thyroid cancer",
+  "expected": [
+   "Thyroid Neoplasms"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "parkinsons disease",
+  "expected": [
+   "Parkinson Disease"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "artritis",
+  "expected": [
+   "Arthritis"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "misspelled",
+  "kind": "condition",
+  "query": "leukaemia",
+  "expected": [
+   "Leukemia"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Tecentriq",
+  "expected": [
+   "atezolizumab"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Imbruvica",
+  "expected": [
+   "ibrutinib"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Lantus",
+  "expected": [
+   "Insulin Glargine"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Zoloft",
+  "expected": [
+   "Sertraline"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Enbrel",
+  "expected": [
+   "Etanercept"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "brand",
+  "kind": "drug",
+  "query": "Synthroid",
+  "expected": [
+   "Thyroxine"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "carboplatin",
+  "expected": [
+   "Carboplatin"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "hydroxychloroquine",
+  "expected": [
+   "Hydroxychloroquine"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "omeprazole",
+  "expected": [
+   "Omeprazole"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "generic",
+  "kind": "drug",
+  "query": "doxycycline",
+  "expected": [
+   "Doxycycline"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "salt",
+  "kind": "drug",
+  "query": "metformin hydrochloride",
+  "expected": [
+   "Metformin"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "code",
+  "kind": "drug",
+  "query": "AZD1222",
+  "expected": [
+   "ChAdOx1 nCoV-19"
+  ]
+ },
+ {
+  "set": "lockbox",
+  "tag": "code",
+  "kind": "drug",
+  "query": "MPDL3280A",
+  "expected": [
+   "atezolizumab"
+  ]
+ }
+]
