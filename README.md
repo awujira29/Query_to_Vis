@@ -201,7 +201,7 @@ spells it, so the query string is deterministic whatever the model's capitalizat
 | `visualization_type` | string | no | one of the six types in section 4 | Force a chart type; the planner's reading is overridden and a note explains. |
 | `dimension` | string | no | one of the dimensions in section 2 | Force the grouping dimension (bar and grouped bar charts). |
 | `top_n` | integer | no | 1 to 100 | Keep the N largest groups (others fold into "Other"), or N nodes per type in a network. |
-| `max_studies` | integer | no | 100 to 10000, default 3000 | Most trials fetched per series. More is slower; see `meta.truncated`. |
+| `max_studies` | integer | no | 100 to 10000, default 5000 | Most trials fetched per series. More is slower; see `meta.truncated`. |
 
 Structured fields are authoritative. When a field is set and the planner read a
 different value from the text, the structured value wins and `meta.notes` records the

@@ -140,6 +140,10 @@ Rules:
   distribution by start_year.
 - "which drugs are combined with X" is a ["drug", "drug"] network with drug X.
 - "recruiting trials" is a status filter, not a dimension.
+- Set start_year or end_year only when the question or the structured fields give a year
+  (or a relative span such as "the last five years"). Otherwise leave them out.
+- "Who funds / who sponsors / who pays for X trials" is a distribution by sponsor_class
+  (or lead_sponsor when the question asks for specific organizations), not a network.
 - Never invent fields or values outside the lists above. Today is {date.today().isoformat()}.
 
 {shots}"""
@@ -150,9 +154,14 @@ def _norm(text: str) -> str:
 
 
 def _ground(plan: Plan, request: QueryRequest) -> str | None:
-    """None if every named entity appears in the input, else what was invented."""
+    """None if every named entity and year appears in the input, else what was invented."""
     haystack = _norm(request.query + " " + json.dumps(request.structured_summary()))
+    relative = re.search(r"\b(last|past|recent|previous)\b", request.query, re.IGNORECASE) is not None
     for s in plan.series:
+        for field in ("start_year", "end_year"):
+            year = getattr(s.filters, field)
+            if year and str(year) not in haystack and not relative:
+                return f"{field} {year} is not in the question or structured fields"
         for field in ("drug", "condition", "sponsor"):
             value = getattr(s.filters, field)
             if value and _norm(value) not in haystack:
@@ -211,7 +220,8 @@ def llm_plan(request: QueryRequest) -> LLMPlanResult:
         plan = Plan.model_validate(_normalize_raw(raw))
     except (ValidationError, ValueError, TypeError) as e:
         logger.warning("LLM plan rejected: %s", str(e)[:300])
-        return LLMPlanResult(error=f"model plan failed validation: {str(e).splitlines()[0][:200]}")
+        detail = " ".join(line.strip() for line in str(e).splitlines()[1:3]) or str(e).splitlines()[0]
+        return LLMPlanResult(error=f"model plan failed validation: {detail[:200]}")
 
     if problem := _ground(plan, request):
         logger.warning("LLM plan rejected as ungrounded: %s", problem)

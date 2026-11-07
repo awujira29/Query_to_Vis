@@ -8006,12 +8006,12 @@
               "terms": [
                 "pembrolizumab"
               ],
-              "source": "exact",
+              "source": "rxnorm",
               "text_search_total": 3003,
               "api_params": {
                 "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
               },
-              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
             }
           ]
         }
@@ -8036,12 +8036,12 @@
           "terms": [
             "pembrolizumab"
           ],
-          "source": "exact",
+          "source": "rxnorm",
           "text_search_total": 3003,
           "api_params": {
             "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
           },
-          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
         }
       ],
       "render_hints": {
@@ -8053,7 +8053,7 @@
       },
       "statistics": {},
       "notes": [
-        "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
+        "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
         "Edges link drugs given in the same trial arm. Drugs in different arms of one trial are being compared, not combined, so they are not linked.",
         "Only arms that give Pembrolizumab are used, so every edge is part of a regimen including Pembrolizumab; other arms (e.g. control arms) are left out.",
         "685 of 2659 trials add no edge: no arm gives Pembrolizumab with another drug.",
@@ -8066,7 +8066,7 @@
         "1 of the top nodes had no edge above the threshold and were removed.",
         "NCT ID lists are capped at 100 per node or edge; weight is always the full count."
       ],
-      "generated_at": "2026-11-07T20:11:39.509495+00:00"
+      "generated_at": "2026-11-07T20:35:54.126792+00:00"
     }
   }
 }

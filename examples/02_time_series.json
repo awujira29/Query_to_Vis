@@ -2082,12 +2082,12 @@
               "terms": [
                 "pembrolizumab"
               ],
-              "source": "exact",
+              "source": "rxnorm",
               "text_search_total": 3003,
               "api_params": {
                 "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
               },
-              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
             }
           ]
         }
@@ -2112,25 +2112,25 @@
           "terms": [
             "pembrolizumab"
           ],
-          "source": "exact",
+          "source": "rxnorm",
           "text_search_total": 3003,
           "api_params": {
             "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
           },
-          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
         }
       ],
       "render_hints": {},
       "statistics": {},
       "notes": [
-        "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
+        "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
         "4 trials have no start date and are not shown.",
         "31 trials with planned start dates after 2026-11-07 are excluded.",
         "2026 is still in progress, so its count is incomplete.",
         "estimated_count is the number of trials per year whose start date is ESTIMATED rather than ACTUAL.",
         "NCT ID lists are capped at 100 per datum; trial_count is always the full count."
       ],
-      "generated_at": "2026-11-07T20:11:33.047558+00:00"
+      "generated_at": "2026-11-07T20:35:45.444213+00:00"
     }
   }
 }

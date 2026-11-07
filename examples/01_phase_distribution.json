@@ -805,12 +805,12 @@
               "terms": [
                 "Nivolumab"
               ],
-              "source": "exact",
+              "source": "rxnorm",
               "text_search_total": 2041,
               "api_params": {
                 "filter.advanced": "(AREA[InterventionMeshTerm]\"Nivolumab\" OR AREA[InterventionAncestorTerm]\"Nivolumab\" OR AREA[InterventionName]\"nivolumab\" OR AREA[InterventionOtherName]\"nivolumab\" OR AREA[InterventionName]\"Nivolumab\" OR AREA[InterventionOtherName]\"Nivolumab\")"
               },
-              "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
+              "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
             }
           ]
         }
@@ -847,12 +847,12 @@
           "terms": [
             "Nivolumab"
           ],
-          "source": "exact",
+          "source": "rxnorm",
           "text_search_total": 2041,
           "api_params": {
             "filter.advanced": "(AREA[InterventionMeshTerm]\"Nivolumab\" OR AREA[InterventionAncestorTerm]\"Nivolumab\" OR AREA[InterventionName]\"nivolumab\" OR AREA[InterventionOtherName]\"nivolumab\" OR AREA[InterventionName]\"Nivolumab\" OR AREA[InterventionOtherName]\"Nivolumab\")"
           },
-          "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
+          "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
         }
       ],
       "render_hints": {
@@ -861,10 +861,10 @@
       "statistics": {},
       "notes": [
         "'melanoma' resolved to MeSH 'Melanoma' (source: exact; verified: covers 88% of trials found by the words, 3,424 trials in the registry, including subtypes).",
-        "'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes).",
+        "'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes).",
         "NCT ID lists are capped at 100 per datum; trial_count is always the full count."
       ],
-      "generated_at": "2026-11-07T20:11:32.095340+00:00"
+      "generated_at": "2026-11-07T20:35:44.102120+00:00"
     }
   }
 }

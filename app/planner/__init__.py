@@ -131,7 +131,7 @@ def make_plan(request: QueryRequest) -> Planning:
         elif result.off_topic:
             # The model's judgment that this is not a trials question is kept: the
             # rule-based planner would only find a spurious entity in the words.
-            return Planning(None, "llm", [f"The question was judged {llm_error}."], llm_error)
+            return Planning(None, "llm", [f"The question was judged {llm_error.rstrip('.')}."], llm_error)
         else:
             notes.append(f"Language-model planner not used ({llm_error}); "
                          "the rule-based planner interpreted the question.")

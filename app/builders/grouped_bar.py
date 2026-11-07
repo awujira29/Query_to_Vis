@@ -1,8 +1,7 @@
 """Grouped bar chart builder: comparison Table -> VisualizationSpec."""
 from typing import Literal
 
-from app.builders.bar import label
-from app.labels import display
+from app.builders.bar import label, row_label
 from app.schemas.response import Channel, VisualizationSpec
 from app.schemas.shapes import Table
 
@@ -19,7 +18,7 @@ Y_CHANNELS = {
 def build_grouped_bar(table: Table, dimension: str, title: str,
                       measure: Measure = "trial_count") -> VisualizationSpec:
     dim_col = next(c for c in table.columns if c.name == dimension)
-    rows = [{**row, "label": display(dimension, row[dimension])} for row in table.rows]
+    rows = [{**row, "label": row_label(dimension, row)} for row in table.rows]
     categories = list(dict.fromkeys(row["label"] for row in rows))
     series = list(dict.fromkeys(row["series"] for row in rows))
     y_title, y_unit = Y_CHANNELS[measure]

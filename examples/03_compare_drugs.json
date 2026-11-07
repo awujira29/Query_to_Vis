@@ -2128,12 +2128,12 @@
               "terms": [
                 "pembrolizumab"
               ],
-              "source": "exact",
+              "source": "rxnorm",
               "text_search_total": 3003,
               "api_params": {
                 "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
               },
-              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+              "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
             }
           ]
         },
@@ -2158,12 +2158,12 @@
               "terms": [
                 "Nivolumab"
               ],
-              "source": "exact",
+              "source": "rxnorm",
               "text_search_total": 2041,
               "api_params": {
                 "filter.advanced": "(AREA[InterventionMeshTerm]\"Nivolumab\" OR AREA[InterventionAncestorTerm]\"Nivolumab\" OR AREA[InterventionName]\"nivolumab\" OR AREA[InterventionOtherName]\"nivolumab\" OR AREA[InterventionName]\"Nivolumab\" OR AREA[InterventionOtherName]\"Nivolumab\")"
               },
-              "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
+              "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
             }
           ]
         }
@@ -2190,12 +2190,12 @@
           "terms": [
             "pembrolizumab"
           ],
-          "source": "exact",
+          "source": "rxnorm",
           "text_search_total": 3003,
           "api_params": {
             "filter.advanced": "(AREA[InterventionMeshTerm]\"pembrolizumab\" OR AREA[InterventionAncestorTerm]\"pembrolizumab\" OR AREA[InterventionName]\"pembrolizumab\" OR AREA[InterventionOtherName]\"pembrolizumab\")"
           },
-          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
+          "note": "'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes)."
         },
         {
           "kind": "drug",
@@ -2204,12 +2204,12 @@
           "terms": [
             "Nivolumab"
           ],
-          "source": "exact",
+          "source": "rxnorm",
           "text_search_total": 2041,
           "api_params": {
             "filter.advanced": "(AREA[InterventionMeshTerm]\"Nivolumab\" OR AREA[InterventionAncestorTerm]\"Nivolumab\" OR AREA[InterventionName]\"nivolumab\" OR AREA[InterventionOtherName]\"nivolumab\" OR AREA[InterventionName]\"Nivolumab\" OR AREA[InterventionOtherName]\"Nivolumab\")"
           },
-          "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
+          "note": "'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes)."
         }
       ],
       "render_hints": {
@@ -2217,13 +2217,13 @@
       },
       "statistics": {},
       "notes": [
-        "pembrolizumab: 'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: exact; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
-        "nivolumab: 'nivolumab' resolved to MeSH 'Nivolumab' (source: exact; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes).",
+        "pembrolizumab: 'pembrolizumab' resolved to MeSH 'pembrolizumab' (source: rxnorm; verified: covers 85% of trials found by the words, 2,584 trials in the registry, including subtypes).",
+        "nivolumab: 'nivolumab' resolved to MeSH 'Nivolumab' (source: rxnorm; verified: covers 83% of trials found by the words, 1,717 trials in the registry, including subtypes).",
         "174 trials appear in both 'pembrolizumab' and 'nivolumab' and are counted in each.",
         "percent is the share of each series' trials, so series of different sizes can be compared.",
         "NCT ID lists are capped per datum; trial_count is always the full count."
       ],
-      "generated_at": "2026-11-07T20:11:34.461591+00:00"
+      "generated_at": "2026-11-07T20:35:47.676791+00:00"
     }
   }
 }

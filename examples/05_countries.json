@@ -2544,7 +2544,7 @@
         "NCT ID lists are capped at 100 per datum; trial_count is always the full count.",
         "A trial can count in several 'country' groups, so counts may sum to more than the number of trials."
       ],
-      "generated_at": "2026-11-07T20:11:37.709221+00:00"
+      "generated_at": "2026-11-07T20:35:51.688390+00:00"
     }
   }
 }

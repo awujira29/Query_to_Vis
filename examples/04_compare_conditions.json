@@ -1878,7 +1878,7 @@
         "NCT ID lists are capped per datum; trial_count is always the full count.",
         "source_count / source_percent are exact counts from ClinicalTrials.gov for each category, using the same query as the records; trial_count / percent come from the analyzed sample, which was truncated."
       ],
-      "generated_at": "2026-11-07T20:11:36.765943+00:00"
+      "generated_at": "2026-11-07T20:35:50.717498+00:00"
     }
   }
 }

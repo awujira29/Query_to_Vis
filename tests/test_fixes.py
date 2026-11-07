@@ -65,3 +65,15 @@ def test_existing_filter_is_combined():
     from app.aggregate.source_counts import _with_area
     p = _with_area({"filter.advanced": "AREA[StartDate]RANGE[2015-01-01,MAX]"}, "LeadSponsorClass", "NIH")
     assert p["filter.advanced"] == "(AREA[StartDate]RANGE[2015-01-01,MAX]) AND AREA[LeadSponsorClass]NIH"
+
+
+def test_lead_sponsor_rows_are_labeled_with_the_cited_name():
+    from app.aggregate.count import count_by
+    from app.builders.bar import build_bar
+    study = {"protocolSection": {
+        "identificationModule": {"nctId": "NCT00000001", "briefTitle": "t"},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Novartis Pharmaceuticals", "class": "INDUSTRY"}}}}
+    table = count_by([normalize_study(study)], "lead_sponsor")
+    spec = build_bar(table, "lead_sponsor", "T")
+    assert spec.data[0]["lead_sponsor"] == "novartis pharmaceuticals"
+    assert spec.data[0]["label"] == "Novartis Pharmaceuticals"

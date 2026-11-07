@@ -19,7 +19,7 @@ from app.schemas.response import VizType
 STATUSES = tuple(DISPLAY["overall_status"])
 _ROMAN = {"I": "1", "II": "2", "III": "3", "IV": "4"}
 
-DEFAULT_MAX_STUDIES = 3000
+DEFAULT_MAX_STUDIES = 5000
 MAX_STUDIES_LIMIT = 10000
 
 

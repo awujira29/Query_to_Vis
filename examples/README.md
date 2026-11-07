@@ -2,7 +2,7 @@
 
 Each file holds the exact request sent to `POST /query`, the HTTP status, and the full response. Regenerate with `python -m scripts.run_examples` (live) or `python -m scripts.run_examples --offline` (replay from `.cache/ctgov`), then check them with `python -m scripts.verify_examples`.
 
-Generated with planner mode: `rules only (no LLM key)`, offline replay: `True`.
+Generated with planner mode: `rules only (no LLM key)`, offline replay: `False`.
 
 | File | Query | Visualization | Trials analyzed | Size | Planner |
 |---|---|---|---|---|---|

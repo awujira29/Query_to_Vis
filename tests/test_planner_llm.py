@@ -126,3 +126,12 @@ def test_system_prompt_lists_the_live_vocabulary():
     for word in ("sponsor_class", "intervention_type", "EARLY_PHASE1", "NOT_YET_RECRUITING",
                  "duration_months", '"drug", "sponsor", "condition"'):
         assert word in prompt
+
+
+def test_invented_year_is_rejected_but_relative_spans_pass(model):
+    model["raw"] = {"intent": "trend", "title": "t",
+                    "series": [{"label": "ovarian cancer", "filters": {"condition": "ovarian cancer", "start_year": 2010}}]}
+    result = llm_plan(QueryRequest(query="How many trials started each year for ovarian cancer?"))
+    assert result.plan is None and "start_year 2010" in result.error
+    assert llm_plan(QueryRequest(query="ovarian cancer trials over the last five years")).plan is not None
+    assert llm_plan(QueryRequest(query="ovarian cancer trials since 2010")).plan is not None

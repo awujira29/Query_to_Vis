@@ -1584,7 +1584,7 @@
         "Bins use fixed edges because the values are heavy-tailed; bin_end is exclusive and null for the open-ended last bin.",
         "NCT ID lists are capped at 100 per bin; trial_count is always the full count."
       ],
-      "generated_at": "2026-11-07T20:11:40.401142+00:00"
+      "generated_at": "2026-11-07T20:35:55.001088+00:00"
     }
   }
 }
